@@ -1,0 +1,13 @@
+NSW-RespiratoryHospitalAdmissions-Annual-All
+
+https://www.healthstats.nsw.gov.au/indicator?name=-res-cat-hos&location=LHD&view=Trend&measure=DSTRate&confidence=true&groups=Disease%20type,Sex&compare=Disease%20type,Sex,LHD&filter=Disease%20type,Influenza%20and%20pneumonia&filter=LHD,Sydney%20LHD&filter=Sex,Males
+
+
+NSW-RespiratoryDeaths-Annual-All
+
+https://www.healthstats.nsw.gov.au/indicator?name=-res-cat-dth&location=NSW&view=Trend&measure=DSTRate&groups=Disease%20type,Sex&compare=Disease%20type,Sex&filter=Disease%20type,Total&filter=Sex,Persons
+
+
+NSW-AsthmalikeIllnessPrsentations-Annual-All
+
+https://www.healthstats.nsw.gov.au/indicator?name=-res-asthma-mth-ed&location=NSW&view=Trend&measure=DSTRate&groups=Sex&compare=Sex&filter=Sex,Persons
