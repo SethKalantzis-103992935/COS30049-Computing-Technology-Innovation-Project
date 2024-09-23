@@ -1,0 +1,2 @@
+This includes only the asthma, chronic obstructive pulmonary , and influenza and pneumonia stats.
+'respiratory-general' seems to have too much overlap with these to be of much use.
