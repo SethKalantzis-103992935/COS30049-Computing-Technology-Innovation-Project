@@ -1,0 +1,141 @@
+financial year,lhd,"Female rate per 100,000 population","Male rate per 100,000 population","Persons rate per 100,000 population"
+2014/2015,Central Coast,9.4,11.5,10.2
+2015/2016,Central Coast,9.9,10.2,10.1
+2016/2017,Central Coast,11.1,11.4,11.3
+2017/2018,Central Coast,9.7,13.3,11.3
+2018/2019,Central Coast,7.8,13.3,10.1
+2019/2020,Central Coast,7.2,11.2,9.0
+2020/2021,Central Coast,4.8,7.5,6.1
+2021/2022,Central Coast,5.675,8.45,6.975
+2022/2023,Central Coast,6.550000000000001,9.4,7.85
+2023/2024,Central Coast,7.425000000000001,10.350000000000001,8.725
+2014/2015,Hunter New England,8.3,11.3,9.6
+2015/2016,Hunter New England,8.3,8.6,8.4
+2016/2017,Hunter New England,11.8,12.5,12.2
+2017/2018,Hunter New England,11.4,14.3,12.7
+2018/2019,Hunter New England,9.9,10.4,10.2
+2019/2020,Hunter New England,7.6,7.3,7.5
+2020/2021,Hunter New England,4.6,5.8,5.1
+2021/2022,Hunter New England,5.5,6.175,5.8
+2022/2023,Hunter New England,6.3999999999999995,6.55,6.5
+2023/2024,Hunter New England,7.299999999999999,6.925,7.2
+2014/2015,Illawarra Shoalhaven,8.2,7.3,7.9
+2015/2016,Illawarra Shoalhaven,7.5,9.0,8.3
+2016/2017,Illawarra Shoalhaven,9.4,12.5,10.7
+2017/2018,Illawarra Shoalhaven,9.1,12.9,10.7
+2018/2019,Illawarra Shoalhaven,10.1,10.4,10.4
+2019/2020,Illawarra Shoalhaven,9.1,7.7,8.6
+2020/2021,Illawarra Shoalhaven,4.8,6.5,5.5
+2021/2022,Illawarra Shoalhaven,5.725,7.95,6.65
+2022/2023,Illawarra Shoalhaven,6.65,9.4,7.8
+2023/2024,Illawarra Shoalhaven,7.575,10.850000000000001,8.95
+2014/2015,Mid North Coast,8.5,12.3,10.1
+2015/2016,Mid North Coast,6.7,11.5,8.7
+2016/2017,Mid North Coast,6.7,9.2,7.8
+2017/2018,Mid North Coast,8.7,8.8,8.6
+2018/2019,Mid North Coast,9.1,8.8,8.8
+2019/2020,Mid North Coast,8.7,6.4,7.6
+2020/2021,Mid North Coast,5.3,4.2,4.9
+2021/2022,Mid North Coast,6.125,5.675,6.075
+2022/2023,Mid North Coast,6.949999999999999,7.15,7.25
+2023/2024,Mid North Coast,7.7749999999999995,8.625,8.425
+2014/2015,Murrumbidgee,8.6,10.1,9.6
+2015/2016,Murrumbidgee,7.4,13.4,10.4
+2016/2017,Murrumbidgee,7.9,16.7,11.9
+2017/2018,Murrumbidgee,8.7,11.8,10.0
+2018/2019,Murrumbidgee,9.2,8.2,8.8
+2019/2020,Murrumbidgee,8.0,6.3,7.4
+2020/2021,Murrumbidgee,5.8,5.2,5.5
+2021/2022,Murrumbidgee,6.7749999999999995,6.8,6.775
+2022/2023,Murrumbidgee,7.75,8.4,8.05
+2023/2024,Murrumbidgee,8.725,10.0,9.325
+2014/2015,Nepean Blue Mountains,9.7,11.6,10.6
+2015/2016,Nepean Blue Mountains,13.2,14.0,13.7
+2016/2017,Nepean Blue Mountains,14.9,12.4,14.0
+2017/2018,Nepean Blue Mountains,11.4,12.9,12.0
+2018/2019,Nepean Blue Mountains,9.4,13.0,10.9
+2019/2020,Nepean Blue Mountains,8.0,12.0,9.6
+2020/2021,Nepean Blue Mountains,6.3,9.0,7.3
+2021/2022,Nepean Blue Mountains,6.7749999999999995,9.1,7.6499999999999995
+2022/2023,Nepean Blue Mountains,7.25,9.2,8.0
+2023/2024,Nepean Blue Mountains,7.725,9.3,8.35
+2014/2015,Northern NSW,8.2,9.4,8.7
+2015/2016,Northern NSW,7.7,10.0,8.6
+2016/2017,Northern NSW,8.7,11.0,9.6
+2017/2018,Northern NSW,8.2,10.1,9.0
+2018/2019,Northern NSW,5.7,10.7,7.8
+2019/2020,Northern NSW,4.7,10.3,7.1
+2020/2021,Northern NSW,3.3,5.8,4.4
+2021/2022,Northern NSW,4.6499999999999995,6.6499999999999995,5.525
+2022/2023,Northern NSW,6.0,7.5,6.65
+2023/2024,Northern NSW,7.35,8.35,7.775
+2014/2015,Northern Sydney,8.7,9.2,8.9
+2015/2016,Northern Sydney,9.6,8.4,9.2
+2016/2017,Northern Sydney,11.9,10.5,11.3
+2017/2018,Northern Sydney,11.1,11.5,11.2
+2018/2019,Northern Sydney,9.1,9.5,9.3
+2019/2020,Northern Sydney,8.2,7.8,8.0
+2020/2021,Northern Sydney,5.7,6.3,5.9
+2021/2022,Northern Sydney,6.025,6.85,6.375
+2022/2023,Northern Sydney,6.35,7.4,6.85
+2023/2024,Northern Sydney,6.675,7.95,7.325
+2014/2015,South Eastern Sydney,7.0,8.5,7.8
+2015/2016,South Eastern Sydney,5.9,8.5,7.2
+2016/2017,South Eastern Sydney,8.0,9.8,8.9
+2017/2018,South Eastern Sydney,8.2,9.5,8.8
+2018/2019,South Eastern Sydney,6.6,8.4,7.4
+2019/2020,South Eastern Sydney,5.8,6.4,6.1
+2020/2021,South Eastern Sydney,4.2,5.2,4.7
+2021/2022,South Eastern Sydney,4.725,5.775,5.25
+2022/2023,South Eastern Sydney,5.25,6.35,5.800000000000001
+2023/2024,South Eastern Sydney,5.775,6.925,6.3500000000000005
+2014/2015,South Western Sydney,6.3,7.5,6.9
+2015/2016,South Western Sydney,8.0,8.2,8.1
+2016/2017,South Western Sydney,8.9,9.6,9.2
+2017/2018,South Western Sydney,8.6,9.6,9.1
+2018/2019,South Western Sydney,7.7,9.9,8.8
+2019/2020,South Western Sydney,5.9,8.7,7.2
+2020/2021,South Western Sydney,4.8,6.3,5.5
+2021/2022,South Western Sydney,5.8,7.975,6.775
+2022/2023,South Western Sydney,6.800000000000001,9.65,8.05
+2023/2024,South Western Sydney,7.800000000000001,11.325,9.325
+2014/2015,Southern NSW,8.8,13.0,10.6
+2015/2016,Southern NSW,8.6,9.7,9.0
+2016/2017,Southern NSW,13.3,15.0,14.2
+2017/2018,Southern NSW,11.3,16.2,13.6
+2018/2019,Southern NSW,9.5,9.4,9.5
+2019/2020,Southern NSW,8.0,7.4,7.8
+2020/2021,Southern NSW,3.9,4.5,4.2
+2021/2022,Southern NSW,4.725,5.35,5.1
+2022/2023,Southern NSW,5.55,6.2,6.0
+2023/2024,Southern NSW,6.375,7.050000000000001,6.9
+2014/2015,Sydney,7.2,7.9,7.8
+2015/2016,Sydney,8.3,8.4,8.6
+2016/2017,Sydney,9.8,13.3,11.4
+2017/2018,Sydney,8.9,13.9,11.0
+2018/2019,Sydney,8.2,12.1,9.9
+2019/2020,Sydney,6.9,9.8,8.2
+2020/2021,Sydney,4.0,6.0,4.9
+2021/2022,Sydney,5.175,6.825,5.95
+2022/2023,Sydney,6.35,7.65,7.0
+2023/2024,Sydney,7.5249999999999995,8.475000000000001,8.05
+2014/2015,Western NSW,8.7,9.3,9.1
+2015/2016,Western NSW,12.2,9.8,11.3
+2016/2017,Western NSW,14.8,15.5,15.0
+2017/2018,Western NSW,11.5,14.1,12.5
+2018/2019,Western NSW,11.9,12.9,12.4
+2019/2020,Western NSW,9.8,11.4,10.6
+2020/2021,Western NSW,4.8,8.6,6.5
+2021/2022,Western NSW,5.675,8.7,7.05
+2022/2023,Western NSW,6.550000000000001,8.8,7.6
+2023/2024,Western NSW,7.425000000000001,8.9,8.149999999999999
+2014/2015,Western Sydney,8.3,9.0,8.7
+2015/2016,Western Sydney,8.0,8.9,8.4
+2016/2017,Western Sydney,10.4,10.6,10.7
+2017/2018,Western Sydney,8.6,9.3,9.0
+2018/2019,Western Sydney,8.3,9.5,8.8
+2019/2020,Western Sydney,7.2,9.2,8.1
+2020/2021,Western Sydney,4.0,5.7,4.8
+2021/2022,Western Sydney,4.0,5.7,4.8
+2022/2023,Western Sydney,4.0,5.7,4.8
+2023/2024,Western Sydney,4.0,5.7,4.8
