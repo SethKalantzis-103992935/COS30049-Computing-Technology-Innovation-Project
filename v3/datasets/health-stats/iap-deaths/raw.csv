@@ -1,0 +1,451 @@
+Sex,LHD,Period,"Rate per 100,000 population",LL 95% CI,UL 95% CI
+Males,Sydney LHD,2011-2012,9.2,6.7,12.3
+Males,Sydney LHD,2012-2013,8.7,6.3,11.6
+Males,Sydney LHD,2013-2014,9,6.6,11.9
+Males,Sydney LHD,2014-2015,7.9,5.8,10.7
+Males,Sydney LHD,2015-2016,8.4,6.2,11.1
+Males,Sydney LHD,2016-2017,13.3,10.5,16.5
+Males,Sydney LHD,2017-2018,13.9,11.1,17.2
+Males,Sydney LHD,2018-2019,12.1,9.6,15.1
+Males,Sydney LHD,2019-2020,9.8,7.5,12.5
+Males,Sydney LHD,2020-2021,6,4.3,8.2
+Males,South Western Sydney LHD,2011-2012,7.1,5.2,9.4
+Males,South Western Sydney LHD,2012-2013,8,6.1,10.4
+Males,South Western Sydney LHD,2013-2014,7.7,5.9,9.9
+Males,South Western Sydney LHD,2014-2015,7.5,5.7,9.6
+Males,South Western Sydney LHD,2015-2016,8.2,6.4,10.4
+Males,South Western Sydney LHD,2016-2017,9.6,7.6,11.9
+Males,South Western Sydney LHD,2017-2018,9.6,7.6,11.8
+Males,South Western Sydney LHD,2018-2019,9.9,8,12.1
+Males,South Western Sydney LHD,2019-2020,8.7,7,10.8
+Males,South Western Sydney LHD,2020-2021,6.3,4.8,8.1
+Males,South Eastern Sydney LHD,2011-2012,8,6.2,10.1
+Males,South Eastern Sydney LHD,2012-2013,7.2,5.6,9.3
+Males,South Eastern Sydney LHD,2013-2014,8,6.3,10.1
+Males,South Eastern Sydney LHD,2014-2015,8.5,6.8,10.6
+Males,South Eastern Sydney LHD,2015-2016,8.5,6.7,10.6
+Males,South Eastern Sydney LHD,2016-2017,9.8,7.9,11.9
+Males,South Eastern Sydney LHD,2017-2018,9.5,7.7,11.6
+Males,South Eastern Sydney LHD,2018-2019,8.4,6.7,10.3
+Males,South Eastern Sydney LHD,2019-2020,6.4,4.9,8.1
+Males,South Eastern Sydney LHD,2020-2021,5.2,4,6.8
+Males,Illawarra Shoalhaven LHD,2011-2012,7.9,5.6,10.9
+Males,Illawarra Shoalhaven LHD,2012-2013,7.5,5.3,10.4
+Males,Illawarra Shoalhaven LHD,2013-2014,7.9,5.7,10.8
+Males,Illawarra Shoalhaven LHD,2014-2015,7.3,5.2,10.1
+Males,Illawarra Shoalhaven LHD,2015-2016,9,6.6,11.9
+Males,Illawarra Shoalhaven LHD,2016-2017,12.5,9.8,15.9
+Males,Illawarra Shoalhaven LHD,2017-2018,12.9,10.1,16.2
+Males,Illawarra Shoalhaven LHD,2018-2019,10.4,8,13.5
+Males,Illawarra Shoalhaven LHD,2019-2020,7.7,5.7,10.4
+Males,Illawarra Shoalhaven LHD,2020-2021,6.5,4.6,8.9
+Males,Western Sydney LHD,2011-2012,11.9,9.1,15.1
+Males,Western Sydney LHD,2012-2013,8.7,6.5,11.4
+Males,Western Sydney LHD,2013-2014,8,6,10.5
+Males,Western Sydney LHD,2014-2015,9,6.8,11.5
+Males,Western Sydney LHD,2015-2016,8.9,6.8,11.5
+Males,Western Sydney LHD,2016-2017,10.6,8.3,13.3
+Males,Western Sydney LHD,2017-2018,9.3,7.3,11.8
+Males,Western Sydney LHD,2018-2019,9.5,7.4,11.9
+Males,Western Sydney LHD,2019-2020,9.2,7.2,11.6
+Males,Western Sydney LHD,2020-2021,5.7,4.2,7.6
+Males,Nepean Blue Mountains LHD,2011-2012,11.8,8,16.6
+Males,Nepean Blue Mountains LHD,2012-2013,12.2,8.4,16.9
+Males,Nepean Blue Mountains LHD,2013-2014,10.2,6.8,14.6
+Males,Nepean Blue Mountains LHD,2014-2015,11.6,8,16.2
+Males,Nepean Blue Mountains LHD,2015-2016,14,10.1,19
+Males,Nepean Blue Mountains LHD,2016-2017,12.4,8.7,16.9
+Males,Nepean Blue Mountains LHD,2017-2018,12.9,9.2,17.5
+Males,Nepean Blue Mountains LHD,2018-2019,13,9.3,17.6
+Males,Nepean Blue Mountains LHD,2019-2020,12,8.5,16.3
+Males,Nepean Blue Mountains LHD,2020-2021,9,6.1,12.7
+Males,Northern Sydney LHD,2011-2012,8.8,7,10.9
+Males,Northern Sydney LHD,2012-2013,8.6,6.9,10.7
+Males,Northern Sydney LHD,2013-2014,9,7.3,11
+Males,Northern Sydney LHD,2014-2015,9.2,7.4,11.2
+Males,Northern Sydney LHD,2015-2016,8.4,6.8,10.3
+Males,Northern Sydney LHD,2016-2017,10.5,8.7,12.5
+Males,Northern Sydney LHD,2017-2018,11.5,9.6,13.7
+Males,Northern Sydney LHD,2018-2019,9.5,7.8,11.5
+Males,Northern Sydney LHD,2019-2020,7.8,6.3,9.5
+Males,Northern Sydney LHD,2020-2021,6.3,5,7.9
+Males,Central Coast LHD,2011-2012,10.2,7.4,13.8
+Males,Central Coast LHD,2012-2013,8.7,6.2,12
+Males,Central Coast LHD,2013-2014,9.4,6.8,12.7
+Males,Central Coast LHD,2014-2015,11.5,8.6,15.1
+Males,Central Coast LHD,2015-2016,10.2,7.5,13.6
+Males,Central Coast LHD,2016-2017,11.4,8.4,15.1
+Males,Central Coast LHD,2017-2018,13.3,10.2,17.3
+Males,Central Coast LHD,2018-2019,13.3,10.3,17
+Males,Central Coast LHD,2019-2020,11.2,8.4,14.7
+Males,Central Coast LHD,2020-2021,7.5,5.2,10.5
+Males,Hunter New England LHD,2011-2012,11.3,9.3,13.6
+Males,Hunter New England LHD,2012-2013,10.7,8.8,12.9
+Males,Hunter New England LHD,2013-2014,11.1,9.2,13.3
+Males,Hunter New England LHD,2014-2015,11.3,9.4,13.5
+Males,Hunter New England LHD,2015-2016,8.6,6.9,10.5
+Males,Hunter New England LHD,2016-2017,12.5,10.5,14.7
+Males,Hunter New England LHD,2017-2018,14.3,12.2,16.7
+Males,Hunter New England LHD,2018-2019,10.4,8.7,12.4
+Males,Hunter New England LHD,2019-2020,7.3,5.9,8.9
+Males,Hunter New England LHD,2020-2021,5.8,4.6,7.3
+Males,Northern NSW LHD,2011-2012,8.9,6.2,12.6
+Males,Northern NSW LHD,2012-2013,9.7,6.9,13.4
+Males,Northern NSW LHD,2013-2014,8.8,6.3,12.2
+Males,Northern NSW LHD,2014-2015,9.4,6.9,12.8
+Males,Northern NSW LHD,2015-2016,10,7.3,13.6
+Males,Northern NSW LHD,2016-2017,11,8.1,14.8
+Males,Northern NSW LHD,2017-2018,10.1,7.5,13.6
+Males,Northern NSW LHD,2018-2019,10.7,8,14.3
+Males,Northern NSW LHD,2019-2020,10.3,7.6,13.8
+Males,Northern NSW LHD,2020-2021,5.8,3.9,8.5
+Males,Mid North Coast LHD,2011-2012,9.8,6.6,14.3
+Males,Mid North Coast LHD,2012-2013,10.8,7.3,15.7
+Males,Mid North Coast LHD,2013-2014,12.8,9,17.8
+Males,Mid North Coast LHD,2014-2015,12.3,8.7,17.1
+Males,Mid North Coast LHD,2015-2016,11.5,8.1,16.2
+Males,Mid North Coast LHD,2016-2017,9.2,6.3,13.3
+Males,Mid North Coast LHD,2017-2018,8.8,6.1,12.6
+Males,Mid North Coast LHD,2018-2019,8.8,6.1,12.7
+Males,Mid North Coast LHD,2019-2020,6.4,4.2,9.8
+Males,Mid North Coast LHD,2020-2021,4.2,2.5,7
+Males,Southern NSW LHD,2011-2012,15.9,11,22.3
+Males,Southern NSW LHD,2012-2013,14.2,9.7,20.1
+Males,Southern NSW LHD,2013-2014,12.7,8.6,18.2
+Males,Southern NSW LHD,2014-2015,13,8.9,18.4
+Males,Southern NSW LHD,2015-2016,9.7,6.2,14.6
+Males,Southern NSW LHD,2016-2017,15,10.5,20.8
+Males,Southern NSW LHD,2017-2018,16.2,11.6,22
+Males,Southern NSW LHD,2018-2019,9.4,6.1,13.8
+Males,Southern NSW LHD,2019-2020,7.4,4.6,11.4
+Males,Southern NSW LHD,2020-2021,4.5,2.5,7.8
+Males,Murrumbidgee LHD,2011-2012,10.6,7.2,15.2
+Males,Murrumbidgee LHD,2012-2013,8,5.1,12
+Males,Murrumbidgee LHD,2013-2014,6.9,4.1,10.9
+Males,Murrumbidgee LHD,2014-2015,10.1,6.8,14.7
+Males,Murrumbidgee LHD,2015-2016,13.4,9.7,18.2
+Males,Murrumbidgee LHD,2016-2017,16.7,12.6,21.8
+Males,Murrumbidgee LHD,2017-2018,11.8,8.5,16.1
+Males,Murrumbidgee LHD,2018-2019,8.2,5.5,11.9
+Males,Murrumbidgee LHD,2019-2020,6.3,4,9.7
+Males,Murrumbidgee LHD,2020-2021,5.2,3.2,8.2
+Males,Western NSW LHD,2011-2012,7.7,4.8,11.6
+Males,Western NSW LHD,2012-2013,7.9,5,12
+Males,Western NSW LHD,2013-2014,11.6,8.1,16.1
+Males,Western NSW LHD,2014-2015,9.3,6.3,13.4
+Males,Western NSW LHD,2015-2016,9.8,6.7,14
+Males,Western NSW LHD,2016-2017,15.5,11.5,20.4
+Males,Western NSW LHD,2017-2018,14.1,10.4,18.7
+Males,Western NSW LHD,2018-2019,12.9,9.4,17.2
+Males,Western NSW LHD,2019-2020,11.4,8.2,15.5
+Males,Western NSW LHD,2020-2021,8.6,5.8,12.3
+Males,All LHDs,2011-2012,10,9.3,10.8
+Males,All LHDs,2012-2013,9.4,8.7,10.2
+Males,All LHDs,2013-2014,9.7,9,10.4
+Males,All LHDs,2014-2015,10,9.3,10.7
+Males,All LHDs,2015-2016,9.9,9.2,10.6
+Males,All LHDs,2016-2017,12,11.3,12.8
+Males,All LHDs,2017-2018,12,11.3,12.7
+Males,All LHDs,2018-2019,10.4,9.8,11.1
+Males,All LHDs,2019-2020,8.6,8,9.2
+Males,All LHDs,2020-2021,6.1,5.6,6.6
+Females,Sydney LHD,2011-2012,7.2,5.4,9.4
+Females,Sydney LHD,2012-2013,6.8,5,9
+Females,Sydney LHD,2013-2014,5.2,3.8,7.1
+Females,Sydney LHD,2014-2015,7.2,5.4,9.3
+Females,Sydney LHD,2015-2016,8.3,6.5,10.6
+Females,Sydney LHD,2016-2017,9.8,7.8,12.2
+Females,Sydney LHD,2017-2018,8.9,6.9,11.2
+Females,Sydney LHD,2018-2019,8.2,6.4,10.5
+Females,Sydney LHD,2019-2020,6.9,5.2,9
+Females,Sydney LHD,2020-2021,4,2.8,5.7
+Females,South Western Sydney LHD,2011-2012,4.2,3,5.7
+Females,South Western Sydney LHD,2012-2013,4.7,3.5,6.2
+Females,South Western Sydney LHD,2013-2014,5.7,4.3,7.3
+Females,South Western Sydney LHD,2014-2015,6.3,4.9,7.9
+Females,South Western Sydney LHD,2015-2016,8,6.4,9.9
+Females,South Western Sydney LHD,2016-2017,8.9,7.3,10.8
+Females,South Western Sydney LHD,2017-2018,8.6,7,10.4
+Females,South Western Sydney LHD,2018-2019,7.7,6.2,9.4
+Females,South Western Sydney LHD,2019-2020,5.9,4.6,7.4
+Females,South Western Sydney LHD,2020-2021,4.8,3.7,6.2
+Females,South Eastern Sydney LHD,2011-2012,6,4.7,7.5
+Females,South Eastern Sydney LHD,2012-2013,5.9,4.7,7.4
+Females,South Eastern Sydney LHD,2013-2014,6.4,5.1,7.9
+Females,South Eastern Sydney LHD,2014-2015,7,5.7,8.5
+Females,South Eastern Sydney LHD,2015-2016,5.9,4.8,7.3
+Females,South Eastern Sydney LHD,2016-2017,8,6.7,9.7
+Females,South Eastern Sydney LHD,2017-2018,8.2,6.8,9.8
+Females,South Eastern Sydney LHD,2018-2019,6.6,5.4,8
+Females,South Eastern Sydney LHD,2019-2020,5.8,4.7,7.2
+Females,South Eastern Sydney LHD,2020-2021,4.2,3.3,5.4
+Females,Illawarra Shoalhaven LHD,2011-2012,8.6,6.5,11.3
+Females,Illawarra Shoalhaven LHD,2012-2013,7.8,5.9,10.3
+Females,Illawarra Shoalhaven LHD,2013-2014,7.6,5.7,10.1
+Females,Illawarra Shoalhaven LHD,2014-2015,8.2,6.3,10.7
+Females,Illawarra Shoalhaven LHD,2015-2016,7.5,5.7,9.8
+Females,Illawarra Shoalhaven LHD,2016-2017,9.4,7.3,12
+Females,Illawarra Shoalhaven LHD,2017-2018,9.1,7,11.6
+Females,Illawarra Shoalhaven LHD,2018-2019,10.1,8,12.6
+Females,Illawarra Shoalhaven LHD,2019-2020,9.1,7.2,11.6
+Females,Illawarra Shoalhaven LHD,2020-2021,4.8,3.4,6.7
+Females,Western Sydney LHD,2011-2012,8.3,6.5,10.4
+Females,Western Sydney LHD,2012-2013,8.2,6.5,10.3
+Females,Western Sydney LHD,2013-2014,9.4,7.5,11.6
+Females,Western Sydney LHD,2014-2015,8.3,6.6,10.4
+Females,Western Sydney LHD,2015-2016,8,6.3,10
+Females,Western Sydney LHD,2016-2017,10.4,8.5,12.6
+Females,Western Sydney LHD,2017-2018,8.6,6.9,10.6
+Females,Western Sydney LHD,2018-2019,8.3,6.7,10.3
+Females,Western Sydney LHD,2019-2020,7.2,5.7,9
+Females,Western Sydney LHD,2020-2021,4,2.9,5.4
+Females,Nepean Blue Mountains LHD,2011-2012,10.9,7.9,14.6
+Females,Nepean Blue Mountains LHD,2012-2013,10.8,7.9,14.5
+Females,Nepean Blue Mountains LHD,2013-2014,9.6,6.9,13.1
+Females,Nepean Blue Mountains LHD,2014-2015,9.7,7,13.1
+Females,Nepean Blue Mountains LHD,2015-2016,13.2,10.1,17
+Females,Nepean Blue Mountains LHD,2016-2017,14.9,11.5,19
+Females,Nepean Blue Mountains LHD,2017-2018,11.4,8.5,15.1
+Females,Nepean Blue Mountains LHD,2018-2019,9.4,6.9,12.7
+Females,Nepean Blue Mountains LHD,2019-2020,8,5.7,11
+Females,Nepean Blue Mountains LHD,2020-2021,6.3,4.3,9
+Females,Northern Sydney LHD,2011-2012,9.5,8.1,11.2
+Females,Northern Sydney LHD,2012-2013,8.1,6.8,9.6
+Females,Northern Sydney LHD,2013-2014,7.2,6,8.6
+Females,Northern Sydney LHD,2014-2015,8.7,7.4,10.3
+Females,Northern Sydney LHD,2015-2016,9.6,8.2,11.3
+Females,Northern Sydney LHD,2016-2017,11.9,10.3,13.8
+Females,Northern Sydney LHD,2017-2018,11.1,9.6,12.9
+Females,Northern Sydney LHD,2018-2019,9.1,7.8,10.7
+Females,Northern Sydney LHD,2019-2020,8.2,6.9,9.7
+Females,Northern Sydney LHD,2020-2021,5.7,4.7,7
+Females,Central Coast LHD,2011-2012,7.6,5.6,10.3
+Females,Central Coast LHD,2012-2013,6.3,4.6,8.7
+Females,Central Coast LHD,2013-2014,6.4,4.7,8.9
+Females,Central Coast LHD,2014-2015,9.4,7.2,12.3
+Females,Central Coast LHD,2015-2016,9.9,7.6,12.9
+Females,Central Coast LHD,2016-2017,11.1,8.6,14.2
+Females,Central Coast LHD,2017-2018,9.7,7.5,12.6
+Females,Central Coast LHD,2018-2019,7.8,6,10.3
+Females,Central Coast LHD,2019-2020,7.2,5.4,9.6
+Females,Central Coast LHD,2020-2021,4.8,3.3,6.8
+Females,Hunter New England LHD,2011-2012,7.8,6.4,9.5
+Females,Hunter New England LHD,2012-2013,8.5,7,10.2
+Females,Hunter New England LHD,2013-2014,8.8,7.3,10.5
+Females,Hunter New England LHD,2014-2015,8.3,6.9,10
+Females,Hunter New England LHD,2015-2016,8.3,6.9,9.9
+Females,Hunter New England LHD,2016-2017,11.8,10.2,13.6
+Females,Hunter New England LHD,2017-2018,11.4,9.9,13.2
+Females,Hunter New England LHD,2018-2019,9.9,8.5,11.5
+Females,Hunter New England LHD,2019-2020,7.6,6.4,9.1
+Females,Hunter New England LHD,2020-2021,4.6,3.6,5.7
+Females,Northern NSW LHD,2011-2012,5.8,4.1,8.4
+Females,Northern NSW LHD,2012-2013,5,3.4,7.3
+Females,Northern NSW LHD,2013-2014,7.4,5.4,10.3
+Females,Northern NSW LHD,2014-2015,8.2,6,11.3
+Females,Northern NSW LHD,2015-2016,7.7,5.5,10.7
+Females,Northern NSW LHD,2016-2017,8.7,6.5,11.6
+Females,Northern NSW LHD,2017-2018,8.2,5.9,11.1
+Females,Northern NSW LHD,2018-2019,5.7,3.8,8.4
+Females,Northern NSW LHD,2019-2020,4.7,3.2,6.9
+Females,Northern NSW LHD,2020-2021,3.3,2.1,5.2
+Females,Mid North Coast LHD,2011-2012,10.6,7.6,14.7
+Females,Mid North Coast LHD,2012-2013,10.5,7.6,14.4
+Females,Mid North Coast LHD,2013-2014,6.8,4.6,10
+Females,Mid North Coast LHD,2014-2015,8.5,6,12.1
+Females,Mid North Coast LHD,2015-2016,6.7,4.6,10
+Females,Mid North Coast LHD,2016-2017,6.7,4.6,10
+Females,Mid North Coast LHD,2017-2018,8.7,6.1,12.2
+Females,Mid North Coast LHD,2018-2019,9.1,6.5,12.8
+Females,Mid North Coast LHD,2019-2020,8.7,6.2,12.2
+Females,Mid North Coast LHD,2020-2021,5.3,3.6,8.1
+Females,Southern NSW LHD,2011-2012,8.7,5.8,12.7
+Females,Southern NSW LHD,2012-2013,8.7,5.9,12.7
+Females,Southern NSW LHD,2013-2014,9.9,6.9,14.1
+Females,Southern NSW LHD,2014-2015,8.8,6,12.9
+Females,Southern NSW LHD,2015-2016,8.6,5.6,12.8
+Females,Southern NSW LHD,2016-2017,13.3,9.6,18.3
+Females,Southern NSW LHD,2017-2018,11.3,8.1,15.7
+Females,Southern NSW LHD,2018-2019,9.5,6.5,13.7
+Females,Southern NSW LHD,2019-2020,8,5.2,11.9
+Females,Southern NSW LHD,2020-2021,3.9,2.2,6.8
+Females,Murrumbidgee LHD,2011-2012,9.3,6.4,13.2
+Females,Murrumbidgee LHD,2012-2013,9.2,6.4,13.1
+Females,Murrumbidgee LHD,2013-2014,8.8,6,12.7
+Females,Murrumbidgee LHD,2014-2015,8.6,6,12.3
+Females,Murrumbidgee LHD,2015-2016,7.4,5.2,10.7
+Females,Murrumbidgee LHD,2016-2017,7.9,5.6,11.2
+Females,Murrumbidgee LHD,2017-2018,8.7,6.1,12.1
+Females,Murrumbidgee LHD,2018-2019,9.2,6.5,12.7
+Females,Murrumbidgee LHD,2019-2020,8,5.6,11.4
+Females,Murrumbidgee LHD,2020-2021,5.8,3.7,8.9
+Females,Western NSW LHD,2011-2012,9.4,6.7,13.1
+Females,Western NSW LHD,2012-2013,7.7,5.2,11.1
+Females,Western NSW LHD,2013-2014,5.8,3.8,8.7
+Females,Western NSW LHD,2014-2015,8.7,6.2,12.1
+Females,Western NSW LHD,2015-2016,12.2,9.2,16.2
+Females,Western NSW LHD,2016-2017,14.8,11.5,19
+Females,Western NSW LHD,2017-2018,11.5,8.7,15.3
+Females,Western NSW LHD,2018-2019,11.9,9,15.6
+Females,Western NSW LHD,2019-2020,9.8,7.3,13.2
+Females,Western NSW LHD,2020-2021,4.8,3.1,7.4
+Females,All LHDs,2011-2012,7.5,7,8
+Females,All LHDs,2012-2013,7.2,6.7,7.7
+Females,All LHDs,2013-2014,7.1,6.6,7.6
+Females,All LHDs,2014-2015,7.7,7.2,8.2
+Females,All LHDs,2015-2016,7.9,7.4,8.5
+Females,All LHDs,2016-2017,9.8,9.2,10.4
+Females,All LHDs,2017-2018,9,8.5,9.6
+Females,All LHDs,2018-2019,7.9,7.4,8.4
+Females,All LHDs,2019-2020,6.7,6.3,7.2
+Females,All LHDs,2020-2021,4.4,4,4.7
+Persons,Sydney LHD,2011-2012,8.2,6.7,10
+Persons,Sydney LHD,2012-2013,7.6,6.1,9.3
+Persons,Sydney LHD,2013-2014,7,5.7,8.7
+Persons,Sydney LHD,2014-2015,7.8,6.3,9.4
+Persons,Sydney LHD,2015-2016,8.6,7.1,10.3
+Persons,Sydney LHD,2016-2017,11.4,9.7,13.3
+Persons,Sydney LHD,2017-2018,11,9.4,12.9
+Persons,Sydney LHD,2018-2019,9.9,8.4,11.7
+Persons,Sydney LHD,2019-2020,8.2,6.8,9.8
+Persons,Sydney LHD,2020-2021,4.9,3.9,6.2
+Persons,South Western Sydney LHD,2011-2012,5.4,4.3,6.6
+Persons,South Western Sydney LHD,2012-2013,6,5,7.3
+Persons,South Western Sydney LHD,2013-2014,6.6,5.5,7.9
+Persons,South Western Sydney LHD,2014-2015,6.9,5.8,8.2
+Persons,South Western Sydney LHD,2015-2016,8.1,6.9,9.4
+Persons,South Western Sydney LHD,2016-2017,9.2,8,10.7
+Persons,South Western Sydney LHD,2017-2018,9.1,7.9,10.5
+Persons,South Western Sydney LHD,2018-2019,8.8,7.5,10.1
+Persons,South Western Sydney LHD,2019-2020,7.2,6.1,8.4
+Persons,South Western Sydney LHD,2020-2021,5.5,4.5,6.5
+Persons,South Eastern Sydney LHD,2011-2012,6.7,5.7,7.9
+Persons,South Eastern Sydney LHD,2012-2013,6.5,5.5,7.7
+Persons,South Eastern Sydney LHD,2013-2014,7.2,6.1,8.4
+Persons,South Eastern Sydney LHD,2014-2015,7.8,6.7,9
+Persons,South Eastern Sydney LHD,2015-2016,7.2,6.2,8.4
+Persons,South Eastern Sydney LHD,2016-2017,8.9,7.8,10.2
+Persons,South Eastern Sydney LHD,2017-2018,8.8,7.7,10.1
+Persons,South Eastern Sydney LHD,2018-2019,7.4,6.4,8.6
+Persons,South Eastern Sydney LHD,2019-2020,6.1,5.2,7.2
+Persons,South Eastern Sydney LHD,2020-2021,4.7,3.9,5.6
+Persons,Illawarra Shoalhaven LHD,2011-2012,8.3,6.7,10.2
+Persons,Illawarra Shoalhaven LHD,2012-2013,7.7,6.2,9.5
+Persons,Illawarra Shoalhaven LHD,2013-2014,7.8,6.3,9.6
+Persons,Illawarra Shoalhaven LHD,2014-2015,7.9,6.5,9.7
+Persons,Illawarra Shoalhaven LHD,2015-2016,8.3,6.8,10
+Persons,Illawarra Shoalhaven LHD,2016-2017,10.7,9.1,12.7
+Persons,Illawarra Shoalhaven LHD,2017-2018,10.7,9,12.7
+Persons,Illawarra Shoalhaven LHD,2018-2019,10.4,8.8,12.3
+Persons,Illawarra Shoalhaven LHD,2019-2020,8.6,7.2,10.4
+Persons,Illawarra Shoalhaven LHD,2020-2021,5.5,4.4,6.9
+Persons,Western Sydney LHD,2011-2012,9.7,8.1,11.4
+Persons,Western Sydney LHD,2012-2013,8.6,7.2,10.2
+Persons,Western Sydney LHD,2013-2014,9,7.6,10.7
+Persons,Western Sydney LHD,2014-2015,8.7,7.3,10.2
+Persons,Western Sydney LHD,2015-2016,8.4,7.1,10
+Persons,Western Sydney LHD,2016-2017,10.7,9.2,12.3
+Persons,Western Sydney LHD,2017-2018,9,7.6,10.5
+Persons,Western Sydney LHD,2018-2019,8.8,7.5,10.3
+Persons,Western Sydney LHD,2019-2020,8.1,6.9,9.5
+Persons,Western Sydney LHD,2020-2021,4.8,3.8,5.8
+Persons,Nepean Blue Mountains LHD,2011-2012,11.6,9.1,14.5
+Persons,Nepean Blue Mountains LHD,2012-2013,11.8,9.4,14.6
+Persons,Nepean Blue Mountains LHD,2013-2014,10.2,7.9,12.8
+Persons,Nepean Blue Mountains LHD,2014-2015,10.6,8.4,13.3
+Persons,Nepean Blue Mountains LHD,2015-2016,13.7,11.2,16.6
+Persons,Nepean Blue Mountains LHD,2016-2017,14,11.5,17
+Persons,Nepean Blue Mountains LHD,2017-2018,12,9.7,14.7
+Persons,Nepean Blue Mountains LHD,2018-2019,10.9,8.7,13.4
+Persons,Nepean Blue Mountains LHD,2019-2020,9.6,7.6,12
+Persons,Nepean Blue Mountains LHD,2020-2021,7.3,5.6,9.4
+Persons,Northern Sydney LHD,2011-2012,9.3,8.2,10.5
+Persons,Northern Sydney LHD,2012-2013,8.4,7.3,9.5
+Persons,Northern Sydney LHD,2013-2014,7.9,6.9,9
+Persons,Northern Sydney LHD,2014-2015,8.9,7.9,10.1
+Persons,Northern Sydney LHD,2015-2016,9.2,8.1,10.4
+Persons,Northern Sydney LHD,2016-2017,11.3,10.1,12.6
+Persons,Northern Sydney LHD,2017-2018,11.2,10.1,12.6
+Persons,Northern Sydney LHD,2018-2019,9.3,8.3,10.5
+Persons,Northern Sydney LHD,2019-2020,8,7.1,9.1
+Persons,Northern Sydney LHD,2020-2021,5.9,5.1,6.9
+Persons,Central Coast LHD,2011-2012,8.7,7,10.7
+Persons,Central Coast LHD,2012-2013,7.4,5.9,9.2
+Persons,Central Coast LHD,2013-2014,7.6,6.1,9.4
+Persons,Central Coast LHD,2014-2015,10.2,8.4,12.4
+Persons,Central Coast LHD,2015-2016,10.1,8.3,12.2
+Persons,Central Coast LHD,2016-2017,11.3,9.3,13.6
+Persons,Central Coast LHD,2017-2018,11.3,9.3,13.5
+Persons,Central Coast LHD,2018-2019,10.1,8.4,12.1
+Persons,Central Coast LHD,2019-2020,9,7.4,11
+Persons,Central Coast LHD,2020-2021,6.1,4.7,7.7
+Persons,Hunter New England LHD,2011-2012,9.4,8.2,10.7
+Persons,Hunter New England LHD,2012-2013,9.4,8.2,10.7
+Persons,Hunter New England LHD,2013-2014,9.7,8.6,11
+Persons,Hunter New England LHD,2014-2015,9.6,8.4,10.9
+Persons,Hunter New England LHD,2015-2016,8.4,7.3,9.6
+Persons,Hunter New England LHD,2016-2017,12.2,10.9,13.6
+Persons,Hunter New England LHD,2017-2018,12.7,11.5,14.1
+Persons,Hunter New England LHD,2018-2019,10.2,9,11.4
+Persons,Hunter New England LHD,2019-2020,7.5,6.6,8.6
+Persons,Hunter New England LHD,2020-2021,5.1,4.3,6
+Persons,Northern NSW LHD,2011-2012,7.1,5.5,9.1
+Persons,Northern NSW LHD,2012-2013,7,5.4,9
+Persons,Northern NSW LHD,2013-2014,8.1,6.5,10.1
+Persons,Northern NSW LHD,2014-2015,8.7,7,10.7
+Persons,Northern NSW LHD,2015-2016,8.6,6.9,10.7
+Persons,Northern NSW LHD,2016-2017,9.6,7.8,11.8
+Persons,Northern NSW LHD,2017-2018,9,7.3,11.1
+Persons,Northern NSW LHD,2018-2019,7.8,6.2,9.8
+Persons,Northern NSW LHD,2019-2020,7.1,5.6,8.9
+Persons,Northern NSW LHD,2020-2021,4.4,3.3,5.9
+Persons,Mid North Coast LHD,2011-2012,10.2,7.9,12.9
+Persons,Mid North Coast LHD,2012-2013,10.8,8.4,13.7
+Persons,Mid North Coast LHD,2013-2014,9.5,7.4,12.3
+Persons,Mid North Coast LHD,2014-2015,10.1,7.9,12.8
+Persons,Mid North Coast LHD,2015-2016,8.7,6.8,11.3
+Persons,Mid North Coast LHD,2016-2017,7.8,6,10.1
+Persons,Mid North Coast LHD,2017-2018,8.6,6.8,11
+Persons,Mid North Coast LHD,2018-2019,8.8,6.9,11.2
+Persons,Mid North Coast LHD,2019-2020,7.6,5.9,9.9
+Persons,Mid North Coast LHD,2020-2021,4.9,3.6,6.7
+Persons,Southern NSW LHD,2011-2012,11.5,8.8,14.8
+Persons,Southern NSW LHD,2012-2013,11.2,8.6,14.4
+Persons,Southern NSW LHD,2013-2014,11.2,8.7,14.4
+Persons,Southern NSW LHD,2014-2015,10.6,8.1,13.6
+Persons,Southern NSW LHD,2015-2016,9,6.7,11.9
+Persons,Southern NSW LHD,2016-2017,14.2,11.2,17.8
+Persons,Southern NSW LHD,2017-2018,13.6,10.8,17
+Persons,Southern NSW LHD,2018-2019,9.5,7.3,12.4
+Persons,Southern NSW LHD,2019-2020,7.8,5.8,10.4
+Persons,Southern NSW LHD,2020-2021,4.2,2.9,6.2
+Persons,Murrumbidgee LHD,2011-2012,9.8,7.6,12.6
+Persons,Murrumbidgee LHD,2012-2013,8.7,6.6,11.3
+Persons,Murrumbidgee LHD,2013-2014,8.1,6,10.7
+Persons,Murrumbidgee LHD,2014-2015,9.6,7.4,12.4
+Persons,Murrumbidgee LHD,2015-2016,10.4,8.2,13
+Persons,Murrumbidgee LHD,2016-2017,11.9,9.6,14.7
+Persons,Murrumbidgee LHD,2017-2018,10,8,12.5
+Persons,Murrumbidgee LHD,2018-2019,8.8,6.8,11.2
+Persons,Murrumbidgee LHD,2019-2020,7.4,5.6,9.6
+Persons,Murrumbidgee LHD,2020-2021,5.5,4,7.5
+Persons,Western NSW LHD,2011-2012,8.8,6.8,11.4
+Persons,Western NSW LHD,2012-2013,7.6,5.7,9.9
+Persons,Western NSW LHD,2013-2014,8,6.2,10.4
+Persons,Western NSW LHD,2014-2015,9.1,7.1,11.5
+Persons,Western NSW LHD,2015-2016,11.3,9.1,14
+Persons,Western NSW LHD,2016-2017,15,12.5,18
+Persons,Western NSW LHD,2017-2018,12.5,10.2,15.3
+Persons,Western NSW LHD,2018-2019,12.4,10.1,15
+Persons,Western NSW LHD,2019-2020,10.6,8.5,13.1
+Persons,Western NSW LHD,2020-2021,6.5,4.9,8.5
+Persons,All LHDs,2011-2012,8.5,8.1,9
+Persons,All LHDs,2012-2013,8.1,7.7,8.5
+Persons,All LHDs,2013-2014,8.2,7.8,8.6
+Persons,All LHDs,2014-2015,8.7,8.3,9.1
+Persons,All LHDs,2015-2016,8.7,8.3,9.1
+Persons,All LHDs,2016-2017,10.7,10.3,11.2
+Persons,All LHDs,2017-2018,10.3,9.8,10.7
+Persons,All LHDs,2018-2019,8.9,8.5,9.3
+Persons,All LHDs,2019-2020,7.5,7.1,7.8
+Persons,All LHDs,2020-2021,5.1,4.8,5.4
