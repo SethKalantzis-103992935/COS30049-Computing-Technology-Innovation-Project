@@ -22,6 +22,7 @@ The project implements relevant Regression, Classification and Clustering models
 
 Ensure that the following tools are installed on your local machine. Follow installation instructions for your specific Operating System.
 
+- [pip](https://pip.pypa.io/en/stable/installation/)
 - [Python](https://www.python.org/downloads/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Anaconda](https://docs.anaconda.com/anaconda/install/windows/)
