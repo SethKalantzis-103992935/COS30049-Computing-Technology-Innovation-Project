@@ -1,6 +1,5 @@
 # Influenza and Pneumonia Deaths
-## Annual || 2011/2012 - 2020/2021
-### By Sex and Local Health District
+### Annual (2011/2012 - 2020/2021) By Sex and Local Health District
 
 Health Stats NSW: Influenza and pneumonia deaths
 Accessed 17: September, 2024

@@ -1,6 +1,5 @@
 # Influenza and Pneumonia Hospitalisations
-## Annual || 2001/2002 - 2020/2021
-### By Age, Sex, and Local Health District
+### Annual (2001/2002 - 2020/2021) By Age, Sex, and Local Health District
 
 Health Stats NSW: Influenza and pneumonia hospitalisations
 Accessed 17: September, 2024

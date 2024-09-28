@@ -1,6 +1,5 @@
 # Asthma-Like Illness Emergency Department Presentations
-## Annual || 2014/2015 - 2022/2023
-## By Sex and Local Health District
+### Annual (2014/2015 - 2022/2023) By Sex and Local Health District
 
 Health Stats NSW: Asthma-like illness emergency department presentations (annual)
 Accessed 17: September, 2024

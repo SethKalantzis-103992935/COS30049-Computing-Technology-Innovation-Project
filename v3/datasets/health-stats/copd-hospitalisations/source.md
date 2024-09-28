@@ -1,6 +1,5 @@
 # Chronic Obstructive Pulmonary Disease Hospitalisations
-## Annual || 2001/2002 - 2021-2022
-### By Sex and Local Health District
+### Annual (2001/2002 - 2021-2022) By Sex and Local Health District
 
 Health Stats NSW: Chronic obstructive pulmonary disease hospitalisations
 Accessed 17: September, 2024

@@ -1,6 +1,5 @@
 # Asthma Hospitalisations
-## Annual || 2001/2002 - 2021/2022
-# By Sex, Local Health District, and Risk Group
+### Annual (2001/2002 - 2021/2022) By Sex, Local Health District, and Risk Group
 
 Health Stats NSW: Asthma hospitalisations
 Accessed 17: September, 2024

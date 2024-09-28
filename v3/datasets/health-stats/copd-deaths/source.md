@@ -1,6 +1,5 @@
 # Chronic Obstructive Pulmonary Disease Deaths
-## Annual || 2011/2012 - 2020/2021
-### By Risk Group, Sex, and Local Health District
+### Annual (2011/2012 - 2020/2021) By Risk Group, Sex, and Local Health District
 
 Health Stats NSW: Chronic obstructive pulmonary disease deaths
 Accessed 17: September, 2024

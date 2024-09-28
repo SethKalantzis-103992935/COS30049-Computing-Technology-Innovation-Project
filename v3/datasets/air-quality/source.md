@@ -1,5 +1,5 @@
 # NSW Air Quality Concentration Data
-## Monthly || 2000/01/01 - 2024/09/17
+### 2000/01/01 - 2024/09/17 (Monthly)
 
 NSW Government: Air Quality Data Services: Data Download Facility
 Accessed: 17 September, 2024

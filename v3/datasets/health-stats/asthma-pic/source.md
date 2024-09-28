@@ -1,6 +1,5 @@
 # Asthma Prevelance in Children
-## 2-Year Rolling Average || 2002/2004 - 2017/2019
-# By Asthma Type and Local Health District
+### 2-Year Rolling Average (2002/2004 - 2017/2019) By Asthma Type and Local Health District
 
 Health Stats NSW: Asthma prevelance in children
 Accessed 17: September, 2024

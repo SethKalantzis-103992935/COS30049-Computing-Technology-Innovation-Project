@@ -1,6 +1,5 @@
 # Asthma Deaths
-## 2-Year Rolling Average || 2011/2013 - 2019/2021
-# By Local Health District
+### 2-Year Rolling Average (2011/2013 - 2019/2021) By Local Health District
 
 Health Stats NSW: Asthma deaths
 Accessed 17: September, 2024
