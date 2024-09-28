@@ -150,7 +150,7 @@ The change the dataset used, the user should follow the below steps:
 
 Unfortunately, unlike the other models, this model was designed to work with the aggregate data of the monthly genderless dataset, alongside the Asthma EDPs due to the larger amount of data compared to the other datasets. Due to this, only the provided dataset already implemented into the model currently provides training and prediction. No additional configuration is required to utilize the model in its current state.
 
-The only required action to perform and review the analysis is to simple hit `Run All` in the top right of the Jupyter notebook.
+The only required action to perform and review the analysis is to simply hit `Run All` in the top right of the Jupyter notebook.
 
 
 
