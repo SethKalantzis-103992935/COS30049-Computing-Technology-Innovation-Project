@@ -153,7 +153,10 @@ Unfortunately, unlike the other models, this model was designed to work with the
 The only required action to perform and review the analysis is to simply hit `Run All` in the top right of the Jupyter notebook.
 
 
-
 # Prediction Guide
 
-<p style='color: salmon'>Not sure. Anyone have thoughts on what to put for this? (if anything...)</p>
+All Jupyter notebooks have a prediction section built in following the training of the models, typically alongside evaluation metrics. These predictions, alongside visual plots and metrics, can generally be found near the bottom of each notebook, however their location will vary based on the model you are viewing. Following previous instructions, you will simply need to use `Run All`, and scroll to the bottom of the notebook to view predictions made by the model. An example sourced from the KNN model can be seen below:
+
+![image](https://github.com/user-attachments/assets/d95f4433-d123-423c-b10f-d6db53a99d56)
+![image](https://github.com/user-attachments/assets/7d6f3311-e406-40ad-a9d1-7cb1f4262a7a)
+
