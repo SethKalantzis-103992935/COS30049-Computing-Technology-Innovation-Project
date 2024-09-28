@@ -117,6 +117,7 @@ Each model has been trained within the provided Jupyter Notebook. Each notebook 
 - `clusterin-k-means.ipynb` implements and PCA and K-Means analysis.
 - `regression-linear.ipynb` implements a Linear Regression analysis.
 - `classification-knn.ipynb` implements a KNN analysis.
+- `arima-timeseries.ipynb` implements Time Series Forecasting to predict pollutant concentrations and asthma emergency department presentations.
 
 Each of these models can be trained and reviewed by navigating to the `analysis` directory, opening the file and selecting 'run all'. 
 
@@ -126,6 +127,7 @@ Alternatively, you can run the following command to execute the notebook in a br
 jupyter notebook path/to/file/filename.ipynb          # Replace path/to/file with local path.
                                                       # Replace filename with the name of the file. 
 ```
+
 
 # Selecting Different Datasets
 
@@ -146,17 +148,17 @@ The change the dataset used, the user should follow the below steps:
 3. In the `second code snippet` change the `chosen_dataset` value to the index of their desired dataset.
 4. Select `Run All` at the top left of the notebook to execute the analysis.
 
-### KNN Classification Model
+### KNN Classification Model & ARIMA Time Series Forecasting Model
 
-Unfortunately, unlike the other models, this model was designed to work with the aggregate data of the monthly genderless dataset, alongside the Asthma EDPs due to the larger amount of data compared to the other datasets. Due to this, only the provided dataset already implemented into the model currently provides training and prediction. No additional configuration is required to utilize the model in its current state.
+The KNN and ARIMA Time Series models were both configured to address the specific problem statement relating to genderless monthly data. They cannot be readily configured to accept differently structured datasets.
 
-The only required action to perform and review the analysis is to simply hit `Run All` in the top right of the Jupyter notebook.
+The only required action to perform and review these analyses is to select `Run All` in the top left of the Jupyter notebook.
 
 
 # Prediction Guide
 
-All Jupyter notebooks have a prediction section built in following the training of the models, typically alongside evaluation metrics. These predictions, alongside visual plots and metrics, can generally be found near the bottom of each notebook, however their location will vary based on the model you are viewing. Following previous instructions, you will simply need to use `Run All`, and scroll to the bottom of the notebook to view predictions made by the model. An example sourced from the KNN model can be seen below:
+Predictions outcomes and evaluation metrics are specific to each Machine Learning model.
 
-![image](https://github.com/user-attachments/assets/d95f4433-d123-423c-b10f-d6db53a99d56)
-![image](https://github.com/user-attachments/assets/7d6f3311-e406-40ad-a9d1-7cb1f4262a7a)
+These predictions are represented via printed statements and visual plots within each relevant Jupyter Notebook. The specific location and meaning of each varies, but can be found be reviewing the relevant notebook. 
 
+Markdown and comments within each notebook are provided to offer insights into the metrics and visualizations provided.
