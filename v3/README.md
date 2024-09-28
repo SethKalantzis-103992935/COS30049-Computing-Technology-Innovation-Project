@@ -135,7 +135,14 @@ Most of the models have been developed to accommodate the multiple datasets outl
 
 ### Linear Regression Model
 
-<p style='color: salmon'>Henry</p>
+This model is designed to assess and predict a variety of labels (commonly Health Stats, with one instance of Pollutants). The program automatically sorts all assessable variables into two groups, then assigns these groups as the label or feature(s) of a given output. Where applicable, the program knows the limits of what it can output in subplots. To view the models performance, the user only needs to configure the path to the desired dataset.
+
+The change the dataset used, the user should follow the below steps:
+
+1. Locate the `Load Data` section near the beginning of the notebook.
+2. Review the `first code snippet` in the section to find the index of their desired dataset.
+3. In the `second code snippet` change the `chosen_dataset` value to the index of their desired dataset.
+4. Select `Run All` at the top left of the notebook to execute the analysis.
 
 ### K-Means Clustering Model
 
