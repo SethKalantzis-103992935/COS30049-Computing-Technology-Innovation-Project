@@ -1,0 +1,3025 @@
+date,sex,lhd,"rate per 100,000 population"
+2014-07,Males,Sydney,22.6
+2014-08,Males,Sydney,28.9
+2014-09,Males,Sydney,15.7
+2014-10,Males,Sydney,19.2
+2014-11,Males,Sydney,19.7
+2014-12,Males,Sydney,24.9
+2015-01,Males,Sydney,15.1
+2015-02,Males,Sydney,27.8
+2015-03,Males,Sydney,29.5
+2015-04,Males,Sydney,24.7
+2015-05,Males,Sydney,27.6
+2015-06,Males,Sydney,26.5
+2015-07,Males,Sydney,27.2
+2015-08,Males,Sydney,28.4
+2015-09,Males,Sydney,17.9
+2015-10,Males,Sydney,21.7
+2015-11,Males,Sydney,19.5
+2015-12,Males,Sydney,15.0
+2016-01,Males,Sydney,14.6
+2016-02,Males,Sydney,35.2
+2016-03,Males,Sydney,29.5
+2016-04,Males,Sydney,21.1
+2016-05,Males,Sydney,28.3
+2016-06,Males,Sydney,28.1
+2016-07,Males,Sydney,24.0
+2016-08,Males,Sydney,20.0
+2016-09,Males,Sydney,19.2
+2016-10,Males,Sydney,18.7
+2016-11,Males,Sydney,16.3
+2016-12,Males,Sydney,16.0
+2017-01,Males,Sydney,12.6
+2017-02,Males,Sydney,22.2
+2017-03,Males,Sydney,26.7
+2017-04,Males,Sydney,26.6
+2017-05,Males,Sydney,36.0
+2017-06,Males,Sydney,24.5
+2017-07,Males,Sydney,16.7
+2017-08,Males,Sydney,16.8
+2017-09,Males,Sydney,16.5
+2017-10,Males,Sydney,19.1
+2017-11,Males,Sydney,14.1
+2017-12,Males,Sydney,18.6
+2018-01,Males,Sydney,10.3
+2018-02,Males,Sydney,22.5
+2018-03,Males,Sydney,21.2
+2018-04,Males,Sydney,18.0
+2018-05,Males,Sydney,34.3
+2018-06,Males,Sydney,21.3
+2018-07,Males,Sydney,12.6
+2018-08,Males,Sydney,17.2
+2018-09,Males,Sydney,24.4
+2018-10,Males,Sydney,16.3
+2018-11,Males,Sydney,19.8
+2018-12,Males,Sydney,11.8
+2019-01,Males,Sydney,14.8
+2019-02,Males,Sydney,30.2
+2019-03,Males,Sydney,24.5
+2019-04,Males,Sydney,22.8
+2019-05,Males,Sydney,26.4
+2019-06,Males,Sydney,23.5
+2019-07,Males,Sydney,15.6
+2019-08,Males,Sydney,17.2
+2019-09,Males,Sydney,20.3
+2019-10,Males,Sydney,14.4
+2019-11,Males,Sydney,20.4
+2019-12,Males,Sydney,22.5
+2020-01,Males,Sydney,13.5
+2020-02,Males,Sydney,23.5
+2020-03,Males,Sydney,24.5
+2020-04,Males,Sydney,5.9
+2020-05,Males,Sydney,6.2
+2020-06,Males,Sydney,19.1
+2020-07,Males,Sydney,11.5
+2020-08,Males,Sydney,20.2
+2020-09,Males,Sydney,11.1
+2020-10,Males,Sydney,15.2
+2020-11,Males,Sydney,15.3
+2020-12,Males,Sydney,15.4
+2021-01,Males,Sydney,8.4
+2021-02,Males,Sydney,15.9
+2021-03,Males,Sydney,19.7
+2021-04,Males,Sydney,18.7
+2021-05,Males,Sydney,23.6
+2021-06,Males,Sydney,18.5
+2021-07,Males,Sydney,8.2
+2021-08,Males,Sydney,5.6
+2021-09,Males,Sydney,3.0
+2021-10,Males,Sydney,6.5
+2021-11,Males,Sydney,8.2
+2021-12,Males,Sydney,9.1
+2022-01,Males,Sydney,11.2
+2022-02,Males,Sydney,11.2
+2022-03,Males,Sydney,24.4
+2022-04,Males,Sydney,24.2
+2022-05,Males,Sydney,28.4
+2022-06,Males,Sydney,17.0
+2022-07,Males,Sydney,16.5
+2022-08,Males,Sydney,27.1
+2022-09,Males,Sydney,18.9
+2022-10,Males,Sydney,15.5
+2022-11,Males,Sydney,13.9
+2022-12,Males,Sydney,11.1
+2023-01,Males,Sydney,9.5
+2023-02,Males,Sydney,15.3
+2023-03,Males,Sydney,12.6
+2023-04,Males,Sydney,18.6
+2023-05,Males,Sydney,19.9
+2023-06,Males,Sydney,14.4
+2014-07,Males,South Western Sydney,27.4
+2014-08,Males,South Western Sydney,25.3
+2014-09,Males,South Western Sydney,25.9
+2014-10,Males,South Western Sydney,24.3
+2014-11,Males,South Western Sydney,22.9
+2014-12,Males,South Western Sydney,25.0
+2015-01,Males,South Western Sydney,23.0
+2015-02,Males,South Western Sydney,38.3
+2015-03,Males,South Western Sydney,39.2
+2015-04,Males,South Western Sydney,29.8
+2015-05,Males,South Western Sydney,38.4
+2015-06,Males,South Western Sydney,42.6
+2015-07,Males,South Western Sydney,28.5
+2015-08,Males,South Western Sydney,30.1
+2015-09,Males,South Western Sydney,26.7
+2015-10,Males,South Western Sydney,31.2
+2015-11,Males,South Western Sydney,29.5
+2015-12,Males,South Western Sydney,20.7
+2016-01,Males,South Western Sydney,20.7
+2016-02,Males,South Western Sydney,39.5
+2016-03,Males,South Western Sydney,34.8
+2016-04,Males,South Western Sydney,28.2
+2016-05,Males,South Western Sydney,40.8
+2016-06,Males,South Western Sydney,33.0
+2016-07,Males,South Western Sydney,22.7
+2016-08,Males,South Western Sydney,25.1
+2016-09,Males,South Western Sydney,27.0
+2016-10,Males,South Western Sydney,22.1
+2016-11,Males,South Western Sydney,22.1
+2016-12,Males,South Western Sydney,22.4
+2017-01,Males,South Western Sydney,15.4
+2017-02,Males,South Western Sydney,27.7
+2017-03,Males,South Western Sydney,27.0
+2017-04,Males,South Western Sydney,31.6
+2017-05,Males,South Western Sydney,42.2
+2017-06,Males,South Western Sydney,34.6
+2017-07,Males,South Western Sydney,29.7
+2017-08,Males,South Western Sydney,19.1
+2017-09,Males,South Western Sydney,17.4
+2017-10,Males,South Western Sydney,19.7
+2017-11,Males,South Western Sydney,22.8
+2017-12,Males,South Western Sydney,16.4
+2018-01,Males,South Western Sydney,14.1
+2018-02,Males,South Western Sydney,27.3
+2018-03,Males,South Western Sydney,27.3
+2018-04,Males,South Western Sydney,23.3
+2018-05,Males,South Western Sydney,37.4
+2018-06,Males,South Western Sydney,24.8
+2018-07,Males,South Western Sydney,21.2
+2018-08,Males,South Western Sydney,22.9
+2018-09,Males,South Western Sydney,21.7
+2018-10,Males,South Western Sydney,23.4
+2018-11,Males,South Western Sydney,22.2
+2018-12,Males,South Western Sydney,19.4
+2019-01,Males,South Western Sydney,18.1
+2019-02,Males,South Western Sydney,32.6
+2019-03,Males,South Western Sydney,29.2
+2019-04,Males,South Western Sydney,30.7
+2019-05,Males,South Western Sydney,38.0
+2019-06,Males,South Western Sydney,30.2
+2019-07,Males,South Western Sydney,21.3
+2019-08,Males,South Western Sydney,24.7
+2019-09,Males,South Western Sydney,20.0
+2019-10,Males,South Western Sydney,18.7
+2019-11,Males,South Western Sydney,23.4
+2019-12,Males,South Western Sydney,23.8
+2020-01,Males,South Western Sydney,16.7
+2020-02,Males,South Western Sydney,26.5
+2020-03,Males,South Western Sydney,28.0
+2020-04,Males,South Western Sydney,7.1
+2020-05,Males,South Western Sydney,9.5
+2020-06,Males,South Western Sydney,20.1
+2020-07,Males,South Western Sydney,14.5
+2020-08,Males,South Western Sydney,23.4
+2020-09,Males,South Western Sydney,16.7
+2020-10,Males,South Western Sydney,11.2
+2020-11,Males,South Western Sydney,19.3
+2020-12,Males,South Western Sydney,13.8
+2021-01,Males,South Western Sydney,8.9
+2021-02,Males,South Western Sydney,16.5
+2021-03,Males,South Western Sydney,19.0
+2021-04,Males,South Western Sydney,23.3
+2021-05,Males,South Western Sydney,26.9
+2021-06,Males,South Western Sydney,17.5
+2021-07,Males,South Western Sydney,10.7
+2021-08,Males,South Western Sydney,4.2
+2021-09,Males,South Western Sydney,5.3
+2021-10,Males,South Western Sydney,7.9
+2021-11,Males,South Western Sydney,17.1
+2021-12,Males,South Western Sydney,12.0
+2022-01,Males,South Western Sydney,7.3
+2022-02,Males,South Western Sydney,20.4
+2022-03,Males,South Western Sydney,28.8
+2022-04,Males,South Western Sydney,28.0
+2022-05,Males,South Western Sydney,42.8
+2022-06,Males,South Western Sydney,24.8
+2022-07,Males,South Western Sydney,16.4
+2022-08,Males,South Western Sydney,33.3
+2022-09,Males,South Western Sydney,21.1
+2022-10,Males,South Western Sydney,20.6
+2022-11,Males,South Western Sydney,16.4
+2022-12,Males,South Western Sydney,13.7
+2023-01,Males,South Western Sydney,14.3
+2023-02,Males,South Western Sydney,25.4
+2023-03,Males,South Western Sydney,19.5
+2023-04,Males,South Western Sydney,20.1
+2023-05,Males,South Western Sydney,29.0
+2023-06,Males,South Western Sydney,18.4
+2014-07,Males,South Eastern Sydney,19.8
+2014-08,Males,South Eastern Sydney,21.5
+2014-09,Males,South Eastern Sydney,18.3
+2014-10,Males,South Eastern Sydney,20.1
+2014-11,Males,South Eastern Sydney,21.1
+2014-12,Males,South Eastern Sydney,30.8
+2015-01,Males,South Eastern Sydney,13.7
+2015-02,Males,South Eastern Sydney,30.7
+2015-03,Males,South Eastern Sydney,36.8
+2015-04,Males,South Eastern Sydney,26.0
+2015-05,Males,South Eastern Sydney,37.9
+2015-06,Males,South Eastern Sydney,30.8
+2015-07,Males,South Eastern Sydney,28.0
+2015-08,Males,South Eastern Sydney,24.5
+2015-09,Males,South Eastern Sydney,19.5
+2015-10,Males,South Eastern Sydney,20.1
+2015-11,Males,South Eastern Sydney,26.9
+2015-12,Males,South Eastern Sydney,16.9
+2016-01,Males,South Eastern Sydney,14.3
+2016-02,Males,South Eastern Sydney,26.0
+2016-03,Males,South Eastern Sydney,25.5
+2016-04,Males,South Eastern Sydney,21.6
+2016-05,Males,South Eastern Sydney,27.0
+2016-06,Males,South Eastern Sydney,23.6
+2016-07,Males,South Eastern Sydney,19.0
+2016-08,Males,South Eastern Sydney,23.4
+2016-09,Males,South Eastern Sydney,18.8
+2016-10,Males,South Eastern Sydney,15.7
+2016-11,Males,South Eastern Sydney,19.2
+2016-12,Males,South Eastern Sydney,20.4
+2017-01,Males,South Eastern Sydney,13.8
+2017-02,Males,South Eastern Sydney,31.7
+2017-03,Males,South Eastern Sydney,28.3
+2017-04,Males,South Eastern Sydney,27.8
+2017-05,Males,South Eastern Sydney,31.3
+2017-06,Males,South Eastern Sydney,19.1
+2017-07,Males,South Eastern Sydney,17.8
+2017-08,Males,South Eastern Sydney,17.3
+2017-09,Males,South Eastern Sydney,17.6
+2017-10,Males,South Eastern Sydney,18.5
+2017-11,Males,South Eastern Sydney,16.3
+2017-12,Males,South Eastern Sydney,18.3
+2018-01,Males,South Eastern Sydney,14.9
+2018-02,Males,South Eastern Sydney,24.4
+2018-03,Males,South Eastern Sydney,24.3
+2018-04,Males,South Eastern Sydney,20.4
+2018-05,Males,South Eastern Sydney,23.7
+2018-06,Males,South Eastern Sydney,21.3
+2018-07,Males,South Eastern Sydney,17.2
+2018-08,Males,South Eastern Sydney,16.4
+2018-09,Males,South Eastern Sydney,16.0
+2018-10,Males,South Eastern Sydney,21.5
+2018-11,Males,South Eastern Sydney,22.9
+2018-12,Males,South Eastern Sydney,15.4
+2019-01,Males,South Eastern Sydney,14.3
+2019-02,Males,South Eastern Sydney,25.7
+2019-03,Males,South Eastern Sydney,22.0
+2019-04,Males,South Eastern Sydney,21.8
+2019-05,Males,South Eastern Sydney,24.5
+2019-06,Males,South Eastern Sydney,20.3
+2019-07,Males,South Eastern Sydney,19.4
+2019-08,Males,South Eastern Sydney,23.3
+2019-09,Males,South Eastern Sydney,19.1
+2019-10,Males,South Eastern Sydney,10.3
+2019-11,Males,South Eastern Sydney,21.8
+2019-12,Males,South Eastern Sydney,24.7
+2020-01,Males,South Eastern Sydney,12.9
+2020-02,Males,South Eastern Sydney,18.4
+2020-03,Males,South Eastern Sydney,23.4
+2020-04,Males,South Eastern Sydney,8.3
+2020-05,Males,South Eastern Sydney,7.3
+2020-06,Males,South Eastern Sydney,17.2
+2020-07,Males,South Eastern Sydney,11.5
+2020-08,Males,South Eastern Sydney,14.5
+2020-09,Males,South Eastern Sydney,10.9
+2020-10,Males,South Eastern Sydney,11.1
+2020-11,Males,South Eastern Sydney,16.0
+2020-12,Males,South Eastern Sydney,12.9
+2021-01,Males,South Eastern Sydney,9.6
+2021-02,Males,South Eastern Sydney,14.4
+2021-03,Males,South Eastern Sydney,18.9
+2021-04,Males,South Eastern Sydney,19.4
+2021-05,Males,South Eastern Sydney,19.8
+2021-06,Males,South Eastern Sydney,16.4
+2021-07,Males,South Eastern Sydney,9.7
+2021-08,Males,South Eastern Sydney,7.8
+2021-09,Males,South Eastern Sydney,4.2
+2021-10,Males,South Eastern Sydney,3.8
+2021-11,Males,South Eastern Sydney,8.6
+2021-12,Males,South Eastern Sydney,10.8
+2022-01,Males,South Eastern Sydney,7.0
+2022-02,Males,South Eastern Sydney,10.1
+2022-03,Males,South Eastern Sydney,22.8
+2022-04,Males,South Eastern Sydney,24.2
+2022-05,Males,South Eastern Sydney,31.9
+2022-06,Males,South Eastern Sydney,16.5
+2022-07,Males,South Eastern Sydney,14.0
+2022-08,Males,South Eastern Sydney,20.2
+2022-09,Males,South Eastern Sydney,18.6
+2022-10,Males,South Eastern Sydney,14.9
+2022-11,Males,South Eastern Sydney,15.0
+2022-12,Males,South Eastern Sydney,12.9
+2023-01,Males,South Eastern Sydney,5.9
+2023-02,Males,South Eastern Sydney,21.8
+2023-03,Males,South Eastern Sydney,17.8
+2023-04,Males,South Eastern Sydney,16.6
+2023-05,Males,South Eastern Sydney,19.3
+2023-06,Males,South Eastern Sydney,13.8
+2014-07,Males,Illawarra Shoalhaven,26.7
+2014-08,Males,Illawarra Shoalhaven,37.5
+2014-09,Males,Illawarra Shoalhaven,26.3
+2014-10,Males,Illawarra Shoalhaven,22.9
+2014-11,Males,Illawarra Shoalhaven,26.9
+2014-12,Males,Illawarra Shoalhaven,24.2
+2015-01,Males,Illawarra Shoalhaven,25.4
+2015-02,Males,Illawarra Shoalhaven,45.4
+2015-03,Males,Illawarra Shoalhaven,40.0
+2015-04,Males,Illawarra Shoalhaven,27.3
+2015-05,Males,Illawarra Shoalhaven,39.4
+2015-06,Males,Illawarra Shoalhaven,40.7
+2015-07,Males,Illawarra Shoalhaven,33.0
+2015-08,Males,Illawarra Shoalhaven,34.1
+2015-09,Males,Illawarra Shoalhaven,29.9
+2015-10,Males,Illawarra Shoalhaven,28.9
+2015-11,Males,Illawarra Shoalhaven,29.2
+2015-12,Males,Illawarra Shoalhaven,30.1
+2016-01,Males,Illawarra Shoalhaven,20.2
+2016-02,Males,Illawarra Shoalhaven,44.6
+2016-03,Males,Illawarra Shoalhaven,31.8
+2016-04,Males,Illawarra Shoalhaven,30.7
+2016-05,Males,Illawarra Shoalhaven,41.7
+2016-06,Males,Illawarra Shoalhaven,37.0
+2016-07,Males,Illawarra Shoalhaven,32.2
+2016-08,Males,Illawarra Shoalhaven,29.5
+2016-09,Males,Illawarra Shoalhaven,34.9
+2016-10,Males,Illawarra Shoalhaven,23.2
+2016-11,Males,Illawarra Shoalhaven,27.0
+2016-12,Males,Illawarra Shoalhaven,23.3
+2017-01,Males,Illawarra Shoalhaven,20.8
+2017-02,Males,Illawarra Shoalhaven,28.2
+2017-03,Males,Illawarra Shoalhaven,33.0
+2017-04,Males,Illawarra Shoalhaven,43.3
+2017-05,Males,Illawarra Shoalhaven,53.3
+2017-06,Males,Illawarra Shoalhaven,32.8
+2017-07,Males,Illawarra Shoalhaven,42.0
+2017-08,Males,Illawarra Shoalhaven,26.5
+2017-09,Males,Illawarra Shoalhaven,23.5
+2017-10,Males,Illawarra Shoalhaven,32.9
+2017-11,Males,Illawarra Shoalhaven,27.2
+2017-12,Males,Illawarra Shoalhaven,23.3
+2018-01,Males,Illawarra Shoalhaven,20.6
+2018-02,Males,Illawarra Shoalhaven,51.2
+2018-03,Males,Illawarra Shoalhaven,39.2
+2018-04,Males,Illawarra Shoalhaven,30.6
+2018-05,Males,Illawarra Shoalhaven,44.6
+2018-06,Males,Illawarra Shoalhaven,36.2
+2018-07,Males,Illawarra Shoalhaven,26.6
+2018-08,Males,Illawarra Shoalhaven,20.0
+2018-09,Males,Illawarra Shoalhaven,27.8
+2018-10,Males,Illawarra Shoalhaven,16.4
+2018-11,Males,Illawarra Shoalhaven,23.7
+2018-12,Males,Illawarra Shoalhaven,29.4
+2019-01,Males,Illawarra Shoalhaven,21.7
+2019-02,Males,Illawarra Shoalhaven,43.3
+2019-03,Males,Illawarra Shoalhaven,29.1
+2019-04,Males,Illawarra Shoalhaven,30.9
+2019-05,Males,Illawarra Shoalhaven,38.4
+2019-06,Males,Illawarra Shoalhaven,31.0
+2019-07,Males,Illawarra Shoalhaven,28.0
+2019-08,Males,Illawarra Shoalhaven,21.8
+2019-09,Males,Illawarra Shoalhaven,24.1
+2019-10,Males,Illawarra Shoalhaven,19.8
+2019-11,Males,Illawarra Shoalhaven,19.4
+2019-12,Males,Illawarra Shoalhaven,23.9
+2020-01,Males,Illawarra Shoalhaven,27.2
+2020-02,Males,Illawarra Shoalhaven,34.5
+2020-03,Males,Illawarra Shoalhaven,39.0
+2020-04,Males,Illawarra Shoalhaven,9.4
+2020-05,Males,Illawarra Shoalhaven,7.2
+2020-06,Males,Illawarra Shoalhaven,25.7
+2020-07,Males,Illawarra Shoalhaven,17.0
+2020-08,Males,Illawarra Shoalhaven,18.2
+2020-09,Males,Illawarra Shoalhaven,17.5
+2020-10,Males,Illawarra Shoalhaven,17.7
+2020-11,Males,Illawarra Shoalhaven,25.4
+2020-12,Males,Illawarra Shoalhaven,21.0
+2021-01,Males,Illawarra Shoalhaven,7.1
+2021-02,Males,Illawarra Shoalhaven,19.4
+2021-03,Males,Illawarra Shoalhaven,29.6
+2021-04,Males,Illawarra Shoalhaven,24.5
+2021-05,Males,Illawarra Shoalhaven,28.1
+2021-06,Males,Illawarra Shoalhaven,21.6
+2021-07,Males,Illawarra Shoalhaven,14.6
+2021-08,Males,Illawarra Shoalhaven,8.8
+2021-09,Males,Illawarra Shoalhaven,7.6
+2021-10,Males,Illawarra Shoalhaven,12.5
+2021-11,Males,Illawarra Shoalhaven,16.3
+2021-12,Males,Illawarra Shoalhaven,12.6
+2022-01,Males,Illawarra Shoalhaven,9.7
+2022-02,Males,Illawarra Shoalhaven,17.4
+2022-03,Males,Illawarra Shoalhaven,33.8
+2022-04,Males,Illawarra Shoalhaven,26.3
+2022-05,Males,Illawarra Shoalhaven,48.2
+2022-06,Males,Illawarra Shoalhaven,37.5
+2022-07,Males,Illawarra Shoalhaven,17.2
+2022-08,Males,Illawarra Shoalhaven,25.3
+2022-09,Males,Illawarra Shoalhaven,27.3
+2022-10,Males,Illawarra Shoalhaven,21.5
+2022-11,Males,Illawarra Shoalhaven,12.9
+2022-12,Males,Illawarra Shoalhaven,18.3
+2023-01,Males,Illawarra Shoalhaven,15.1
+2023-02,Males,Illawarra Shoalhaven,22.9
+2023-03,Males,Illawarra Shoalhaven,31.2
+2023-04,Males,Illawarra Shoalhaven,19.5
+2023-05,Males,Illawarra Shoalhaven,34.8
+2023-06,Males,Illawarra Shoalhaven,23.0
+2014-07,Males,Western Sydney,28.9
+2014-08,Males,Western Sydney,29.5
+2014-09,Males,Western Sydney,23.6
+2014-10,Males,Western Sydney,23.1
+2014-11,Males,Western Sydney,21.1
+2014-12,Males,Western Sydney,28.0
+2015-01,Males,Western Sydney,13.2
+2015-02,Males,Western Sydney,28.5
+2015-03,Males,Western Sydney,28.1
+2015-04,Males,Western Sydney,30.4
+2015-05,Males,Western Sydney,35.1
+2015-06,Males,Western Sydney,29.6
+2015-07,Males,Western Sydney,25.8
+2015-08,Males,Western Sydney,30.0
+2015-09,Males,Western Sydney,24.1
+2015-10,Males,Western Sydney,24.3
+2015-11,Males,Western Sydney,22.5
+2015-12,Males,Western Sydney,16.0
+2016-01,Males,Western Sydney,18.5
+2016-02,Males,Western Sydney,36.4
+2016-03,Males,Western Sydney,25.3
+2016-04,Males,Western Sydney,27.6
+2016-05,Males,Western Sydney,34.0
+2016-06,Males,Western Sydney,26.2
+2016-07,Males,Western Sydney,21.8
+2016-08,Males,Western Sydney,30.7
+2016-09,Males,Western Sydney,26.0
+2016-10,Males,Western Sydney,24.3
+2016-11,Males,Western Sydney,20.3
+2016-12,Males,Western Sydney,20.5
+2017-01,Males,Western Sydney,12.3
+2017-02,Males,Western Sydney,30.3
+2017-03,Males,Western Sydney,28.7
+2017-04,Males,Western Sydney,25.4
+2017-05,Males,Western Sydney,33.6
+2017-06,Males,Western Sydney,31.5
+2017-07,Males,Western Sydney,21.6
+2017-08,Males,Western Sydney,22.1
+2017-09,Males,Western Sydney,20.1
+2017-10,Males,Western Sydney,18.4
+2017-11,Males,Western Sydney,25.6
+2017-12,Males,Western Sydney,19.5
+2018-01,Males,Western Sydney,13.3
+2018-02,Males,Western Sydney,27.5
+2018-03,Males,Western Sydney,26.7
+2018-04,Males,Western Sydney,15.9
+2018-05,Males,Western Sydney,29.8
+2018-06,Males,Western Sydney,21.6
+2018-07,Males,Western Sydney,14.7
+2018-08,Males,Western Sydney,17.2
+2018-09,Males,Western Sydney,20.8
+2018-10,Males,Western Sydney,16.0
+2018-11,Males,Western Sydney,16.9
+2018-12,Males,Western Sydney,17.1
+2019-01,Males,Western Sydney,15.5
+2019-02,Males,Western Sydney,26.1
+2019-03,Males,Western Sydney,28.6
+2019-04,Males,Western Sydney,28.4
+2019-05,Males,Western Sydney,30.6
+2019-06,Males,Western Sydney,24.2
+2019-07,Males,Western Sydney,13.9
+2019-08,Males,Western Sydney,20.3
+2019-09,Males,Western Sydney,19.3
+2019-10,Males,Western Sydney,19.0
+2019-11,Males,Western Sydney,19.1
+2019-12,Males,Western Sydney,19.5
+2020-01,Males,Western Sydney,13.1
+2020-02,Males,Western Sydney,22.0
+2020-03,Males,Western Sydney,22.8
+2020-04,Males,Western Sydney,7.9
+2020-05,Males,Western Sydney,5.9
+2020-06,Males,Western Sydney,19.7
+2020-07,Males,Western Sydney,15.7
+2020-08,Males,Western Sydney,18.2
+2020-09,Males,Western Sydney,12.1
+2020-10,Males,Western Sydney,11.3
+2020-11,Males,Western Sydney,18.3
+2020-12,Males,Western Sydney,7.8
+2021-01,Males,Western Sydney,6.7
+2021-02,Males,Western Sydney,18.2
+2021-03,Males,Western Sydney,19.8
+2021-04,Males,Western Sydney,15.3
+2021-05,Males,Western Sydney,26.6
+2021-06,Males,Western Sydney,18.0
+2021-07,Males,Western Sydney,9.3
+2021-08,Males,Western Sydney,6.3
+2021-09,Males,Western Sydney,5.4
+2021-10,Males,Western Sydney,6.5
+2021-11,Males,Western Sydney,11.6
+2021-12,Males,Western Sydney,7.9
+2022-01,Males,Western Sydney,6.7
+2022-02,Males,Western Sydney,14.9
+2022-03,Males,Western Sydney,27.5
+2022-04,Males,Western Sydney,30.5
+2022-05,Males,Western Sydney,39.6
+2022-06,Males,Western Sydney,19.7
+2022-07,Males,Western Sydney,15.7
+2022-08,Males,Western Sydney,20.3
+2022-09,Males,Western Sydney,17.5
+2022-10,Males,Western Sydney,17.3
+2022-11,Males,Western Sydney,18.7
+2022-12,Males,Western Sydney,13.5
+2023-01,Males,Western Sydney,10.7
+2023-02,Males,Western Sydney,23.6
+2023-03,Males,Western Sydney,14.0
+2023-04,Males,Western Sydney,18.0
+2023-05,Males,Western Sydney,21.9
+2023-06,Males,Western Sydney,18.3
+2014-07,Males,Nepean Blue Mountains,31.9
+2014-08,Males,Nepean Blue Mountains,33.5
+2014-09,Males,Nepean Blue Mountains,41.4
+2014-10,Males,Nepean Blue Mountains,32.7
+2014-11,Males,Nepean Blue Mountains,22.6
+2014-12,Males,Nepean Blue Mountains,29.5
+2015-01,Males,Nepean Blue Mountains,20.9
+2015-02,Males,Nepean Blue Mountains,32.6
+2015-03,Males,Nepean Blue Mountains,29.2
+2015-04,Males,Nepean Blue Mountains,29.4
+2015-05,Males,Nepean Blue Mountains,42.9
+2015-06,Males,Nepean Blue Mountains,31.1
+2015-07,Males,Nepean Blue Mountains,29.8
+2015-08,Males,Nepean Blue Mountains,38.1
+2015-09,Males,Nepean Blue Mountains,29.3
+2015-10,Males,Nepean Blue Mountains,26.8
+2015-11,Males,Nepean Blue Mountains,25.7
+2015-12,Males,Nepean Blue Mountains,18.8
+2016-01,Males,Nepean Blue Mountains,20.5
+2016-02,Males,Nepean Blue Mountains,47.7
+2016-03,Males,Nepean Blue Mountains,28.7
+2016-04,Males,Nepean Blue Mountains,22.9
+2016-05,Males,Nepean Blue Mountains,29.5
+2016-06,Males,Nepean Blue Mountains,28.3
+2016-07,Males,Nepean Blue Mountains,30.4
+2016-08,Males,Nepean Blue Mountains,33.1
+2016-09,Males,Nepean Blue Mountains,30.2
+2016-10,Males,Nepean Blue Mountains,27.1
+2016-11,Males,Nepean Blue Mountains,24.9
+2016-12,Males,Nepean Blue Mountains,19.9
+2017-01,Males,Nepean Blue Mountains,14.8
+2017-02,Males,Nepean Blue Mountains,29.2
+2017-03,Males,Nepean Blue Mountains,32.8
+2017-04,Males,Nepean Blue Mountains,36.8
+2017-05,Males,Nepean Blue Mountains,47.5
+2017-06,Males,Nepean Blue Mountains,38.6
+2017-07,Males,Nepean Blue Mountains,29.2
+2017-08,Males,Nepean Blue Mountains,23.7
+2017-09,Males,Nepean Blue Mountains,22.7
+2017-10,Males,Nepean Blue Mountains,26.6
+2017-11,Males,Nepean Blue Mountains,26.9
+2017-12,Males,Nepean Blue Mountains,21.9
+2018-01,Males,Nepean Blue Mountains,10.6
+2018-02,Males,Nepean Blue Mountains,21.8
+2018-03,Males,Nepean Blue Mountains,30.7
+2018-04,Males,Nepean Blue Mountains,31.7
+2018-05,Males,Nepean Blue Mountains,42.4
+2018-06,Males,Nepean Blue Mountains,32.0
+2018-07,Males,Nepean Blue Mountains,25.9
+2018-08,Males,Nepean Blue Mountains,24.0
+2018-09,Males,Nepean Blue Mountains,24.1
+2018-10,Males,Nepean Blue Mountains,20.0
+2018-11,Males,Nepean Blue Mountains,20.8
+2018-12,Males,Nepean Blue Mountains,18.1
+2019-01,Males,Nepean Blue Mountains,23.4
+2019-02,Males,Nepean Blue Mountains,35.8
+2019-03,Males,Nepean Blue Mountains,38.5
+2019-04,Males,Nepean Blue Mountains,33.4
+2019-05,Males,Nepean Blue Mountains,34.9
+2019-06,Males,Nepean Blue Mountains,32.9
+2019-07,Males,Nepean Blue Mountains,29.9
+2019-08,Males,Nepean Blue Mountains,25.1
+2019-09,Males,Nepean Blue Mountains,23.2
+2019-10,Males,Nepean Blue Mountains,19.1
+2019-11,Males,Nepean Blue Mountains,16.9
+2019-12,Males,Nepean Blue Mountains,26.8
+2020-01,Males,Nepean Blue Mountains,20.6
+2020-02,Males,Nepean Blue Mountains,24.2
+2020-03,Males,Nepean Blue Mountains,37.8
+2020-04,Males,Nepean Blue Mountains,11.5
+2020-05,Males,Nepean Blue Mountains,15.4
+2020-06,Males,Nepean Blue Mountains,24.7
+2020-07,Males,Nepean Blue Mountains,21.6
+2020-08,Males,Nepean Blue Mountains,18.6
+2020-09,Males,Nepean Blue Mountains,14.7
+2020-10,Males,Nepean Blue Mountains,16.1
+2020-11,Males,Nepean Blue Mountains,22.2
+2020-12,Males,Nepean Blue Mountains,17.8
+2021-01,Males,Nepean Blue Mountains,11.8
+2021-02,Males,Nepean Blue Mountains,19.0
+2021-03,Males,Nepean Blue Mountains,16.6
+2021-04,Males,Nepean Blue Mountains,25.0
+2021-05,Males,Nepean Blue Mountains,31.6
+2021-06,Males,Nepean Blue Mountains,19.8
+2021-07,Males,Nepean Blue Mountains,13.0
+2021-08,Males,Nepean Blue Mountains,7.6
+2021-09,Males,Nepean Blue Mountains,7.4
+2021-10,Males,Nepean Blue Mountains,10.8
+2021-11,Males,Nepean Blue Mountains,19.4
+2021-12,Males,Nepean Blue Mountains,15.1
+2022-01,Males,Nepean Blue Mountains,7.1
+2022-02,Males,Nepean Blue Mountains,16.9
+2022-03,Males,Nepean Blue Mountains,32.1
+2022-04,Males,Nepean Blue Mountains,27.6
+2022-05,Males,Nepean Blue Mountains,52.3
+2022-06,Males,Nepean Blue Mountains,28.7
+2022-07,Males,Nepean Blue Mountains,18.7
+2022-08,Males,Nepean Blue Mountains,27.4
+2022-09,Males,Nepean Blue Mountains,23.3
+2022-10,Males,Nepean Blue Mountains,18.5
+2022-11,Males,Nepean Blue Mountains,20.8
+2022-12,Males,Nepean Blue Mountains,14.1
+2023-01,Males,Nepean Blue Mountains,10.9
+2023-02,Males,Nepean Blue Mountains,21.7
+2023-03,Males,Nepean Blue Mountains,23.6
+2023-04,Males,Nepean Blue Mountains,30.3
+2023-05,Males,Nepean Blue Mountains,25.0
+2023-06,Males,Nepean Blue Mountains,27.0
+2014-07,Males,Northern Sydney,24.6
+2014-08,Males,Northern Sydney,24.0
+2014-09,Males,Northern Sydney,18.3
+2014-10,Males,Northern Sydney,17.8
+2014-11,Males,Northern Sydney,17.6
+2014-12,Males,Northern Sydney,22.3
+2015-01,Males,Northern Sydney,13.5
+2015-02,Males,Northern Sydney,29.5
+2015-03,Males,Northern Sydney,33.5
+2015-04,Males,Northern Sydney,29.5
+2015-05,Males,Northern Sydney,29.5
+2015-06,Males,Northern Sydney,21.8
+2015-07,Males,Northern Sydney,18.0
+2015-08,Males,Northern Sydney,22.3
+2015-09,Males,Northern Sydney,16.9
+2015-10,Males,Northern Sydney,19.0
+2015-11,Males,Northern Sydney,22.9
+2015-12,Males,Northern Sydney,19.1
+2016-01,Males,Northern Sydney,15.5
+2016-02,Males,Northern Sydney,28.9
+2016-03,Males,Northern Sydney,28.7
+2016-04,Males,Northern Sydney,20.5
+2016-05,Males,Northern Sydney,27.4
+2016-06,Males,Northern Sydney,23.8
+2016-07,Males,Northern Sydney,16.2
+2016-08,Males,Northern Sydney,18.6
+2016-09,Males,Northern Sydney,23.9
+2016-10,Males,Northern Sydney,13.8
+2016-11,Males,Northern Sydney,18.4
+2016-12,Males,Northern Sydney,18.5
+2017-01,Males,Northern Sydney,9.7
+2017-02,Males,Northern Sydney,24.1
+2017-03,Males,Northern Sydney,24.7
+2017-04,Males,Northern Sydney,22.3
+2017-05,Males,Northern Sydney,29.7
+2017-06,Males,Northern Sydney,22.8
+2017-07,Males,Northern Sydney,21.0
+2017-08,Males,Northern Sydney,17.5
+2017-09,Males,Northern Sydney,13.1
+2017-10,Males,Northern Sydney,19.8
+2017-11,Males,Northern Sydney,19.8
+2017-12,Males,Northern Sydney,14.3
+2018-01,Males,Northern Sydney,13.9
+2018-02,Males,Northern Sydney,25.1
+2018-03,Males,Northern Sydney,23.1
+2018-04,Males,Northern Sydney,12.9
+2018-05,Males,Northern Sydney,21.5
+2018-06,Males,Northern Sydney,15.0
+2018-07,Males,Northern Sydney,13.4
+2018-08,Males,Northern Sydney,12.1
+2018-09,Males,Northern Sydney,15.8
+2018-10,Males,Northern Sydney,16.8
+2018-11,Males,Northern Sydney,13.3
+2018-12,Males,Northern Sydney,17.4
+2019-01,Males,Northern Sydney,12.3
+2019-02,Males,Northern Sydney,25.3
+2019-03,Males,Northern Sydney,23.2
+2019-04,Males,Northern Sydney,25.1
+2019-05,Males,Northern Sydney,26.5
+2019-06,Males,Northern Sydney,22.1
+2019-07,Males,Northern Sydney,12.5
+2019-08,Males,Northern Sydney,21.2
+2019-09,Males,Northern Sydney,15.3
+2019-10,Males,Northern Sydney,14.8
+2019-11,Males,Northern Sydney,17.5
+2019-12,Males,Northern Sydney,20.4
+2020-01,Males,Northern Sydney,13.5
+2020-02,Males,Northern Sydney,18.9
+2020-03,Males,Northern Sydney,20.2
+2020-04,Males,Northern Sydney,5.8
+2020-05,Males,Northern Sydney,8.0
+2020-06,Males,Northern Sydney,15.9
+2020-07,Males,Northern Sydney,8.7
+2020-08,Males,Northern Sydney,12.9
+2020-09,Males,Northern Sydney,6.9
+2020-10,Males,Northern Sydney,10.9
+2020-11,Males,Northern Sydney,14.6
+2020-12,Males,Northern Sydney,11.6
+2021-01,Males,Northern Sydney,3.9
+2021-02,Males,Northern Sydney,14.8
+2021-03,Males,Northern Sydney,12.0
+2021-04,Males,Northern Sydney,17.1
+2021-05,Males,Northern Sydney,18.8
+2021-06,Males,Northern Sydney,14.8
+2021-07,Males,Northern Sydney,8.1
+2021-08,Males,Northern Sydney,5.5
+2021-09,Males,Northern Sydney,2.8
+2021-10,Males,Northern Sydney,5.6
+2021-11,Males,Northern Sydney,9.1
+2021-12,Males,Northern Sydney,4.5
+2022-01,Males,Northern Sydney,4.2
+2022-02,Males,Northern Sydney,11.0
+2022-03,Males,Northern Sydney,15.0
+2022-04,Males,Northern Sydney,19.3
+2022-05,Males,Northern Sydney,30.3
+2022-06,Males,Northern Sydney,14.8
+2022-07,Males,Northern Sydney,9.4
+2022-08,Males,Northern Sydney,18.4
+2022-09,Males,Northern Sydney,15.4
+2022-10,Males,Northern Sydney,15.9
+2022-11,Males,Northern Sydney,9.5
+2022-12,Males,Northern Sydney,10.4
+2023-01,Males,Northern Sydney,8.9
+2023-02,Males,Northern Sydney,19.2
+2023-03,Males,Northern Sydney,17.8
+2023-04,Males,Northern Sydney,11.7
+2023-05,Males,Northern Sydney,14.8
+2023-06,Males,Northern Sydney,12.4
+2014-07,Males,Central Coast,21.8
+2014-08,Males,Central Coast,32.0
+2014-09,Males,Central Coast,19.9
+2014-10,Males,Central Coast,19.5
+2014-11,Males,Central Coast,21.7
+2014-12,Males,Central Coast,33.4
+2015-01,Males,Central Coast,21.7
+2015-02,Males,Central Coast,33.6
+2015-03,Males,Central Coast,34.6
+2015-04,Males,Central Coast,29.7
+2015-05,Males,Central Coast,43.8
+2015-06,Males,Central Coast,41.6
+2015-07,Males,Central Coast,27.4
+2015-08,Males,Central Coast,37.1
+2015-09,Males,Central Coast,25.9
+2015-10,Males,Central Coast,29.4
+2015-11,Males,Central Coast,28.6
+2015-12,Males,Central Coast,32.5
+2016-01,Males,Central Coast,14.9
+2016-02,Males,Central Coast,26.1
+2016-03,Males,Central Coast,20.7
+2016-04,Males,Central Coast,32.2
+2016-05,Males,Central Coast,40.5
+2016-06,Males,Central Coast,34.6
+2016-07,Males,Central Coast,29.2
+2016-08,Males,Central Coast,27.3
+2016-09,Males,Central Coast,33.7
+2016-10,Males,Central Coast,23.6
+2016-11,Males,Central Coast,21.0
+2016-12,Males,Central Coast,19.9
+2017-01,Males,Central Coast,14.8
+2017-02,Males,Central Coast,34.5
+2017-03,Males,Central Coast,32.6
+2017-04,Males,Central Coast,33.0
+2017-05,Males,Central Coast,38.8
+2017-06,Males,Central Coast,31.2
+2017-07,Males,Central Coast,28.9
+2017-08,Males,Central Coast,29.5
+2017-09,Males,Central Coast,19.4
+2017-10,Males,Central Coast,24.0
+2017-11,Males,Central Coast,36.2
+2017-12,Males,Central Coast,25.5
+2018-01,Males,Central Coast,16.6
+2018-02,Males,Central Coast,32.7
+2018-03,Males,Central Coast,21.9
+2018-04,Males,Central Coast,34.7
+2018-05,Males,Central Coast,38.1
+2018-06,Males,Central Coast,36.6
+2018-07,Males,Central Coast,28.6
+2018-08,Males,Central Coast,24.6
+2018-09,Males,Central Coast,25.0
+2018-10,Males,Central Coast,16.0
+2018-11,Males,Central Coast,22.7
+2018-12,Males,Central Coast,28.1
+2019-01,Males,Central Coast,24.4
+2019-02,Males,Central Coast,44.9
+2019-03,Males,Central Coast,31.1
+2019-04,Males,Central Coast,27.2
+2019-05,Males,Central Coast,37.7
+2019-06,Males,Central Coast,38.7
+2019-07,Males,Central Coast,30.3
+2019-08,Males,Central Coast,17.2
+2019-09,Males,Central Coast,20.0
+2019-10,Males,Central Coast,22.8
+2019-11,Males,Central Coast,25.6
+2019-12,Males,Central Coast,36.9
+2020-01,Males,Central Coast,18.8
+2020-02,Males,Central Coast,35.7
+2020-03,Males,Central Coast,49.0
+2020-04,Males,Central Coast,8.4
+2020-05,Males,Central Coast,15.5
+2020-06,Males,Central Coast,39.9
+2020-07,Males,Central Coast,22.7
+2020-08,Males,Central Coast,23.4
+2020-09,Males,Central Coast,20.8
+2020-10,Males,Central Coast,19.9
+2020-11,Males,Central Coast,29.0
+2020-12,Males,Central Coast,12.3
+2021-01,Males,Central Coast,12.9
+2021-02,Males,Central Coast,24.7
+2021-03,Males,Central Coast,31.0
+2021-04,Males,Central Coast,28.2
+2021-05,Males,Central Coast,31.3
+2021-06,Males,Central Coast,30.3
+2021-07,Males,Central Coast,23.6
+2021-08,Males,Central Coast,7.0
+2021-09,Males,Central Coast,7.5
+2021-10,Males,Central Coast,11.3
+2021-11,Males,Central Coast,14.3
+2021-12,Males,Central Coast,10.4
+2022-01,Males,Central Coast,6.7
+2022-02,Males,Central Coast,15.4
+2022-03,Males,Central Coast,26.6
+2022-04,Males,Central Coast,40.2
+2022-05,Males,Central Coast,57.4
+2022-06,Males,Central Coast,30.1
+2022-07,Males,Central Coast,22.5
+2022-08,Males,Central Coast,37.9
+2022-09,Males,Central Coast,35.5
+2022-10,Males,Central Coast,26.0
+2022-11,Males,Central Coast,18.3
+2022-12,Males,Central Coast,18.5
+2023-01,Males,Central Coast,13.8
+2023-02,Males,Central Coast,31.1
+2023-03,Males,Central Coast,29.5
+2023-04,Males,Central Coast,20.7
+2023-05,Males,Central Coast,31.3
+2023-06,Males,Central Coast,23.2
+2014-07,Males,Hunter New England,32.3
+2014-08,Males,Hunter New England,42.6
+2014-09,Males,Hunter New England,26.7
+2014-10,Males,Hunter New England,31.2
+2014-11,Males,Hunter New England,25.9
+2014-12,Males,Hunter New England,29.4
+2015-01,Males,Hunter New England,20.9
+2015-02,Males,Hunter New England,37.5
+2015-03,Males,Hunter New England,40.6
+2015-04,Males,Hunter New England,41.3
+2015-05,Males,Hunter New England,62.9
+2015-06,Males,Hunter New England,53.5
+2015-07,Males,Hunter New England,45.3
+2015-08,Males,Hunter New England,45.9
+2015-09,Males,Hunter New England,31.0
+2015-10,Males,Hunter New England,33.9
+2015-11,Males,Hunter New England,37.5
+2015-12,Males,Hunter New England,38.0
+2016-01,Males,Hunter New England,21.2
+2016-02,Males,Hunter New England,43.8
+2016-03,Males,Hunter New England,36.2
+2016-04,Males,Hunter New England,33.5
+2016-05,Males,Hunter New England,48.1
+2016-06,Males,Hunter New England,44.1
+2016-07,Males,Hunter New England,37.5
+2016-08,Males,Hunter New England,34.9
+2016-09,Males,Hunter New England,38.2
+2016-10,Males,Hunter New England,48.5
+2016-11,Males,Hunter New England,42.4
+2016-12,Males,Hunter New England,28.7
+2017-01,Males,Hunter New England,17.7
+2017-02,Males,Hunter New England,40.6
+2017-03,Males,Hunter New England,43.3
+2017-04,Males,Hunter New England,52.1
+2017-05,Males,Hunter New England,62.2
+2017-06,Males,Hunter New England,49.4
+2017-07,Males,Hunter New England,42.6
+2017-08,Males,Hunter New England,28.8
+2017-09,Males,Hunter New England,33.7
+2017-10,Males,Hunter New England,32.3
+2017-11,Males,Hunter New England,32.2
+2017-12,Males,Hunter New England,31.9
+2018-01,Males,Hunter New England,20.4
+2018-02,Males,Hunter New England,43.0
+2018-03,Males,Hunter New England,41.7
+2018-04,Males,Hunter New England,33.7
+2018-05,Males,Hunter New England,51.7
+2018-06,Males,Hunter New England,44.9
+2018-07,Males,Hunter New England,41.0
+2018-08,Males,Hunter New England,37.2
+2018-09,Males,Hunter New England,30.3
+2018-10,Males,Hunter New England,31.2
+2018-11,Males,Hunter New England,30.1
+2018-12,Males,Hunter New England,30.9
+2019-01,Males,Hunter New England,19.7
+2019-02,Males,Hunter New England,42.5
+2019-03,Males,Hunter New England,34.4
+2019-04,Males,Hunter New England,40.0
+2019-05,Males,Hunter New England,40.7
+2019-06,Males,Hunter New England,45.0
+2019-07,Males,Hunter New England,44.6
+2019-08,Males,Hunter New England,45.4
+2019-09,Males,Hunter New England,29.6
+2019-10,Males,Hunter New England,31.3
+2019-11,Males,Hunter New England,40.6
+2019-12,Males,Hunter New England,36.7
+2020-01,Males,Hunter New England,22.6
+2020-02,Males,Hunter New England,34.1
+2020-03,Males,Hunter New England,37.0
+2020-04,Males,Hunter New England,13.2
+2020-05,Males,Hunter New England,20.5
+2020-06,Males,Hunter New England,52.4
+2020-07,Males,Hunter New England,24.9
+2020-08,Males,Hunter New England,27.4
+2020-09,Males,Hunter New England,24.2
+2020-10,Males,Hunter New England,25.3
+2020-11,Males,Hunter New England,32.4
+2020-12,Males,Hunter New England,31.5
+2021-01,Males,Hunter New England,14.4
+2021-02,Males,Hunter New England,23.8
+2021-03,Males,Hunter New England,37.3
+2021-04,Males,Hunter New England,34.7
+2021-05,Males,Hunter New England,53.9
+2021-06,Males,Hunter New England,36.2
+2021-07,Males,Hunter New England,28.7
+2021-08,Males,Hunter New England,23.6
+2021-09,Males,Hunter New England,11.7
+2021-10,Males,Hunter New England,20.1
+2021-11,Males,Hunter New England,27.3
+2021-12,Males,Hunter New England,23.2
+2022-01,Males,Hunter New England,9.3
+2022-02,Males,Hunter New England,15.9
+2022-03,Males,Hunter New England,45.1
+2022-04,Males,Hunter New England,43.1
+2022-05,Males,Hunter New England,67.2
+2022-06,Males,Hunter New England,53.6
+2022-07,Males,Hunter New England,28.4
+2022-08,Males,Hunter New England,45.9
+2022-09,Males,Hunter New England,44.6
+2022-10,Males,Hunter New England,47.3
+2022-11,Males,Hunter New England,33.2
+2022-12,Males,Hunter New England,17.4
+2023-01,Males,Hunter New England,18.7
+2023-02,Males,Hunter New England,38.4
+2023-03,Males,Hunter New England,29.7
+2023-04,Males,Hunter New England,29.5
+2023-05,Males,Hunter New England,44.3
+2023-06,Males,Hunter New England,39.1
+2014-07,Males,Northern NSW,48.9
+2014-08,Males,Northern NSW,43.9
+2014-09,Males,Northern NSW,51.6
+2014-10,Males,Northern NSW,47.5
+2014-11,Males,Northern NSW,36.0
+2014-12,Males,Northern NSW,34.9
+2015-01,Males,Northern NSW,23.5
+2015-02,Males,Northern NSW,48.8
+2015-03,Males,Northern NSW,49.5
+2015-04,Males,Northern NSW,53.2
+2015-05,Males,Northern NSW,68.4
+2015-06,Males,Northern NSW,64.1
+2015-07,Males,Northern NSW,62.3
+2015-08,Males,Northern NSW,73.4
+2015-09,Males,Northern NSW,63.8
+2015-10,Males,Northern NSW,56.6
+2015-11,Males,Northern NSW,66.4
+2015-12,Males,Northern NSW,44.0
+2016-01,Males,Northern NSW,27.6
+2016-02,Males,Northern NSW,34.7
+2016-03,Males,Northern NSW,42.6
+2016-04,Males,Northern NSW,42.8
+2016-05,Males,Northern NSW,70.0
+2016-06,Males,Northern NSW,65.7
+2016-07,Males,Northern NSW,43.8
+2016-08,Males,Northern NSW,59.3
+2016-09,Males,Northern NSW,44.8
+2016-10,Males,Northern NSW,41.3
+2016-11,Males,Northern NSW,35.5
+2016-12,Males,Northern NSW,42.5
+2017-01,Males,Northern NSW,23.3
+2017-02,Males,Northern NSW,34.6
+2017-03,Males,Northern NSW,38.6
+2017-04,Males,Northern NSW,48.0
+2017-05,Males,Northern NSW,64.6
+2017-06,Males,Northern NSW,67.6
+2017-07,Males,Northern NSW,52.2
+2017-08,Males,Northern NSW,60.8
+2017-09,Males,Northern NSW,43.9
+2017-10,Males,Northern NSW,35.9
+2017-11,Males,Northern NSW,63.9
+2017-12,Males,Northern NSW,36.7
+2018-01,Males,Northern NSW,30.1
+2018-02,Males,Northern NSW,49.9
+2018-03,Males,Northern NSW,52.8
+2018-04,Males,Northern NSW,48.3
+2018-05,Males,Northern NSW,47.4
+2018-06,Males,Northern NSW,57.7
+2018-07,Males,Northern NSW,45.4
+2018-08,Males,Northern NSW,38.7
+2018-09,Males,Northern NSW,39.0
+2018-10,Males,Northern NSW,49.2
+2018-11,Males,Northern NSW,51.4
+2018-12,Males,Northern NSW,41.7
+2019-01,Males,Northern NSW,23.3
+2019-02,Males,Northern NSW,34.4
+2019-03,Males,Northern NSW,35.4
+2019-04,Males,Northern NSW,44.9
+2019-05,Males,Northern NSW,41.6
+2019-06,Males,Northern NSW,51.5
+2019-07,Males,Northern NSW,53.1
+2019-08,Males,Northern NSW,58.1
+2019-09,Males,Northern NSW,44.3
+2019-10,Males,Northern NSW,34.1
+2019-11,Males,Northern NSW,41.0
+2019-12,Males,Northern NSW,32.3
+2020-01,Males,Northern NSW,23.7
+2020-02,Males,Northern NSW,32.6
+2020-03,Males,Northern NSW,51.0
+2020-04,Males,Northern NSW,20.2
+2020-05,Males,Northern NSW,24.0
+2020-06,Males,Northern NSW,46.4
+2020-07,Males,Northern NSW,36.9
+2020-08,Males,Northern NSW,32.8
+2020-09,Males,Northern NSW,29.9
+2020-10,Males,Northern NSW,29.0
+2020-11,Males,Northern NSW,18.7
+2020-12,Males,Northern NSW,30.1
+2021-01,Males,Northern NSW,21.7
+2021-02,Males,Northern NSW,34.1
+2021-03,Males,Northern NSW,27.4
+2021-04,Males,Northern NSW,39.9
+2021-05,Males,Northern NSW,35.9
+2021-06,Males,Northern NSW,39.7
+2021-07,Males,Northern NSW,33.7
+2021-08,Males,Northern NSW,26.7
+2021-09,Males,Northern NSW,24.0
+2021-10,Males,Northern NSW,28.7
+2021-11,Males,Northern NSW,23.3
+2021-12,Males,Northern NSW,27.3
+2022-01,Males,Northern NSW,20.7
+2022-02,Males,Northern NSW,16.9
+2022-03,Males,Northern NSW,26.0
+2022-04,Males,Northern NSW,27.8
+2022-05,Males,Northern NSW,66.7
+2022-06,Males,Northern NSW,69.5
+2022-07,Males,Northern NSW,39.7
+2022-08,Males,Northern NSW,54.2
+2022-09,Males,Northern NSW,42.7
+2022-10,Males,Northern NSW,48.8
+2022-11,Males,Northern NSW,44.2
+2022-12,Males,Northern NSW,21.9
+2023-01,Males,Northern NSW,15.5
+2023-02,Males,Northern NSW,24.6
+2023-03,Males,Northern NSW,26.4
+2023-04,Males,Northern NSW,33.2
+2023-05,Males,Northern NSW,49.4
+2023-06,Males,Northern NSW,50.0
+2014-07,Males,Mid North Coast,35.5
+2014-08,Males,Mid North Coast,31.6
+2014-09,Males,Mid North Coast,30.7
+2014-10,Males,Mid North Coast,49.2
+2014-11,Males,Mid North Coast,33.1
+2014-12,Males,Mid North Coast,39.0
+2015-01,Males,Mid North Coast,23.9
+2015-02,Males,Mid North Coast,51.3
+2015-03,Males,Mid North Coast,47.3
+2015-04,Males,Mid North Coast,27.6
+2015-05,Males,Mid North Coast,44.1
+2015-06,Males,Mid North Coast,65.8
+2015-07,Males,Mid North Coast,45.2
+2015-08,Males,Mid North Coast,55.4
+2015-09,Males,Mid North Coast,51.8
+2015-10,Males,Mid North Coast,45.0
+2015-11,Males,Mid North Coast,39.1
+2015-12,Males,Mid North Coast,55.2
+2016-01,Males,Mid North Coast,38.9
+2016-02,Males,Mid North Coast,29.4
+2016-03,Males,Mid North Coast,33.3
+2016-04,Males,Mid North Coast,27.2
+2016-05,Males,Mid North Coast,54.8
+2016-06,Males,Mid North Coast,42.2
+2016-07,Males,Mid North Coast,31.2
+2016-08,Males,Mid North Coast,46.5
+2016-09,Males,Mid North Coast,41.7
+2016-10,Males,Mid North Coast,46.2
+2016-11,Males,Mid North Coast,25.5
+2016-12,Males,Mid North Coast,25.0
+2017-01,Males,Mid North Coast,20.0
+2017-02,Males,Mid North Coast,41.5
+2017-03,Males,Mid North Coast,40.5
+2017-04,Males,Mid North Coast,47.7
+2017-05,Males,Mid North Coast,72.7
+2017-06,Males,Mid North Coast,71.5
+2017-07,Males,Mid North Coast,35.2
+2017-08,Males,Mid North Coast,46.5
+2017-09,Males,Mid North Coast,27.9
+2017-10,Males,Mid North Coast,29.0
+2017-11,Males,Mid North Coast,25.2
+2017-12,Males,Mid North Coast,37.2
+2018-01,Males,Mid North Coast,29.8
+2018-02,Males,Mid North Coast,44.0
+2018-03,Males,Mid North Coast,54.3
+2018-04,Males,Mid North Coast,47.7
+2018-05,Males,Mid North Coast,51.9
+2018-06,Males,Mid North Coast,41.4
+2018-07,Males,Mid North Coast,30.0
+2018-08,Males,Mid North Coast,38.8
+2018-09,Males,Mid North Coast,33.8
+2018-10,Males,Mid North Coast,40.9
+2018-11,Males,Mid North Coast,30.1
+2018-12,Males,Mid North Coast,20.9
+2019-01,Males,Mid North Coast,24.3
+2019-02,Males,Mid North Coast,34.9
+2019-03,Males,Mid North Coast,45.2
+2019-04,Males,Mid North Coast,34.6
+2019-05,Males,Mid North Coast,46.1
+2019-06,Males,Mid North Coast,49.8
+2019-07,Males,Mid North Coast,24.6
+2019-08,Males,Mid North Coast,43.5
+2019-09,Males,Mid North Coast,39.4
+2019-10,Males,Mid North Coast,34.7
+2019-11,Males,Mid North Coast,89.2
+2019-12,Males,Mid North Coast,26.8
+2020-01,Males,Mid North Coast,26.3
+2020-02,Males,Mid North Coast,28.3
+2020-03,Males,Mid North Coast,37.2
+2020-04,Males,Mid North Coast,12.2
+2020-05,Males,Mid North Coast,12.4
+2020-06,Males,Mid North Coast,35.3
+2020-07,Males,Mid North Coast,35.0
+2020-08,Males,Mid North Coast,34.1
+2020-09,Males,Mid North Coast,13.4
+2020-10,Males,Mid North Coast,23.6
+2020-11,Males,Mid North Coast,24.0
+2020-12,Males,Mid North Coast,23.2
+2021-01,Males,Mid North Coast,9.5
+2021-02,Males,Mid North Coast,14.0
+2021-03,Males,Mid North Coast,24.7
+2021-04,Males,Mid North Coast,34.0
+2021-05,Males,Mid North Coast,53.3
+2021-06,Males,Mid North Coast,36.4
+2021-07,Males,Mid North Coast,30.9
+2021-08,Males,Mid North Coast,24.8
+2021-09,Males,Mid North Coast,10.3
+2021-10,Males,Mid North Coast,18.8
+2021-11,Males,Mid North Coast,21.1
+2021-12,Males,Mid North Coast,19.6
+2022-01,Males,Mid North Coast,21.0
+2022-02,Males,Mid North Coast,13.4
+2022-03,Males,Mid North Coast,25.7
+2022-04,Males,Mid North Coast,22.3
+2022-05,Males,Mid North Coast,65.2
+2022-06,Males,Mid North Coast,62.1
+2022-07,Males,Mid North Coast,32.8
+2022-08,Males,Mid North Coast,34.7
+2022-09,Males,Mid North Coast,39.7
+2022-10,Males,Mid North Coast,38.5
+2022-11,Males,Mid North Coast,21.7
+2022-12,Males,Mid North Coast,21.4
+2023-01,Males,Mid North Coast,18.6
+2023-02,Males,Mid North Coast,24.7
+2023-03,Males,Mid North Coast,18.6
+2023-04,Males,Mid North Coast,23.9
+2023-05,Males,Mid North Coast,29.7
+2023-06,Males,Mid North Coast,25.6
+2014-07,Males,Southern NSW,26.1
+2014-08,Males,Southern NSW,36.6
+2014-09,Males,Southern NSW,31.8
+2014-10,Males,Southern NSW,29.5
+2014-11,Males,Southern NSW,46.0
+2014-12,Males,Southern NSW,28.6
+2015-01,Males,Southern NSW,24.8
+2015-02,Males,Southern NSW,18.5
+2015-03,Males,Southern NSW,42.9
+2015-04,Males,Southern NSW,27.1
+2015-05,Males,Southern NSW,47.7
+2015-06,Males,Southern NSW,43.5
+2015-07,Males,Southern NSW,17.6
+2015-08,Males,Southern NSW,51.7
+2015-09,Males,Southern NSW,30.5
+2015-10,Males,Southern NSW,22.8
+2015-11,Males,Southern NSW,37.4
+2015-12,Males,Southern NSW,41.6
+2016-01,Males,Southern NSW,21.3
+2016-02,Males,Southern NSW,40.1
+2016-03,Males,Southern NSW,35.2
+2016-04,Males,Southern NSW,26.6
+2016-05,Males,Southern NSW,52.7
+2016-06,Males,Southern NSW,36.8
+2016-07,Males,Southern NSW,31.2
+2016-08,Males,Southern NSW,34.2
+2016-09,Males,Southern NSW,32.4
+2016-10,Males,Southern NSW,25.2
+2016-11,Males,Southern NSW,42.6
+2016-12,Males,Southern NSW,48.1
+2017-01,Males,Southern NSW,30.9
+2017-02,Males,Southern NSW,43.9
+2017-03,Males,Southern NSW,36.0
+2017-04,Males,Southern NSW,43.1
+2017-05,Males,Southern NSW,49.4
+2017-06,Males,Southern NSW,36.1
+2017-07,Males,Southern NSW,36.8
+2017-08,Males,Southern NSW,28.4
+2017-09,Males,Southern NSW,21.9
+2017-10,Males,Southern NSW,31.4
+2017-11,Males,Southern NSW,39.3
+2017-12,Males,Southern NSW,32.3
+2018-01,Males,Southern NSW,19.3
+2018-02,Males,Southern NSW,46.8
+2018-03,Males,Southern NSW,45.6
+2018-04,Males,Southern NSW,34.6
+2018-05,Males,Southern NSW,40.1
+2018-06,Males,Southern NSW,47.2
+2018-07,Males,Southern NSW,46.2
+2018-08,Males,Southern NSW,28.2
+2018-09,Males,Southern NSW,27.3
+2018-10,Males,Southern NSW,31.1
+2018-11,Males,Southern NSW,39.6
+2018-12,Males,Southern NSW,29.0
+2019-01,Males,Southern NSW,30.0
+2019-02,Males,Southern NSW,33.0
+2019-03,Males,Southern NSW,32.8
+2019-04,Males,Southern NSW,38.8
+2019-05,Males,Southern NSW,44.5
+2019-06,Males,Southern NSW,46.4
+2019-07,Males,Southern NSW,46.5
+2019-08,Males,Southern NSW,26.5
+2019-09,Males,Southern NSW,32.8
+2019-10,Males,Southern NSW,27.4
+2019-11,Males,Southern NSW,42.9
+2019-12,Males,Southern NSW,36.6
+2020-01,Males,Southern NSW,36.3
+2020-02,Males,Southern NSW,27.0
+2020-03,Males,Southern NSW,41.1
+2020-04,Males,Southern NSW,13.1
+2020-05,Males,Southern NSW,13.0
+2020-06,Males,Southern NSW,26.7
+2020-07,Males,Southern NSW,20.1
+2020-08,Males,Southern NSW,19.1
+2020-09,Males,Southern NSW,15.4
+2020-10,Males,Southern NSW,33.9
+2020-11,Males,Southern NSW,35.5
+2020-12,Males,Southern NSW,22.4
+2021-01,Males,Southern NSW,15.4
+2021-02,Males,Southern NSW,18.4
+2021-03,Males,Southern NSW,45.7
+2021-04,Males,Southern NSW,28.9
+2021-05,Males,Southern NSW,38.9
+2021-06,Males,Southern NSW,37.6
+2021-07,Males,Southern NSW,24.9
+2021-08,Males,Southern NSW,25.9
+2021-09,Males,Southern NSW,5.0
+2021-10,Males,Southern NSW,14.3
+2021-11,Males,Southern NSW,26.0
+2021-12,Males,Southern NSW,34.3
+2022-01,Males,Southern NSW,11.8
+2022-02,Males,Southern NSW,20.4
+2022-03,Males,Southern NSW,30.3
+2022-04,Males,Southern NSW,23.0
+2022-05,Males,Southern NSW,42.5
+2022-06,Males,Southern NSW,53.5
+2022-07,Males,Southern NSW,32.6
+2022-08,Males,Southern NSW,34.8
+2022-09,Males,Southern NSW,37.6
+2022-10,Males,Southern NSW,39.7
+2022-11,Males,Southern NSW,49.0
+2022-12,Males,Southern NSW,37.1
+2023-01,Males,Southern NSW,16.6
+2023-02,Males,Southern NSW,34.0
+2023-03,Males,Southern NSW,27.1
+2023-04,Males,Southern NSW,33.9
+2023-05,Males,Southern NSW,35.5
+2023-06,Males,Southern NSW,40.7
+2014-07,Males,Murrumbidgee,51.4
+2014-08,Males,Murrumbidgee,59.3
+2014-09,Males,Murrumbidgee,57.2
+2014-10,Males,Murrumbidgee,63.8
+2014-11,Males,Murrumbidgee,49.1
+2014-12,Males,Murrumbidgee,44.0
+2015-01,Males,Murrumbidgee,25.9
+2015-02,Males,Murrumbidgee,41.5
+2015-03,Males,Murrumbidgee,57.4
+2015-04,Males,Murrumbidgee,45.9
+2015-05,Males,Murrumbidgee,62.3
+2015-06,Males,Murrumbidgee,61.1
+2015-07,Males,Murrumbidgee,61.2
+2015-08,Males,Murrumbidgee,56.3
+2015-09,Males,Murrumbidgee,55.1
+2015-10,Males,Murrumbidgee,89.3
+2015-11,Males,Murrumbidgee,66.0
+2015-12,Males,Murrumbidgee,28.8
+2016-01,Males,Murrumbidgee,29.8
+2016-02,Males,Murrumbidgee,53.6
+2016-03,Males,Murrumbidgee,58.8
+2016-04,Males,Murrumbidgee,49.8
+2016-05,Males,Murrumbidgee,64.1
+2016-06,Males,Murrumbidgee,37.6
+2016-07,Males,Murrumbidgee,51.7
+2016-08,Males,Murrumbidgee,64.5
+2016-09,Males,Murrumbidgee,62.9
+2016-10,Males,Murrumbidgee,105.1
+2016-11,Males,Murrumbidgee,93.8
+2016-12,Males,Murrumbidgee,60.3
+2017-01,Males,Murrumbidgee,37.8
+2017-02,Males,Murrumbidgee,32.9
+2017-03,Males,Murrumbidgee,48.2
+2017-04,Males,Murrumbidgee,47.6
+2017-05,Males,Murrumbidgee,75.4
+2017-06,Males,Murrumbidgee,48.7
+2017-07,Males,Murrumbidgee,47.7
+2017-08,Males,Murrumbidgee,56.7
+2017-09,Males,Murrumbidgee,51.3
+2017-10,Males,Murrumbidgee,71.7
+2017-11,Males,Murrumbidgee,72.4
+2017-12,Males,Murrumbidgee,35.7
+2018-01,Males,Murrumbidgee,26.5
+2018-02,Males,Murrumbidgee,42.0
+2018-03,Males,Murrumbidgee,33.6
+2018-04,Males,Murrumbidgee,32.6
+2018-05,Males,Murrumbidgee,41.1
+2018-06,Males,Murrumbidgee,46.5
+2018-07,Males,Murrumbidgee,45.8
+2018-08,Males,Murrumbidgee,38.9
+2018-09,Males,Murrumbidgee,49.4
+2018-10,Males,Murrumbidgee,42.2
+2018-11,Males,Murrumbidgee,48.2
+2018-12,Males,Murrumbidgee,38.1
+2019-01,Males,Murrumbidgee,20.2
+2019-02,Males,Murrumbidgee,43.6
+2019-03,Males,Murrumbidgee,36.6
+2019-04,Males,Murrumbidgee,42.6
+2019-05,Males,Murrumbidgee,45.9
+2019-06,Males,Murrumbidgee,49.4
+2019-07,Males,Murrumbidgee,49.4
+2019-08,Males,Murrumbidgee,51.4
+2019-09,Males,Murrumbidgee,50.2
+2019-10,Males,Murrumbidgee,61.1
+2019-11,Males,Murrumbidgee,52.4
+2019-12,Males,Murrumbidgee,38.0
+2020-01,Males,Murrumbidgee,43.5
+2020-02,Males,Murrumbidgee,28.2
+2020-03,Males,Murrumbidgee,38.6
+2020-04,Males,Murrumbidgee,16.4
+2020-05,Males,Murrumbidgee,13.3
+2020-06,Males,Murrumbidgee,35.7
+2020-07,Males,Murrumbidgee,30.4
+2020-08,Males,Murrumbidgee,20.3
+2020-09,Males,Murrumbidgee,24.6
+2020-10,Males,Murrumbidgee,82.8
+2020-11,Males,Murrumbidgee,51.1
+2020-12,Males,Murrumbidgee,42.7
+2021-01,Males,Murrumbidgee,19.5
+2021-02,Males,Murrumbidgee,27.8
+2021-03,Males,Murrumbidgee,40.3
+2021-04,Males,Murrumbidgee,40.5
+2021-05,Males,Murrumbidgee,36.4
+2021-06,Males,Murrumbidgee,42.8
+2021-07,Males,Murrumbidgee,25.8
+2021-08,Males,Murrumbidgee,36.1
+2021-09,Males,Murrumbidgee,19.2
+2021-10,Males,Murrumbidgee,48.6
+2021-11,Males,Murrumbidgee,51.4
+2021-12,Males,Murrumbidgee,51.1
+2022-01,Males,Murrumbidgee,20.0
+2022-02,Males,Murrumbidgee,24.0
+2022-03,Males,Murrumbidgee,32.8
+2022-04,Males,Murrumbidgee,43.7
+2022-05,Males,Murrumbidgee,75.3
+2022-06,Males,Murrumbidgee,37.8
+2022-07,Males,Murrumbidgee,48.6
+2022-08,Males,Murrumbidgee,65.3
+2022-09,Males,Murrumbidgee,69.1
+2022-10,Males,Murrumbidgee,83.1
+2022-11,Males,Murrumbidgee,93.6
+2022-12,Males,Murrumbidgee,43.3
+2023-01,Males,Murrumbidgee,42.3
+2023-02,Males,Murrumbidgee,38.8
+2023-03,Males,Murrumbidgee,34.9
+2023-04,Males,Murrumbidgee,46.1
+2023-05,Males,Murrumbidgee,43.7
+2023-06,Males,Murrumbidgee,43.2
+2014-07,Males,Western NSW,28.2
+2014-08,Males,Western NSW,33.3
+2014-09,Males,Western NSW,29.1
+2014-10,Males,Western NSW,36.4
+2014-11,Males,Western NSW,43.4
+2014-12,Males,Western NSW,21.3
+2015-01,Males,Western NSW,18.4
+2015-02,Males,Western NSW,30.8
+2015-03,Males,Western NSW,29.3
+2015-04,Males,Western NSW,22.8
+2015-05,Males,Western NSW,48.6
+2015-06,Males,Western NSW,35.1
+2015-07,Males,Western NSW,44.8
+2015-08,Males,Western NSW,45.1
+2015-09,Males,Western NSW,38.3
+2015-10,Males,Western NSW,66.9
+2015-11,Males,Western NSW,58.2
+2015-12,Males,Western NSW,36.1
+2016-01,Males,Western NSW,28.2
+2016-02,Males,Western NSW,55.5
+2016-03,Males,Western NSW,44.4
+2016-04,Males,Western NSW,45.1
+2016-05,Males,Western NSW,59.9
+2016-06,Males,Western NSW,39.5
+2016-07,Males,Western NSW,40.2
+2016-08,Males,Western NSW,54.1
+2016-09,Males,Western NSW,41.5
+2016-10,Males,Western NSW,88.7
+2016-11,Males,Western NSW,90.3
+2016-12,Males,Western NSW,42.8
+2017-01,Males,Western NSW,25.5
+2017-02,Males,Western NSW,40.0
+2017-03,Males,Western NSW,48.5
+2017-04,Males,Western NSW,43.9
+2017-05,Males,Western NSW,71.5
+2017-06,Males,Western NSW,59.3
+2017-07,Males,Western NSW,51.0
+2017-08,Males,Western NSW,54.8
+2017-09,Males,Western NSW,51.9
+2017-10,Males,Western NSW,40.1
+2017-11,Males,Western NSW,47.9
+2017-12,Males,Western NSW,34.9
+2018-01,Males,Western NSW,17.2
+2018-02,Males,Western NSW,33.0
+2018-03,Males,Western NSW,38.4
+2018-04,Males,Western NSW,37.9
+2018-05,Males,Western NSW,47.3
+2018-06,Males,Western NSW,42.4
+2018-07,Males,Western NSW,41.3
+2018-08,Males,Western NSW,46.0
+2018-09,Males,Western NSW,42.7
+2018-10,Males,Western NSW,37.8
+2018-11,Males,Western NSW,46.4
+2018-12,Males,Western NSW,28.4
+2019-01,Males,Western NSW,22.7
+2019-02,Males,Western NSW,38.0
+2019-03,Males,Western NSW,48.2
+2019-04,Males,Western NSW,38.3
+2019-05,Males,Western NSW,52.8
+2019-06,Males,Western NSW,51.4
+2019-07,Males,Western NSW,51.3
+2019-08,Males,Western NSW,52.0
+2019-09,Males,Western NSW,45.8
+2019-10,Males,Western NSW,25.5
+2019-11,Males,Western NSW,44.3
+2019-12,Males,Western NSW,59.4
+2020-01,Males,Western NSW,22.4
+2020-02,Males,Western NSW,36.4
+2020-03,Males,Western NSW,43.1
+2020-04,Males,Western NSW,14.4
+2020-05,Males,Western NSW,18.2
+2020-06,Males,Western NSW,30.4
+2020-07,Males,Western NSW,26.4
+2020-08,Males,Western NSW,29.3
+2020-09,Males,Western NSW,29.0
+2020-10,Males,Western NSW,60.7
+2020-11,Males,Western NSW,86.5
+2020-12,Males,Western NSW,34.3
+2021-01,Males,Western NSW,20.9
+2021-02,Males,Western NSW,27.3
+2021-03,Males,Western NSW,48.6
+2021-04,Males,Western NSW,42.5
+2021-05,Males,Western NSW,72.8
+2021-06,Males,Western NSW,43.0
+2021-07,Males,Western NSW,35.9
+2021-08,Males,Western NSW,27.3
+2021-09,Males,Western NSW,15.8
+2021-10,Males,Western NSW,41.3
+2021-11,Males,Western NSW,60.0
+2021-12,Males,Western NSW,46.2
+2022-01,Males,Western NSW,19.7
+2022-02,Males,Western NSW,16.9
+2022-03,Males,Western NSW,48.7
+2022-04,Males,Western NSW,47.6
+2022-05,Males,Western NSW,74.9
+2022-06,Males,Western NSW,68.3
+2022-07,Males,Western NSW,47.6
+2022-08,Males,Western NSW,45.9
+2022-09,Males,Western NSW,75.2
+2022-10,Males,Western NSW,71.7
+2022-11,Males,Western NSW,72.0
+2022-12,Males,Western NSW,41.0
+2023-01,Males,Western NSW,23.7
+2023-02,Males,Western NSW,27.1
+2023-03,Males,Western NSW,51.0
+2023-04,Males,Western NSW,32.4
+2023-05,Males,Western NSW,50.0
+2023-06,Males,Western NSW,38.1
+2014-07,Females,Sydney,25.9
+2014-08,Females,Sydney,22.0
+2014-09,Females,Sydney,20.5
+2014-10,Females,Sydney,21.1
+2014-11,Females,Sydney,21.7
+2014-12,Females,Sydney,18.0
+2015-01,Females,Sydney,10.9
+2015-02,Females,Sydney,26.4
+2015-03,Females,Sydney,25.6
+2015-04,Females,Sydney,17.6
+2015-05,Females,Sydney,25.2
+2015-06,Females,Sydney,26.7
+2015-07,Females,Sydney,30.5
+2015-08,Females,Sydney,22.1
+2015-09,Females,Sydney,18.3
+2015-10,Females,Sydney,19.6
+2015-11,Females,Sydney,17.2
+2015-12,Females,Sydney,14.3
+2016-01,Females,Sydney,15.0
+2016-02,Females,Sydney,19.3
+2016-03,Females,Sydney,20.1
+2016-04,Females,Sydney,21.9
+2016-05,Females,Sydney,28.3
+2016-06,Females,Sydney,23.3
+2016-07,Females,Sydney,23.6
+2016-08,Females,Sydney,23.6
+2016-09,Females,Sydney,21.2
+2016-10,Females,Sydney,17.6
+2016-11,Females,Sydney,11.4
+2016-12,Females,Sydney,15.2
+2017-01,Females,Sydney,12.2
+2017-02,Females,Sydney,22.0
+2017-03,Females,Sydney,27.3
+2017-04,Females,Sydney,25.3
+2017-05,Females,Sydney,30.8
+2017-06,Females,Sydney,24.5
+2017-07,Females,Sydney,18.9
+2017-08,Females,Sydney,17.0
+2017-09,Females,Sydney,15.7
+2017-10,Females,Sydney,10.6
+2017-11,Females,Sydney,16.3
+2017-12,Females,Sydney,12.1
+2018-01,Females,Sydney,13.1
+2018-02,Females,Sydney,18.7
+2018-03,Females,Sydney,14.3
+2018-04,Females,Sydney,20.2
+2018-05,Females,Sydney,32.0
+2018-06,Females,Sydney,19.5
+2018-07,Females,Sydney,15.1
+2018-08,Females,Sydney,16.0
+2018-09,Females,Sydney,14.1
+2018-10,Females,Sydney,24.7
+2018-11,Females,Sydney,17.1
+2018-12,Females,Sydney,16.6
+2019-01,Females,Sydney,15.5
+2019-02,Females,Sydney,22.0
+2019-03,Females,Sydney,18.1
+2019-04,Females,Sydney,20.5
+2019-05,Females,Sydney,28.2
+2019-06,Females,Sydney,24.8
+2019-07,Females,Sydney,17.2
+2019-08,Females,Sydney,17.2
+2019-09,Females,Sydney,14.6
+2019-10,Females,Sydney,15.0
+2019-11,Females,Sydney,24.5
+2019-12,Females,Sydney,22.3
+2020-01,Females,Sydney,13.3
+2020-02,Females,Sydney,16.4
+2020-03,Females,Sydney,23.7
+2020-04,Females,Sydney,9.5
+2020-05,Females,Sydney,8.1
+2020-06,Females,Sydney,17.6
+2020-07,Females,Sydney,14.9
+2020-08,Females,Sydney,17.0
+2020-09,Females,Sydney,13.3
+2020-10,Females,Sydney,10.9
+2020-11,Females,Sydney,16.5
+2020-12,Females,Sydney,10.0
+2021-01,Females,Sydney,8.0
+2021-02,Females,Sydney,15.7
+2021-03,Females,Sydney,19.5
+2021-04,Females,Sydney,14.4
+2021-05,Females,Sydney,26.0
+2021-06,Females,Sydney,19.2
+2021-07,Females,Sydney,8.9
+2021-08,Females,Sydney,5.9
+2021-09,Females,Sydney,8.3
+2021-10,Females,Sydney,7.2
+2021-11,Females,Sydney,9.7
+2021-12,Females,Sydney,8.8
+2022-01,Females,Sydney,7.0
+2022-02,Females,Sydney,8.1
+2022-03,Females,Sydney,19.2
+2022-04,Females,Sydney,23.1
+2022-05,Females,Sydney,28.9
+2022-06,Females,Sydney,20.9
+2022-07,Females,Sydney,14.6
+2022-08,Females,Sydney,21.3
+2022-09,Females,Sydney,18.9
+2022-10,Females,Sydney,16.5
+2022-11,Females,Sydney,17.2
+2022-12,Females,Sydney,13.6
+2023-01,Females,Sydney,9.6
+2023-02,Females,Sydney,18.1
+2023-03,Females,Sydney,14.9
+2023-04,Females,Sydney,19.4
+2023-05,Females,Sydney,25.1
+2023-06,Females,Sydney,16.9
+2014-07,Females,South Western Sydney,28.1
+2014-08,Females,South Western Sydney,32.2
+2014-09,Females,South Western Sydney,23.7
+2014-10,Females,South Western Sydney,24.0
+2014-11,Females,South Western Sydney,19.9
+2014-12,Females,South Western Sydney,23.8
+2015-01,Females,South Western Sydney,17.6
+2015-02,Females,South Western Sydney,28.6
+2015-03,Females,South Western Sydney,32.6
+2015-04,Females,South Western Sydney,29.4
+2015-05,Females,South Western Sydney,44.9
+2015-06,Females,South Western Sydney,34.9
+2015-07,Females,South Western Sydney,29.7
+2015-08,Females,South Western Sydney,31.3
+2015-09,Females,South Western Sydney,29.7
+2015-10,Females,South Western Sydney,22.5
+2015-11,Females,South Western Sydney,23.4
+2015-12,Females,South Western Sydney,20.8
+2016-01,Females,South Western Sydney,19.2
+2016-02,Females,South Western Sydney,32.1
+2016-03,Females,South Western Sydney,35.9
+2016-04,Females,South Western Sydney,23.4
+2016-05,Females,South Western Sydney,32.0
+2016-06,Females,South Western Sydney,33.0
+2016-07,Females,South Western Sydney,24.5
+2016-08,Females,South Western Sydney,27.8
+2016-09,Females,South Western Sydney,28.6
+2016-10,Females,South Western Sydney,22.4
+2016-11,Females,South Western Sydney,23.3
+2016-12,Females,South Western Sydney,23.8
+2017-01,Females,South Western Sydney,16.5
+2017-02,Females,South Western Sydney,28.3
+2017-03,Females,South Western Sydney,28.1
+2017-04,Females,South Western Sydney,31.8
+2017-05,Females,South Western Sydney,37.5
+2017-06,Females,South Western Sydney,36.9
+2017-07,Females,South Western Sydney,28.2
+2017-08,Females,South Western Sydney,25.0
+2017-09,Females,South Western Sydney,23.6
+2017-10,Females,South Western Sydney,21.2
+2017-11,Females,South Western Sydney,19.4
+2017-12,Females,South Western Sydney,15.2
+2018-01,Females,South Western Sydney,16.5
+2018-02,Females,South Western Sydney,23.3
+2018-03,Females,South Western Sydney,28.5
+2018-04,Females,South Western Sydney,24.3
+2018-05,Females,South Western Sydney,37.2
+2018-06,Females,South Western Sydney,28.5
+2018-07,Females,South Western Sydney,24.5
+2018-08,Females,South Western Sydney,23.0
+2018-09,Females,South Western Sydney,24.0
+2018-10,Females,South Western Sydney,18.9
+2018-11,Females,South Western Sydney,22.2
+2018-12,Females,South Western Sydney,20.7
+2019-01,Females,South Western Sydney,15.3
+2019-02,Females,South Western Sydney,32.9
+2019-03,Females,South Western Sydney,27.1
+2019-04,Females,South Western Sydney,27.7
+2019-05,Females,South Western Sydney,36.3
+2019-06,Females,South Western Sydney,32.3
+2019-07,Females,South Western Sydney,24.8
+2019-08,Females,South Western Sydney,24.8
+2019-09,Females,South Western Sydney,24.8
+2019-10,Females,South Western Sydney,19.2
+2019-11,Females,South Western Sydney,26.6
+2019-12,Females,South Western Sydney,31.1
+2020-01,Females,South Western Sydney,23.1
+2020-02,Females,South Western Sydney,22.3
+2020-03,Females,South Western Sydney,28.3
+2020-04,Females,South Western Sydney,13.6
+2020-05,Females,South Western Sydney,9.3
+2020-06,Females,South Western Sydney,19.7
+2020-07,Females,South Western Sydney,15.8
+2020-08,Females,South Western Sydney,17.8
+2020-09,Females,South Western Sydney,13.6
+2020-10,Females,South Western Sydney,17.3
+2020-11,Females,South Western Sydney,14.1
+2020-12,Females,South Western Sydney,13.6
+2021-01,Females,South Western Sydney,11.3
+2021-02,Females,South Western Sydney,16.7
+2021-03,Females,South Western Sydney,23.0
+2021-04,Females,South Western Sydney,22.0
+2021-05,Females,South Western Sydney,31.0
+2021-06,Females,South Western Sydney,23.8
+2021-07,Females,South Western Sydney,14.8
+2021-08,Females,South Western Sydney,8.8
+2021-09,Females,South Western Sydney,6.8
+2021-10,Females,South Western Sydney,5.9
+2021-11,Females,South Western Sydney,16.0
+2021-12,Females,South Western Sydney,10.8
+2022-01,Females,South Western Sydney,9.6
+2022-02,Females,South Western Sydney,18.6
+2022-03,Females,South Western Sydney,30.6
+2022-04,Females,South Western Sydney,30.1
+2022-05,Females,South Western Sydney,39.5
+2022-06,Females,South Western Sydney,26.9
+2022-07,Females,South Western Sydney,27.1
+2022-08,Females,South Western Sydney,25.0
+2022-09,Females,South Western Sydney,21.2
+2022-10,Females,South Western Sydney,19.6
+2022-11,Females,South Western Sydney,17.2
+2022-12,Females,South Western Sydney,14.1
+2023-01,Females,South Western Sydney,11.7
+2023-02,Females,South Western Sydney,21.0
+2023-03,Females,South Western Sydney,22.0
+2023-04,Females,South Western Sydney,26.5
+2023-05,Females,South Western Sydney,25.5
+2023-06,Females,South Western Sydney,18.9
+2014-07,Females,South Eastern Sydney,24.7
+2014-08,Females,South Eastern Sydney,27.6
+2014-09,Females,South Eastern Sydney,22.6
+2014-10,Females,South Eastern Sydney,15.9
+2014-11,Females,South Eastern Sydney,21.1
+2014-12,Females,South Eastern Sydney,24.0
+2015-01,Females,South Eastern Sydney,12.2
+2015-02,Females,South Eastern Sydney,20.3
+2015-03,Females,South Eastern Sydney,26.2
+2015-04,Females,South Eastern Sydney,24.5
+2015-05,Females,South Eastern Sydney,28.8
+2015-06,Females,South Eastern Sydney,31.0
+2015-07,Females,South Eastern Sydney,26.7
+2015-08,Females,South Eastern Sydney,24.4
+2015-09,Females,South Eastern Sydney,15.8
+2015-10,Females,South Eastern Sydney,17.0
+2015-11,Females,South Eastern Sydney,19.4
+2015-12,Females,South Eastern Sydney,13.0
+2016-01,Females,South Eastern Sydney,16.7
+2016-02,Females,South Eastern Sydney,26.5
+2016-03,Females,South Eastern Sydney,21.8
+2016-04,Females,South Eastern Sydney,21.6
+2016-05,Females,South Eastern Sydney,26.5
+2016-06,Females,South Eastern Sydney,23.2
+2016-07,Females,South Eastern Sydney,16.3
+2016-08,Females,South Eastern Sydney,23.6
+2016-09,Females,South Eastern Sydney,21.8
+2016-10,Females,South Eastern Sydney,15.9
+2016-11,Females,South Eastern Sydney,16.1
+2016-12,Females,South Eastern Sydney,17.4
+2017-01,Females,South Eastern Sydney,13.6
+2017-02,Females,South Eastern Sydney,20.7
+2017-03,Females,South Eastern Sydney,24.0
+2017-04,Females,South Eastern Sydney,22.6
+2017-05,Females,South Eastern Sydney,32.1
+2017-06,Females,South Eastern Sydney,25.3
+2017-07,Females,South Eastern Sydney,23.7
+2017-08,Females,South Eastern Sydney,22.5
+2017-09,Females,South Eastern Sydney,15.8
+2017-10,Females,South Eastern Sydney,16.2
+2017-11,Females,South Eastern Sydney,14.5
+2017-12,Females,South Eastern Sydney,14.2
+2018-01,Females,South Eastern Sydney,11.4
+2018-02,Females,South Eastern Sydney,20.0
+2018-03,Females,South Eastern Sydney,15.2
+2018-04,Females,South Eastern Sydney,20.9
+2018-05,Females,South Eastern Sydney,24.4
+2018-06,Females,South Eastern Sydney,17.5
+2018-07,Females,South Eastern Sydney,24.4
+2018-08,Females,South Eastern Sydney,19.7
+2018-09,Females,South Eastern Sydney,17.4
+2018-10,Females,South Eastern Sydney,15.7
+2018-11,Females,South Eastern Sydney,19.2
+2018-12,Females,South Eastern Sydney,17.8
+2019-01,Females,South Eastern Sydney,12.9
+2019-02,Females,South Eastern Sydney,19.9
+2019-03,Females,South Eastern Sydney,23.0
+2019-04,Females,South Eastern Sydney,22.8
+2019-05,Females,South Eastern Sydney,24.3
+2019-06,Females,South Eastern Sydney,23.7
+2019-07,Females,South Eastern Sydney,21.9
+2019-08,Females,South Eastern Sydney,24.5
+2019-09,Females,South Eastern Sydney,19.2
+2019-10,Females,South Eastern Sydney,14.1
+2019-11,Females,South Eastern Sydney,23.4
+2019-12,Females,South Eastern Sydney,29.7
+2020-01,Females,South Eastern Sydney,17.8
+2020-02,Females,South Eastern Sydney,19.8
+2020-03,Females,South Eastern Sydney,21.5
+2020-04,Females,South Eastern Sydney,9.2
+2020-05,Females,South Eastern Sydney,10.1
+2020-06,Females,South Eastern Sydney,20.0
+2020-07,Females,South Eastern Sydney,12.2
+2020-08,Females,South Eastern Sydney,11.4
+2020-09,Females,South Eastern Sydney,12.2
+2020-10,Females,South Eastern Sydney,11.0
+2020-11,Females,South Eastern Sydney,14.6
+2020-12,Females,South Eastern Sydney,12.1
+2021-01,Females,South Eastern Sydney,8.9
+2021-02,Females,South Eastern Sydney,18.7
+2021-03,Females,South Eastern Sydney,15.5
+2021-04,Females,South Eastern Sydney,17.0
+2021-05,Females,South Eastern Sydney,23.7
+2021-06,Females,South Eastern Sydney,22.2
+2021-07,Females,South Eastern Sydney,10.6
+2021-08,Females,South Eastern Sydney,8.5
+2021-09,Females,South Eastern Sydney,6.6
+2021-10,Females,South Eastern Sydney,8.5
+2021-11,Females,South Eastern Sydney,8.6
+2021-12,Females,South Eastern Sydney,10.5
+2022-01,Females,South Eastern Sydney,9.7
+2022-02,Females,South Eastern Sydney,9.4
+2022-03,Females,South Eastern Sydney,20.4
+2022-04,Females,South Eastern Sydney,26.8
+2022-05,Females,South Eastern Sydney,30.7
+2022-06,Females,South Eastern Sydney,28.8
+2022-07,Females,South Eastern Sydney,16.4
+2022-08,Females,South Eastern Sydney,29.7
+2022-09,Females,South Eastern Sydney,20.7
+2022-10,Females,South Eastern Sydney,17.8
+2022-11,Females,South Eastern Sydney,15.7
+2022-12,Females,South Eastern Sydney,12.8
+2023-01,Females,South Eastern Sydney,11.3
+2023-02,Females,South Eastern Sydney,19.6
+2023-03,Females,South Eastern Sydney,15.9
+2023-04,Females,South Eastern Sydney,22.3
+2023-05,Females,South Eastern Sydney,23.6
+2023-06,Females,South Eastern Sydney,12.5
+2014-07,Females,Illawarra Shoalhaven,42.1
+2014-08,Females,Illawarra Shoalhaven,39.6
+2014-09,Females,Illawarra Shoalhaven,30.8
+2014-10,Females,Illawarra Shoalhaven,21.1
+2014-11,Females,Illawarra Shoalhaven,29.0
+2014-12,Females,Illawarra Shoalhaven,21.9
+2015-01,Females,Illawarra Shoalhaven,25.0
+2015-02,Females,Illawarra Shoalhaven,33.1
+2015-03,Females,Illawarra Shoalhaven,42.0
+2015-04,Females,Illawarra Shoalhaven,32.8
+2015-05,Females,Illawarra Shoalhaven,49.5
+2015-06,Females,Illawarra Shoalhaven,42.1
+2015-07,Females,Illawarra Shoalhaven,42.5
+2015-08,Females,Illawarra Shoalhaven,51.5
+2015-09,Females,Illawarra Shoalhaven,35.5
+2015-10,Females,Illawarra Shoalhaven,20.2
+2015-11,Females,Illawarra Shoalhaven,32.8
+2015-12,Females,Illawarra Shoalhaven,24.3
+2016-01,Females,Illawarra Shoalhaven,26.8
+2016-02,Females,Illawarra Shoalhaven,42.6
+2016-03,Females,Illawarra Shoalhaven,43.8
+2016-04,Females,Illawarra Shoalhaven,42.7
+2016-05,Females,Illawarra Shoalhaven,46.1
+2016-06,Females,Illawarra Shoalhaven,48.3
+2016-07,Females,Illawarra Shoalhaven,40.5
+2016-08,Females,Illawarra Shoalhaven,42.0
+2016-09,Females,Illawarra Shoalhaven,36.8
+2016-10,Females,Illawarra Shoalhaven,37.9
+2016-11,Females,Illawarra Shoalhaven,31.2
+2016-12,Females,Illawarra Shoalhaven,33.2
+2017-01,Females,Illawarra Shoalhaven,25.9
+2017-02,Females,Illawarra Shoalhaven,43.5
+2017-03,Females,Illawarra Shoalhaven,45.1
+2017-04,Females,Illawarra Shoalhaven,39.6
+2017-05,Females,Illawarra Shoalhaven,39.7
+2017-06,Females,Illawarra Shoalhaven,40.7
+2017-07,Females,Illawarra Shoalhaven,41.1
+2017-08,Females,Illawarra Shoalhaven,40.4
+2017-09,Females,Illawarra Shoalhaven,35.2
+2017-10,Females,Illawarra Shoalhaven,24.4
+2017-11,Females,Illawarra Shoalhaven,34.0
+2017-12,Females,Illawarra Shoalhaven,27.0
+2018-01,Females,Illawarra Shoalhaven,21.9
+2018-02,Females,Illawarra Shoalhaven,40.8
+2018-03,Females,Illawarra Shoalhaven,31.5
+2018-04,Females,Illawarra Shoalhaven,33.3
+2018-05,Females,Illawarra Shoalhaven,29.5
+2018-06,Females,Illawarra Shoalhaven,30.6
+2018-07,Females,Illawarra Shoalhaven,31.6
+2018-08,Females,Illawarra Shoalhaven,28.5
+2018-09,Females,Illawarra Shoalhaven,29.2
+2018-10,Females,Illawarra Shoalhaven,29.8
+2018-11,Females,Illawarra Shoalhaven,20.8
+2018-12,Females,Illawarra Shoalhaven,36.4
+2019-01,Females,Illawarra Shoalhaven,31.0
+2019-02,Females,Illawarra Shoalhaven,33.8
+2019-03,Females,Illawarra Shoalhaven,26.6
+2019-04,Females,Illawarra Shoalhaven,38.6
+2019-05,Females,Illawarra Shoalhaven,38.9
+2019-06,Females,Illawarra Shoalhaven,47.0
+2019-07,Females,Illawarra Shoalhaven,33.4
+2019-08,Females,Illawarra Shoalhaven,29.5
+2019-09,Females,Illawarra Shoalhaven,22.9
+2019-10,Females,Illawarra Shoalhaven,29.0
+2019-11,Females,Illawarra Shoalhaven,29.6
+2019-12,Females,Illawarra Shoalhaven,31.2
+2020-01,Females,Illawarra Shoalhaven,35.4
+2020-02,Females,Illawarra Shoalhaven,27.4
+2020-03,Females,Illawarra Shoalhaven,43.8
+2020-04,Females,Illawarra Shoalhaven,18.0
+2020-05,Females,Illawarra Shoalhaven,13.4
+2020-06,Females,Illawarra Shoalhaven,25.8
+2020-07,Females,Illawarra Shoalhaven,19.7
+2020-08,Females,Illawarra Shoalhaven,26.4
+2020-09,Females,Illawarra Shoalhaven,22.1
+2020-10,Females,Illawarra Shoalhaven,23.2
+2020-11,Females,Illawarra Shoalhaven,19.2
+2020-12,Females,Illawarra Shoalhaven,19.9
+2021-01,Females,Illawarra Shoalhaven,12.4
+2021-02,Females,Illawarra Shoalhaven,22.2
+2021-03,Females,Illawarra Shoalhaven,24.9
+2021-04,Females,Illawarra Shoalhaven,27.7
+2021-05,Females,Illawarra Shoalhaven,35.5
+2021-06,Females,Illawarra Shoalhaven,41.1
+2021-07,Females,Illawarra Shoalhaven,20.1
+2021-08,Females,Illawarra Shoalhaven,16.0
+2021-09,Females,Illawarra Shoalhaven,10.9
+2021-10,Females,Illawarra Shoalhaven,11.6
+2021-11,Females,Illawarra Shoalhaven,21.8
+2021-12,Females,Illawarra Shoalhaven,17.5
+2022-01,Females,Illawarra Shoalhaven,13.1
+2022-02,Females,Illawarra Shoalhaven,14.3
+2022-03,Females,Illawarra Shoalhaven,25.2
+2022-04,Females,Illawarra Shoalhaven,32.7
+2022-05,Females,Illawarra Shoalhaven,40.8
+2022-06,Females,Illawarra Shoalhaven,38.3
+2022-07,Females,Illawarra Shoalhaven,21.6
+2022-08,Females,Illawarra Shoalhaven,24.0
+2022-09,Females,Illawarra Shoalhaven,33.0
+2022-10,Females,Illawarra Shoalhaven,26.4
+2022-11,Females,Illawarra Shoalhaven,20.4
+2022-12,Females,Illawarra Shoalhaven,15.8
+2023-01,Females,Illawarra Shoalhaven,15.1
+2023-02,Females,Illawarra Shoalhaven,22.3
+2023-03,Females,Illawarra Shoalhaven,22.6
+2023-04,Females,Illawarra Shoalhaven,22.7
+2023-05,Females,Illawarra Shoalhaven,26.3
+2023-06,Females,Illawarra Shoalhaven,18.2
+2014-07,Females,Western Sydney,35.0
+2014-08,Females,Western Sydney,27.0
+2014-09,Females,Western Sydney,21.4
+2014-10,Females,Western Sydney,21.3
+2014-11,Females,Western Sydney,21.0
+2014-12,Females,Western Sydney,19.7
+2015-01,Females,Western Sydney,17.9
+2015-02,Females,Western Sydney,26.3
+2015-03,Females,Western Sydney,29.2
+2015-04,Females,Western Sydney,25.1
+2015-05,Females,Western Sydney,33.6
+2015-06,Females,Western Sydney,27.6
+2015-07,Females,Western Sydney,30.2
+2015-08,Females,Western Sydney,29.0
+2015-09,Females,Western Sydney,23.4
+2015-10,Females,Western Sydney,21.9
+2015-11,Females,Western Sydney,21.8
+2015-12,Females,Western Sydney,19.5
+2016-01,Females,Western Sydney,17.4
+2016-02,Females,Western Sydney,28.4
+2016-03,Females,Western Sydney,26.0
+2016-04,Females,Western Sydney,26.7
+2016-05,Females,Western Sydney,31.1
+2016-06,Females,Western Sydney,28.4
+2016-07,Females,Western Sydney,23.6
+2016-08,Females,Western Sydney,30.1
+2016-09,Females,Western Sydney,27.8
+2016-10,Females,Western Sydney,18.4
+2016-11,Females,Western Sydney,17.5
+2016-12,Females,Western Sydney,17.7
+2017-01,Females,Western Sydney,16.3
+2017-02,Females,Western Sydney,22.9
+2017-03,Females,Western Sydney,23.9
+2017-04,Females,Western Sydney,28.3
+2017-05,Females,Western Sydney,36.9
+2017-06,Females,Western Sydney,32.8
+2017-07,Females,Western Sydney,29.6
+2017-08,Females,Western Sydney,26.2
+2017-09,Females,Western Sydney,24.5
+2017-10,Females,Western Sydney,18.2
+2017-11,Females,Western Sydney,18.6
+2017-12,Females,Western Sydney,18.8
+2018-01,Females,Western Sydney,17.6
+2018-02,Females,Western Sydney,21.7
+2018-03,Females,Western Sydney,21.0
+2018-04,Females,Western Sydney,22.6
+2018-05,Females,Western Sydney,27.9
+2018-06,Females,Western Sydney,23.2
+2018-07,Females,Western Sydney,23.2
+2018-08,Females,Western Sydney,19.4
+2018-09,Females,Western Sydney,21.4
+2018-10,Females,Western Sydney,18.3
+2018-11,Females,Western Sydney,20.6
+2018-12,Females,Western Sydney,18.0
+2019-01,Females,Western Sydney,19.1
+2019-02,Females,Western Sydney,20.3
+2019-03,Females,Western Sydney,28.1
+2019-04,Females,Western Sydney,23.8
+2019-05,Females,Western Sydney,32.2
+2019-06,Females,Western Sydney,32.9
+2019-07,Females,Western Sydney,22.7
+2019-08,Females,Western Sydney,29.3
+2019-09,Females,Western Sydney,22.5
+2019-10,Females,Western Sydney,21.1
+2019-11,Females,Western Sydney,23.7
+2019-12,Females,Western Sydney,27.2
+2020-01,Females,Western Sydney,16.1
+2020-02,Females,Western Sydney,18.8
+2020-03,Females,Western Sydney,22.0
+2020-04,Females,Western Sydney,11.7
+2020-05,Females,Western Sydney,8.8
+2020-06,Females,Western Sydney,20.2
+2020-07,Females,Western Sydney,14.5
+2020-08,Females,Western Sydney,14.1
+2020-09,Females,Western Sydney,14.8
+2020-10,Females,Western Sydney,10.1
+2020-11,Females,Western Sydney,15.0
+2020-12,Females,Western Sydney,11.5
+2021-01,Females,Western Sydney,7.6
+2021-02,Females,Western Sydney,16.0
+2021-03,Females,Western Sydney,17.0
+2021-04,Females,Western Sydney,17.7
+2021-05,Females,Western Sydney,23.0
+2021-06,Females,Western Sydney,22.8
+2021-07,Females,Western Sydney,10.5
+2021-08,Females,Western Sydney,8.1
+2021-09,Females,Western Sydney,5.2
+2021-10,Females,Western Sydney,8.7
+2021-11,Females,Western Sydney,12.2
+2021-12,Females,Western Sydney,10.4
+2022-01,Females,Western Sydney,10.9
+2022-02,Females,Western Sydney,14.0
+2022-03,Females,Western Sydney,21.7
+2022-04,Females,Western Sydney,31.6
+2022-05,Females,Western Sydney,32.4
+2022-06,Females,Western Sydney,23.1
+2022-07,Females,Western Sydney,17.0
+2022-08,Females,Western Sydney,27.4
+2022-09,Females,Western Sydney,17.7
+2022-10,Females,Western Sydney,19.0
+2022-11,Females,Western Sydney,16.3
+2022-12,Females,Western Sydney,15.1
+2023-01,Females,Western Sydney,11.9
+2023-02,Females,Western Sydney,19.3
+2023-03,Females,Western Sydney,16.2
+2023-04,Females,Western Sydney,22.1
+2023-05,Females,Western Sydney,22.9
+2023-06,Females,Western Sydney,15.3
+2014-07,Females,Nepean Blue Mountains,49.1
+2014-08,Females,Nepean Blue Mountains,41.1
+2014-09,Females,Nepean Blue Mountains,39.8
+2014-10,Females,Nepean Blue Mountains,33.6
+2014-11,Females,Nepean Blue Mountains,33.1
+2014-12,Females,Nepean Blue Mountains,32.2
+2015-01,Females,Nepean Blue Mountains,24.7
+2015-02,Females,Nepean Blue Mountains,29.7
+2015-03,Females,Nepean Blue Mountains,36.0
+2015-04,Females,Nepean Blue Mountains,37.8
+2015-05,Females,Nepean Blue Mountains,40.4
+2015-06,Females,Nepean Blue Mountains,48.1
+2015-07,Females,Nepean Blue Mountains,38.8
+2015-08,Females,Nepean Blue Mountains,44.0
+2015-09,Females,Nepean Blue Mountains,25.7
+2015-10,Females,Nepean Blue Mountains,37.2
+2015-11,Females,Nepean Blue Mountains,25.9
+2015-12,Females,Nepean Blue Mountains,19.0
+2016-01,Females,Nepean Blue Mountains,26.3
+2016-02,Females,Nepean Blue Mountains,44.7
+2016-03,Females,Nepean Blue Mountains,33.8
+2016-04,Females,Nepean Blue Mountains,31.6
+2016-05,Females,Nepean Blue Mountains,45.8
+2016-06,Females,Nepean Blue Mountains,26.3
+2016-07,Females,Nepean Blue Mountains,38.0
+2016-08,Females,Nepean Blue Mountains,40.2
+2016-09,Females,Nepean Blue Mountains,36.5
+2016-10,Females,Nepean Blue Mountains,25.8
+2016-11,Females,Nepean Blue Mountains,30.4
+2016-12,Females,Nepean Blue Mountains,28.3
+2017-01,Females,Nepean Blue Mountains,23.7
+2017-02,Females,Nepean Blue Mountains,23.4
+2017-03,Females,Nepean Blue Mountains,39.8
+2017-04,Females,Nepean Blue Mountains,48.8
+2017-05,Females,Nepean Blue Mountains,58.1
+2017-06,Females,Nepean Blue Mountains,45.6
+2017-07,Females,Nepean Blue Mountains,47.9
+2017-08,Females,Nepean Blue Mountains,36.1
+2017-09,Females,Nepean Blue Mountains,31.8
+2017-10,Females,Nepean Blue Mountains,37.0
+2017-11,Females,Nepean Blue Mountains,31.9
+2017-12,Females,Nepean Blue Mountains,27.2
+2018-01,Females,Nepean Blue Mountains,21.3
+2018-02,Females,Nepean Blue Mountains,25.0
+2018-03,Females,Nepean Blue Mountains,43.7
+2018-04,Females,Nepean Blue Mountains,24.1
+2018-05,Females,Nepean Blue Mountains,34.4
+2018-06,Females,Nepean Blue Mountains,35.9
+2018-07,Females,Nepean Blue Mountains,30.7
+2018-08,Females,Nepean Blue Mountains,36.7
+2018-09,Females,Nepean Blue Mountains,33.8
+2018-10,Females,Nepean Blue Mountains,26.4
+2018-11,Females,Nepean Blue Mountains,31.8
+2018-12,Females,Nepean Blue Mountains,24.6
+2019-01,Females,Nepean Blue Mountains,23.0
+2019-02,Females,Nepean Blue Mountains,33.5
+2019-03,Females,Nepean Blue Mountains,37.7
+2019-04,Females,Nepean Blue Mountains,35.7
+2019-05,Females,Nepean Blue Mountains,47.6
+2019-06,Females,Nepean Blue Mountains,43.6
+2019-07,Females,Nepean Blue Mountains,36.6
+2019-08,Females,Nepean Blue Mountains,30.9
+2019-09,Females,Nepean Blue Mountains,33.9
+2019-10,Females,Nepean Blue Mountains,21.7
+2019-11,Females,Nepean Blue Mountains,37.1
+2019-12,Females,Nepean Blue Mountains,47.7
+2020-01,Females,Nepean Blue Mountains,24.4
+2020-02,Females,Nepean Blue Mountains,25.1
+2020-03,Females,Nepean Blue Mountains,40.5
+2020-04,Females,Nepean Blue Mountains,16.6
+2020-05,Females,Nepean Blue Mountains,12.6
+2020-06,Females,Nepean Blue Mountains,38.9
+2020-07,Females,Nepean Blue Mountains,16.6
+2020-08,Females,Nepean Blue Mountains,19.1
+2020-09,Females,Nepean Blue Mountains,18.3
+2020-10,Females,Nepean Blue Mountains,23.0
+2020-11,Females,Nepean Blue Mountains,20.2
+2020-12,Females,Nepean Blue Mountains,18.8
+2021-01,Females,Nepean Blue Mountains,9.7
+2021-02,Females,Nepean Blue Mountains,22.5
+2021-03,Females,Nepean Blue Mountains,32.4
+2021-04,Females,Nepean Blue Mountains,24.9
+2021-05,Females,Nepean Blue Mountains,32.1
+2021-06,Females,Nepean Blue Mountains,30.8
+2021-07,Females,Nepean Blue Mountains,24.8
+2021-08,Females,Nepean Blue Mountains,14.2
+2021-09,Females,Nepean Blue Mountains,10.2
+2021-10,Females,Nepean Blue Mountains,12.2
+2021-11,Females,Nepean Blue Mountains,10.6
+2021-12,Females,Nepean Blue Mountains,12.9
+2022-01,Females,Nepean Blue Mountains,20.3
+2022-02,Females,Nepean Blue Mountains,15.2
+2022-03,Females,Nepean Blue Mountains,36.2
+2022-04,Females,Nepean Blue Mountains,36.3
+2022-05,Females,Nepean Blue Mountains,48.0
+2022-06,Females,Nepean Blue Mountains,31.9
+2022-07,Females,Nepean Blue Mountains,22.7
+2022-08,Females,Nepean Blue Mountains,30.9
+2022-09,Females,Nepean Blue Mountains,31.9
+2022-10,Females,Nepean Blue Mountains,25.4
+2022-11,Females,Nepean Blue Mountains,19.4
+2022-12,Females,Nepean Blue Mountains,18.6
+2023-01,Females,Nepean Blue Mountains,15.0
+2023-02,Females,Nepean Blue Mountains,20.1
+2023-03,Females,Nepean Blue Mountains,16.3
+2023-04,Females,Nepean Blue Mountains,29.0
+2023-05,Females,Nepean Blue Mountains,33.0
+2023-06,Females,Nepean Blue Mountains,30.0
+2014-07,Females,Northern Sydney,18.2
+2014-08,Females,Northern Sydney,21.3
+2014-09,Females,Northern Sydney,18.0
+2014-10,Females,Northern Sydney,14.9
+2014-11,Females,Northern Sydney,11.7
+2014-12,Females,Northern Sydney,14.8
+2015-01,Females,Northern Sydney,10.7
+2015-02,Females,Northern Sydney,19.5
+2015-03,Females,Northern Sydney,29.6
+2015-04,Females,Northern Sydney,23.6
+2015-05,Females,Northern Sydney,23.2
+2015-06,Females,Northern Sydney,15.4
+2015-07,Females,Northern Sydney,15.7
+2015-08,Females,Northern Sydney,18.3
+2015-09,Females,Northern Sydney,14.1
+2015-10,Females,Northern Sydney,15.8
+2015-11,Females,Northern Sydney,15.1
+2015-12,Females,Northern Sydney,16.4
+2016-01,Females,Northern Sydney,13.5
+2016-02,Females,Northern Sydney,20.9
+2016-03,Females,Northern Sydney,20.1
+2016-04,Females,Northern Sydney,14.0
+2016-05,Females,Northern Sydney,25.9
+2016-06,Females,Northern Sydney,21.0
+2016-07,Females,Northern Sydney,17.5
+2016-08,Females,Northern Sydney,19.1
+2016-09,Females,Northern Sydney,17.1
+2016-10,Females,Northern Sydney,14.4
+2016-11,Females,Northern Sydney,13.7
+2016-12,Females,Northern Sydney,17.0
+2017-01,Females,Northern Sydney,13.6
+2017-02,Females,Northern Sydney,14.4
+2017-03,Females,Northern Sydney,17.5
+2017-04,Females,Northern Sydney,21.6
+2017-05,Females,Northern Sydney,30.8
+2017-06,Females,Northern Sydney,18.3
+2017-07,Females,Northern Sydney,19.2
+2017-08,Females,Northern Sydney,18.6
+2017-09,Females,Northern Sydney,15.3
+2017-10,Females,Northern Sydney,12.8
+2017-11,Females,Northern Sydney,20.2
+2017-12,Females,Northern Sydney,15.1
+2018-01,Females,Northern Sydney,12.2
+2018-02,Females,Northern Sydney,16.4
+2018-03,Females,Northern Sydney,17.4
+2018-04,Females,Northern Sydney,12.1
+2018-05,Females,Northern Sydney,20.9
+2018-06,Females,Northern Sydney,15.0
+2018-07,Females,Northern Sydney,12.1
+2018-08,Females,Northern Sydney,11.5
+2018-09,Females,Northern Sydney,14.3
+2018-10,Females,Northern Sydney,14.2
+2018-11,Females,Northern Sydney,14.6
+2018-12,Females,Northern Sydney,11.0
+2019-01,Females,Northern Sydney,11.7
+2019-02,Females,Northern Sydney,20.9
+2019-03,Females,Northern Sydney,18.5
+2019-04,Females,Northern Sydney,20.0
+2019-05,Females,Northern Sydney,21.6
+2019-06,Females,Northern Sydney,24.4
+2019-07,Females,Northern Sydney,14.5
+2019-08,Females,Northern Sydney,14.7
+2019-09,Females,Northern Sydney,14.1
+2019-10,Females,Northern Sydney,14.7
+2019-11,Females,Northern Sydney,20.2
+2019-12,Females,Northern Sydney,24.9
+2020-01,Females,Northern Sydney,12.9
+2020-02,Females,Northern Sydney,15.7
+2020-03,Females,Northern Sydney,18.8
+2020-04,Females,Northern Sydney,6.0
+2020-05,Females,Northern Sydney,5.4
+2020-06,Females,Northern Sydney,7.4
+2020-07,Females,Northern Sydney,10.8
+2020-08,Females,Northern Sydney,11.0
+2020-09,Females,Northern Sydney,7.7
+2020-10,Females,Northern Sydney,8.2
+2020-11,Females,Northern Sydney,10.4
+2020-12,Females,Northern Sydney,9.2
+2021-01,Females,Northern Sydney,7.1
+2021-02,Females,Northern Sydney,13.1
+2021-03,Females,Northern Sydney,7.7
+2021-04,Females,Northern Sydney,14.2
+2021-05,Females,Northern Sydney,15.7
+2021-06,Females,Northern Sydney,15.0
+2021-07,Females,Northern Sydney,7.2
+2021-08,Females,Northern Sydney,7.7
+2021-09,Females,Northern Sydney,4.6
+2021-10,Females,Northern Sydney,6.4
+2021-11,Females,Northern Sydney,5.6
+2021-12,Females,Northern Sydney,7.2
+2022-01,Females,Northern Sydney,6.2
+2022-02,Females,Northern Sydney,7.4
+2022-03,Females,Northern Sydney,13.2
+2022-04,Females,Northern Sydney,16.1
+2022-05,Females,Northern Sydney,24.2
+2022-06,Females,Northern Sydney,12.8
+2022-07,Females,Northern Sydney,12.5
+2022-08,Females,Northern Sydney,17.4
+2022-09,Females,Northern Sydney,16.9
+2022-10,Females,Northern Sydney,11.4
+2022-11,Females,Northern Sydney,12.0
+2022-12,Females,Northern Sydney,11.8
+2023-01,Females,Northern Sydney,9.0
+2023-02,Females,Northern Sydney,12.6
+2023-03,Females,Northern Sydney,9.1
+2023-04,Females,Northern Sydney,9.8
+2023-05,Females,Northern Sydney,15.9
+2023-06,Females,Northern Sydney,8.7
+2014-07,Females,Central Coast,29.8
+2014-08,Females,Central Coast,34.3
+2014-09,Females,Central Coast,28.4
+2014-10,Females,Central Coast,28.0
+2014-11,Females,Central Coast,28.0
+2014-12,Females,Central Coast,18.0
+2015-01,Females,Central Coast,19.0
+2015-02,Females,Central Coast,37.6
+2015-03,Females,Central Coast,41.5
+2015-04,Females,Central Coast,39.0
+2015-05,Females,Central Coast,42.7
+2015-06,Females,Central Coast,26.8
+2015-07,Females,Central Coast,37.5
+2015-08,Females,Central Coast,39.6
+2015-09,Females,Central Coast,42.5
+2015-10,Females,Central Coast,21.3
+2015-11,Females,Central Coast,27.0
+2015-12,Females,Central Coast,39.5
+2016-01,Females,Central Coast,25.7
+2016-02,Females,Central Coast,30.6
+2016-03,Females,Central Coast,29.0
+2016-04,Females,Central Coast,33.4
+2016-05,Females,Central Coast,39.2
+2016-06,Females,Central Coast,39.9
+2016-07,Females,Central Coast,25.2
+2016-08,Females,Central Coast,48.6
+2016-09,Females,Central Coast,35.5
+2016-10,Females,Central Coast,34.3
+2016-11,Females,Central Coast,19.3
+2016-12,Females,Central Coast,27.9
+2017-01,Females,Central Coast,19.4
+2017-02,Females,Central Coast,28.3
+2017-03,Females,Central Coast,30.6
+2017-04,Females,Central Coast,45.9
+2017-05,Females,Central Coast,62.1
+2017-06,Females,Central Coast,34.3
+2017-07,Females,Central Coast,29.7
+2017-08,Females,Central Coast,39.9
+2017-09,Females,Central Coast,35.1
+2017-10,Females,Central Coast,24.7
+2017-11,Females,Central Coast,33.5
+2017-12,Females,Central Coast,34.6
+2018-01,Females,Central Coast,21.6
+2018-02,Females,Central Coast,28.5
+2018-03,Females,Central Coast,34.0
+2018-04,Females,Central Coast,25.6
+2018-05,Females,Central Coast,41.0
+2018-06,Females,Central Coast,38.1
+2018-07,Females,Central Coast,39.5
+2018-08,Females,Central Coast,31.9
+2018-09,Females,Central Coast,27.5
+2018-10,Females,Central Coast,30.3
+2018-11,Females,Central Coast,30.3
+2018-12,Females,Central Coast,26.7
+2019-01,Females,Central Coast,23.7
+2019-02,Females,Central Coast,35.7
+2019-03,Females,Central Coast,31.0
+2019-04,Females,Central Coast,34.1
+2019-05,Females,Central Coast,39.8
+2019-06,Females,Central Coast,53.2
+2019-07,Females,Central Coast,36.6
+2019-08,Females,Central Coast,39.6
+2019-09,Females,Central Coast,31.1
+2019-10,Females,Central Coast,24.1
+2019-11,Females,Central Coast,45.1
+2019-12,Females,Central Coast,43.5
+2020-01,Females,Central Coast,21.0
+2020-02,Females,Central Coast,29.2
+2020-03,Females,Central Coast,45.7
+2020-04,Females,Central Coast,24.8
+2020-05,Females,Central Coast,18.9
+2020-06,Females,Central Coast,34.4
+2020-07,Females,Central Coast,23.7
+2020-08,Females,Central Coast,32.3
+2020-09,Females,Central Coast,20.4
+2020-10,Females,Central Coast,18.4
+2020-11,Females,Central Coast,27.4
+2020-12,Females,Central Coast,24.8
+2021-01,Females,Central Coast,22.8
+2021-02,Females,Central Coast,17.8
+2021-03,Females,Central Coast,26.0
+2021-04,Females,Central Coast,28.2
+2021-05,Females,Central Coast,26.6
+2021-06,Females,Central Coast,40.2
+2021-07,Females,Central Coast,23.1
+2021-08,Females,Central Coast,15.4
+2021-09,Females,Central Coast,11.1
+2021-10,Females,Central Coast,14.1
+2021-11,Females,Central Coast,20.4
+2021-12,Females,Central Coast,13.2
+2022-01,Females,Central Coast,18.5
+2022-02,Females,Central Coast,13.2
+2022-03,Females,Central Coast,28.3
+2022-04,Females,Central Coast,37.8
+2022-05,Females,Central Coast,46.4
+2022-06,Females,Central Coast,45.8
+2022-07,Females,Central Coast,35.7
+2022-08,Females,Central Coast,39.4
+2022-09,Females,Central Coast,31.8
+2022-10,Females,Central Coast,27.3
+2022-11,Females,Central Coast,24.0
+2022-12,Females,Central Coast,22.6
+2023-01,Females,Central Coast,18.3
+2023-02,Females,Central Coast,22.8
+2023-03,Females,Central Coast,25.3
+2023-04,Females,Central Coast,26.1
+2023-05,Females,Central Coast,42.0
+2023-06,Females,Central Coast,33.3
+2014-07,Females,Hunter New England,45.3
+2014-08,Females,Hunter New England,49.4
+2014-09,Females,Hunter New England,36.0
+2014-10,Females,Hunter New England,34.4
+2014-11,Females,Hunter New England,24.7
+2014-12,Females,Hunter New England,24.8
+2015-01,Females,Hunter New England,26.5
+2015-02,Females,Hunter New England,34.4
+2015-03,Females,Hunter New England,34.4
+2015-04,Females,Hunter New England,35.5
+2015-05,Females,Hunter New England,53.2
+2015-06,Females,Hunter New England,56.3
+2015-07,Females,Hunter New England,48.3
+2015-08,Females,Hunter New England,54.2
+2015-09,Females,Hunter New England,36.4
+2015-10,Females,Hunter New England,33.8
+2015-11,Females,Hunter New England,33.7
+2015-12,Females,Hunter New England,41.0
+2016-01,Females,Hunter New England,31.1
+2016-02,Females,Hunter New England,35.0
+2016-03,Females,Hunter New England,34.3
+2016-04,Females,Hunter New England,36.6
+2016-05,Females,Hunter New England,41.6
+2016-06,Females,Hunter New England,48.9
+2016-07,Females,Hunter New England,42.8
+2016-08,Females,Hunter New England,51.7
+2016-09,Females,Hunter New England,37.0
+2016-10,Females,Hunter New England,42.1
+2016-11,Females,Hunter New England,42.9
+2016-12,Females,Hunter New England,33.5
+2017-01,Females,Hunter New England,26.4
+2017-02,Females,Hunter New England,32.4
+2017-03,Females,Hunter New England,34.3
+2017-04,Females,Hunter New England,52.5
+2017-05,Females,Hunter New England,61.6
+2017-06,Females,Hunter New England,47.5
+2017-07,Females,Hunter New England,49.6
+2017-08,Females,Hunter New England,40.1
+2017-09,Females,Hunter New England,36.4
+2017-10,Females,Hunter New England,29.6
+2017-11,Females,Hunter New England,26.1
+2017-12,Females,Hunter New England,32.5
+2018-01,Females,Hunter New England,26.3
+2018-02,Females,Hunter New England,34.1
+2018-03,Females,Hunter New England,36.6
+2018-04,Females,Hunter New England,31.3
+2018-05,Females,Hunter New England,46.0
+2018-06,Females,Hunter New England,41.7
+2018-07,Females,Hunter New England,40.1
+2018-08,Females,Hunter New England,35.7
+2018-09,Females,Hunter New England,38.1
+2018-10,Females,Hunter New England,34.2
+2018-11,Females,Hunter New England,41.8
+2018-12,Females,Hunter New England,34.0
+2019-01,Females,Hunter New England,18.8
+2019-02,Females,Hunter New England,34.7
+2019-03,Females,Hunter New England,40.9
+2019-04,Females,Hunter New England,41.3
+2019-05,Females,Hunter New England,53.0
+2019-06,Females,Hunter New England,53.1
+2019-07,Females,Hunter New England,42.1
+2019-08,Females,Hunter New England,43.8
+2019-09,Females,Hunter New England,47.2
+2019-10,Females,Hunter New England,40.6
+2019-11,Females,Hunter New England,51.3
+2019-12,Females,Hunter New England,45.1
+2020-01,Females,Hunter New England,30.0
+2020-02,Females,Hunter New England,31.4
+2020-03,Females,Hunter New England,50.2
+2020-04,Females,Hunter New England,23.3
+2020-05,Females,Hunter New England,18.6
+2020-06,Females,Hunter New England,46.3
+2020-07,Females,Hunter New England,33.7
+2020-08,Females,Hunter New England,31.6
+2020-09,Females,Hunter New England,20.0
+2020-10,Females,Hunter New England,28.4
+2020-11,Females,Hunter New England,29.5
+2020-12,Females,Hunter New England,26.5
+2021-01,Females,Hunter New England,21.0
+2021-02,Females,Hunter New England,29.1
+2021-03,Females,Hunter New England,42.9
+2021-04,Females,Hunter New England,44.7
+2021-05,Females,Hunter New England,53.1
+2021-06,Females,Hunter New England,39.7
+2021-07,Females,Hunter New England,35.7
+2021-08,Females,Hunter New England,26.6
+2021-09,Females,Hunter New England,18.5
+2021-10,Females,Hunter New England,27.7
+2021-11,Females,Hunter New England,24.7
+2021-12,Females,Hunter New England,23.5
+2022-01,Females,Hunter New England,19.6
+2022-02,Females,Hunter New England,18.5
+2022-03,Females,Hunter New England,41.5
+2022-04,Females,Hunter New England,42.3
+2022-05,Females,Hunter New England,58.3
+2022-06,Females,Hunter New England,61.2
+2022-07,Females,Hunter New England,35.5
+2022-08,Females,Hunter New England,48.4
+2022-09,Females,Hunter New England,40.7
+2022-10,Females,Hunter New England,44.5
+2022-11,Females,Hunter New England,30.2
+2022-12,Females,Hunter New England,21.6
+2023-01,Females,Hunter New England,23.2
+2023-02,Females,Hunter New England,28.7
+2023-03,Females,Hunter New England,28.5
+2023-04,Females,Hunter New England,30.2
+2023-05,Females,Hunter New England,39.9
+2023-06,Females,Hunter New England,38.7
+2014-07,Females,Northern NSW,58.5
+2014-08,Females,Northern NSW,68.7
+2014-09,Females,Northern NSW,57.9
+2014-10,Females,Northern NSW,41.3
+2014-11,Females,Northern NSW,50.8
+2014-12,Females,Northern NSW,52.5
+2015-01,Females,Northern NSW,44.9
+2015-02,Females,Northern NSW,54.6
+2015-03,Females,Northern NSW,51.8
+2015-04,Females,Northern NSW,53.5
+2015-05,Females,Northern NSW,58.4
+2015-06,Females,Northern NSW,70.0
+2015-07,Females,Northern NSW,62.7
+2015-08,Females,Northern NSW,83.4
+2015-09,Females,Northern NSW,71.1
+2015-10,Females,Northern NSW,65.5
+2015-11,Females,Northern NSW,58.7
+2015-12,Females,Northern NSW,53.3
+2016-01,Females,Northern NSW,33.3
+2016-02,Females,Northern NSW,41.9
+2016-03,Females,Northern NSW,46.5
+2016-04,Females,Northern NSW,37.7
+2016-05,Females,Northern NSW,66.3
+2016-06,Females,Northern NSW,48.8
+2016-07,Females,Northern NSW,52.8
+2016-08,Females,Northern NSW,76.1
+2016-09,Females,Northern NSW,57.6
+2016-10,Females,Northern NSW,48.0
+2016-11,Females,Northern NSW,43.5
+2016-12,Females,Northern NSW,35.0
+2017-01,Females,Northern NSW,27.4
+2017-02,Females,Northern NSW,39.8
+2017-03,Females,Northern NSW,50.8
+2017-04,Females,Northern NSW,52.7
+2017-05,Females,Northern NSW,68.4
+2017-06,Females,Northern NSW,67.3
+2017-07,Females,Northern NSW,69.3
+2017-08,Females,Northern NSW,69.5
+2017-09,Females,Northern NSW,62.6
+2017-10,Females,Northern NSW,52.4
+2017-11,Females,Northern NSW,56.3
+2017-12,Females,Northern NSW,60.7
+2018-01,Females,Northern NSW,28.9
+2018-02,Females,Northern NSW,39.0
+2018-03,Females,Northern NSW,55.0
+2018-04,Females,Northern NSW,53.0
+2018-05,Females,Northern NSW,57.6
+2018-06,Females,Northern NSW,59.5
+2018-07,Females,Northern NSW,52.9
+2018-08,Females,Northern NSW,60.1
+2018-09,Females,Northern NSW,49.6
+2018-10,Females,Northern NSW,53.3
+2018-11,Females,Northern NSW,49.4
+2018-12,Females,Northern NSW,38.2
+2019-01,Females,Northern NSW,33.4
+2019-02,Females,Northern NSW,34.9
+2019-03,Females,Northern NSW,37.7
+2019-04,Females,Northern NSW,53.8
+2019-05,Females,Northern NSW,66.3
+2019-06,Females,Northern NSW,53.1
+2019-07,Females,Northern NSW,55.8
+2019-08,Females,Northern NSW,73.7
+2019-09,Females,Northern NSW,53.8
+2019-10,Females,Northern NSW,40.6
+2019-11,Females,Northern NSW,65.6
+2019-12,Females,Northern NSW,46.2
+2020-01,Females,Northern NSW,34.1
+2020-02,Females,Northern NSW,31.1
+2020-03,Females,Northern NSW,57.6
+2020-04,Females,Northern NSW,28.9
+2020-05,Females,Northern NSW,21.3
+2020-06,Females,Northern NSW,49.7
+2020-07,Females,Northern NSW,42.7
+2020-08,Females,Northern NSW,46.0
+2020-09,Females,Northern NSW,24.9
+2020-10,Females,Northern NSW,35.3
+2020-11,Females,Northern NSW,25.1
+2020-12,Females,Northern NSW,28.4
+2021-01,Females,Northern NSW,30.6
+2021-02,Females,Northern NSW,32.6
+2021-03,Females,Northern NSW,50.8
+2021-04,Females,Northern NSW,55.7
+2021-05,Females,Northern NSW,56.9
+2021-06,Females,Northern NSW,52.4
+2021-07,Females,Northern NSW,40.7
+2021-08,Females,Northern NSW,37.7
+2021-09,Females,Northern NSW,23.8
+2021-10,Females,Northern NSW,40.9
+2021-11,Females,Northern NSW,26.4
+2021-12,Females,Northern NSW,37.7
+2022-01,Females,Northern NSW,33.6
+2022-02,Females,Northern NSW,13.9
+2022-03,Females,Northern NSW,46.4
+2022-04,Females,Northern NSW,54.1
+2022-05,Females,Northern NSW,78.6
+2022-06,Females,Northern NSW,87.1
+2022-07,Females,Northern NSW,76.5
+2022-08,Females,Northern NSW,69.3
+2022-09,Females,Northern NSW,53.0
+2022-10,Females,Northern NSW,49.8
+2022-11,Females,Northern NSW,45.1
+2022-12,Females,Northern NSW,32.3
+2023-01,Females,Northern NSW,20.2
+2023-02,Females,Northern NSW,22.4
+2023-03,Females,Northern NSW,29.3
+2023-04,Females,Northern NSW,34.3
+2023-05,Females,Northern NSW,60.5
+2023-06,Females,Northern NSW,59.6
+2014-07,Females,Mid North Coast,58.4
+2014-08,Females,Mid North Coast,40.9
+2014-09,Females,Mid North Coast,33.1
+2014-10,Females,Mid North Coast,34.5
+2014-11,Females,Mid North Coast,38.8
+2014-12,Females,Mid North Coast,30.0
+2015-01,Females,Mid North Coast,27.5
+2015-02,Females,Mid North Coast,40.2
+2015-03,Females,Mid North Coast,42.0
+2015-04,Females,Mid North Coast,40.7
+2015-05,Females,Mid North Coast,52.7
+2015-06,Females,Mid North Coast,56.0
+2015-07,Females,Mid North Coast,56.0
+2015-08,Females,Mid North Coast,53.9
+2015-09,Females,Mid North Coast,49.7
+2015-10,Females,Mid North Coast,37.5
+2015-11,Females,Mid North Coast,41.4
+2015-12,Females,Mid North Coast,36.8
+2016-01,Females,Mid North Coast,16.0
+2016-02,Females,Mid North Coast,30.6
+2016-03,Females,Mid North Coast,31.0
+2016-04,Females,Mid North Coast,38.1
+2016-05,Females,Mid North Coast,53.1
+2016-06,Females,Mid North Coast,42.6
+2016-07,Females,Mid North Coast,33.1
+2016-08,Females,Mid North Coast,43.9
+2016-09,Females,Mid North Coast,48.4
+2016-10,Females,Mid North Coast,38.3
+2016-11,Females,Mid North Coast,41.7
+2016-12,Females,Mid North Coast,20.8
+2017-01,Females,Mid North Coast,17.0
+2017-02,Females,Mid North Coast,28.7
+2017-03,Females,Mid North Coast,34.5
+2017-04,Females,Mid North Coast,42.1
+2017-05,Females,Mid North Coast,58.3
+2017-06,Females,Mid North Coast,54.5
+2017-07,Females,Mid North Coast,51.7
+2017-08,Females,Mid North Coast,49.7
+2017-09,Females,Mid North Coast,36.0
+2017-10,Females,Mid North Coast,38.2
+2017-11,Females,Mid North Coast,43.0
+2017-12,Females,Mid North Coast,29.4
+2018-01,Females,Mid North Coast,15.7
+2018-02,Females,Mid North Coast,24.3
+2018-03,Females,Mid North Coast,25.2
+2018-04,Females,Mid North Coast,26.6
+2018-05,Females,Mid North Coast,35.0
+2018-06,Females,Mid North Coast,46.8
+2018-07,Females,Mid North Coast,42.7
+2018-08,Females,Mid North Coast,46.2
+2018-09,Females,Mid North Coast,36.9
+2018-10,Females,Mid North Coast,40.2
+2018-11,Females,Mid North Coast,47.2
+2018-12,Females,Mid North Coast,37.1
+2019-01,Females,Mid North Coast,19.2
+2019-02,Females,Mid North Coast,25.5
+2019-03,Females,Mid North Coast,40.5
+2019-04,Females,Mid North Coast,35.1
+2019-05,Females,Mid North Coast,61.5
+2019-06,Females,Mid North Coast,44.4
+2019-07,Females,Mid North Coast,47.3
+2019-08,Females,Mid North Coast,51.1
+2019-09,Females,Mid North Coast,50.0
+2019-10,Females,Mid North Coast,32.0
+2019-11,Females,Mid North Coast,78.5
+2019-12,Females,Mid North Coast,28.3
+2020-01,Females,Mid North Coast,29.6
+2020-02,Females,Mid North Coast,26.2
+2020-03,Females,Mid North Coast,59.5
+2020-04,Females,Mid North Coast,28.9
+2020-05,Females,Mid North Coast,22.5
+2020-06,Females,Mid North Coast,39.8
+2020-07,Females,Mid North Coast,38.6
+2020-08,Females,Mid North Coast,36.9
+2020-09,Females,Mid North Coast,15.4
+2020-10,Females,Mid North Coast,17.1
+2020-11,Females,Mid North Coast,16.6
+2020-12,Females,Mid North Coast,20.4
+2021-01,Females,Mid North Coast,19.1
+2021-02,Females,Mid North Coast,20.2
+2021-03,Females,Mid North Coast,27.1
+2021-04,Females,Mid North Coast,45.7
+2021-05,Females,Mid North Coast,45.7
+2021-06,Females,Mid North Coast,58.1
+2021-07,Females,Mid North Coast,38.8
+2021-08,Females,Mid North Coast,27.3
+2021-09,Females,Mid North Coast,22.1
+2021-10,Females,Mid North Coast,26.2
+2021-11,Females,Mid North Coast,22.2
+2021-12,Females,Mid North Coast,26.8
+2022-01,Females,Mid North Coast,26.6
+2022-02,Females,Mid North Coast,14.4
+2022-03,Females,Mid North Coast,32.1
+2022-04,Females,Mid North Coast,31.6
+2022-05,Females,Mid North Coast,50.0
+2022-06,Females,Mid North Coast,68.1
+2022-07,Females,Mid North Coast,52.5
+2022-08,Females,Mid North Coast,49.0
+2022-09,Females,Mid North Coast,48.8
+2022-10,Females,Mid North Coast,46.5
+2022-11,Females,Mid North Coast,39.5
+2022-12,Females,Mid North Coast,29.3
+2023-01,Females,Mid North Coast,19.8
+2023-02,Females,Mid North Coast,20.8
+2023-03,Females,Mid North Coast,25.9
+2023-04,Females,Mid North Coast,41.1
+2023-05,Females,Mid North Coast,33.7
+2023-06,Females,Mid North Coast,40.7
+2014-07,Females,Southern NSW,36.2
+2014-08,Females,Southern NSW,55.6
+2014-09,Females,Southern NSW,34.6
+2014-10,Females,Southern NSW,29.5
+2014-11,Females,Southern NSW,43.3
+2014-12,Females,Southern NSW,20.1
+2015-01,Females,Southern NSW,12.5
+2015-02,Females,Southern NSW,38.6
+2015-03,Females,Southern NSW,29.7
+2015-04,Females,Southern NSW,39.1
+2015-05,Females,Southern NSW,41.2
+2015-06,Females,Southern NSW,47.7
+2015-07,Females,Southern NSW,42.8
+2015-08,Females,Southern NSW,57.6
+2015-09,Females,Southern NSW,40.0
+2015-10,Females,Southern NSW,34.5
+2015-11,Females,Southern NSW,30.3
+2015-12,Females,Southern NSW,27.9
+2016-01,Females,Southern NSW,26.1
+2016-02,Females,Southern NSW,35.7
+2016-03,Females,Southern NSW,41.1
+2016-04,Females,Southern NSW,40.9
+2016-05,Females,Southern NSW,48.8
+2016-06,Females,Southern NSW,39.2
+2016-07,Females,Southern NSW,47.6
+2016-08,Females,Southern NSW,55.8
+2016-09,Females,Southern NSW,29.8
+2016-10,Females,Southern NSW,23.2
+2016-11,Females,Southern NSW,34.5
+2016-12,Females,Southern NSW,35.6
+2017-01,Females,Southern NSW,34.3
+2017-02,Females,Southern NSW,32.2
+2017-03,Females,Southern NSW,29.7
+2017-04,Females,Southern NSW,47.6
+2017-05,Females,Southern NSW,52.5
+2017-06,Females,Southern NSW,53.2
+2017-07,Females,Southern NSW,42.2
+2017-08,Females,Southern NSW,49.3
+2017-09,Females,Southern NSW,33.5
+2017-10,Females,Southern NSW,35.0
+2017-11,Females,Southern NSW,31.8
+2017-12,Females,Southern NSW,31.7
+2018-01,Females,Southern NSW,28.8
+2018-02,Females,Southern NSW,33.4
+2018-03,Females,Southern NSW,54.2
+2018-04,Females,Southern NSW,33.0
+2018-05,Females,Southern NSW,28.2
+2018-06,Females,Southern NSW,43.0
+2018-07,Females,Southern NSW,54.0
+2018-08,Females,Southern NSW,40.0
+2018-09,Females,Southern NSW,41.7
+2018-10,Females,Southern NSW,32.2
+2018-11,Females,Southern NSW,42.3
+2018-12,Females,Southern NSW,48.8
+2019-01,Females,Southern NSW,31.9
+2019-02,Females,Southern NSW,41.5
+2019-03,Females,Southern NSW,56.2
+2019-04,Females,Southern NSW,56.6
+2019-05,Females,Southern NSW,65.6
+2019-06,Females,Southern NSW,48.8
+2019-07,Females,Southern NSW,52.6
+2019-08,Females,Southern NSW,50.2
+2019-09,Females,Southern NSW,35.5
+2019-10,Females,Southern NSW,38.8
+2019-11,Females,Southern NSW,43.5
+2019-12,Females,Southern NSW,61.0
+2020-01,Females,Southern NSW,76.0
+2020-02,Females,Southern NSW,26.9
+2020-03,Females,Southern NSW,39.0
+2020-04,Females,Southern NSW,10.6
+2020-05,Females,Southern NSW,18.4
+2020-06,Females,Southern NSW,39.3
+2020-07,Females,Southern NSW,18.2
+2020-08,Females,Southern NSW,25.8
+2020-09,Females,Southern NSW,29.7
+2020-10,Females,Southern NSW,41.5
+2020-11,Females,Southern NSW,38.9
+2020-12,Females,Southern NSW,30.7
+2021-01,Females,Southern NSW,19.4
+2021-02,Females,Southern NSW,22.7
+2021-03,Females,Southern NSW,31.3
+2021-04,Females,Southern NSW,35.4
+2021-05,Females,Southern NSW,43.2
+2021-06,Females,Southern NSW,37.9
+2021-07,Females,Southern NSW,41.8
+2021-08,Females,Southern NSW,53.0
+2021-09,Females,Southern NSW,16.7
+2021-10,Females,Southern NSW,20.4
+2021-11,Females,Southern NSW,16.4
+2021-12,Females,Southern NSW,22.4
+2022-01,Females,Southern NSW,18.3
+2022-02,Females,Southern NSW,21.1
+2022-03,Females,Southern NSW,40.9
+2022-04,Females,Southern NSW,37.2
+2022-05,Females,Southern NSW,47.0
+2022-06,Females,Southern NSW,56.8
+2022-07,Females,Southern NSW,37.9
+2022-08,Females,Southern NSW,42.3
+2022-09,Females,Southern NSW,42.4
+2022-10,Females,Southern NSW,65.2
+2022-11,Females,Southern NSW,48.8
+2022-12,Females,Southern NSW,28.6
+2023-01,Females,Southern NSW,18.3
+2023-02,Females,Southern NSW,20.4
+2023-03,Females,Southern NSW,30.3
+2023-04,Females,Southern NSW,36.0
+2023-05,Females,Southern NSW,40.2
+2023-06,Females,Southern NSW,29.7
+2014-07,Females,Murrumbidgee,46.2
+2014-08,Females,Murrumbidgee,84.8
+2014-09,Females,Murrumbidgee,52.7
+2014-10,Females,Murrumbidgee,80.6
+2014-11,Females,Murrumbidgee,57.1
+2014-12,Females,Murrumbidgee,41.1
+2015-01,Females,Murrumbidgee,22.1
+2015-02,Females,Murrumbidgee,45.4
+2015-03,Females,Murrumbidgee,45.9
+2015-04,Females,Murrumbidgee,52.3
+2015-05,Females,Murrumbidgee,58.1
+2015-06,Females,Murrumbidgee,66.4
+2015-07,Females,Murrumbidgee,61.1
+2015-08,Females,Murrumbidgee,69.4
+2015-09,Females,Murrumbidgee,58.8
+2015-10,Females,Murrumbidgee,80.8
+2015-11,Females,Murrumbidgee,61.2
+2015-12,Females,Murrumbidgee,38.8
+2016-01,Females,Murrumbidgee,32.2
+2016-02,Females,Murrumbidgee,48.9
+2016-03,Females,Murrumbidgee,44.9
+2016-04,Females,Murrumbidgee,44.2
+2016-05,Females,Murrumbidgee,55.5
+2016-06,Females,Murrumbidgee,72.4
+2016-07,Females,Murrumbidgee,69.8
+2016-08,Females,Murrumbidgee,65.5
+2016-09,Females,Murrumbidgee,71.9
+2016-10,Females,Murrumbidgee,75.6
+2016-11,Females,Murrumbidgee,87.4
+2016-12,Females,Murrumbidgee,60.3
+2017-01,Females,Murrumbidgee,50.6
+2017-02,Females,Murrumbidgee,38.3
+2017-03,Females,Murrumbidgee,46.1
+2017-04,Females,Murrumbidgee,45.4
+2017-05,Females,Murrumbidgee,79.0
+2017-06,Females,Murrumbidgee,60.0
+2017-07,Females,Murrumbidgee,74.3
+2017-08,Females,Murrumbidgee,70.9
+2017-09,Females,Murrumbidgee,65.8
+2017-10,Females,Murrumbidgee,69.5
+2017-11,Females,Murrumbidgee,51.5
+2017-12,Females,Murrumbidgee,41.9
+2018-01,Females,Murrumbidgee,42.3
+2018-02,Females,Murrumbidgee,33.6
+2018-03,Females,Murrumbidgee,50.2
+2018-04,Females,Murrumbidgee,41.7
+2018-05,Females,Murrumbidgee,66.2
+2018-06,Females,Murrumbidgee,45.6
+2018-07,Females,Murrumbidgee,60.8
+2018-08,Females,Murrumbidgee,64.8
+2018-09,Females,Murrumbidgee,69.5
+2018-10,Females,Murrumbidgee,57.3
+2018-11,Females,Murrumbidgee,68.1
+2018-12,Females,Murrumbidgee,37.0
+2019-01,Females,Murrumbidgee,31.9
+2019-02,Females,Murrumbidgee,42.3
+2019-03,Females,Murrumbidgee,58.2
+2019-04,Females,Murrumbidgee,66.0
+2019-05,Females,Murrumbidgee,58.1
+2019-06,Females,Murrumbidgee,56.7
+2019-07,Females,Murrumbidgee,60.8
+2019-08,Females,Murrumbidgee,58.7
+2019-09,Females,Murrumbidgee,69.7
+2019-10,Females,Murrumbidgee,48.2
+2019-11,Females,Murrumbidgee,70.1
+2019-12,Females,Murrumbidgee,74.9
+2020-01,Females,Murrumbidgee,76.1
+2020-02,Females,Murrumbidgee,39.1
+2020-03,Females,Murrumbidgee,47.4
+2020-04,Females,Murrumbidgee,29.9
+2020-05,Females,Murrumbidgee,31.4
+2020-06,Females,Murrumbidgee,34.3
+2020-07,Females,Murrumbidgee,43.2
+2020-08,Females,Murrumbidgee,43.5
+2020-09,Females,Murrumbidgee,32.0
+2020-10,Females,Murrumbidgee,91.0
+2020-11,Females,Murrumbidgee,62.5
+2020-12,Females,Murrumbidgee,51.6
+2021-01,Females,Murrumbidgee,30.8
+2021-02,Females,Murrumbidgee,41.3
+2021-03,Females,Murrumbidgee,45.3
+2021-04,Females,Murrumbidgee,52.8
+2021-05,Females,Murrumbidgee,58.3
+2021-06,Females,Murrumbidgee,55.9
+2021-07,Females,Murrumbidgee,35.8
+2021-08,Females,Murrumbidgee,63.3
+2021-09,Females,Murrumbidgee,36.4
+2021-10,Females,Murrumbidgee,50.0
+2021-11,Females,Murrumbidgee,50.9
+2021-12,Females,Murrumbidgee,48.2
+2022-01,Females,Murrumbidgee,33.6
+2022-02,Females,Murrumbidgee,32.4
+2022-03,Females,Murrumbidgee,38.9
+2022-04,Females,Murrumbidgee,61.7
+2022-05,Females,Murrumbidgee,68.5
+2022-06,Females,Murrumbidgee,63.7
+2022-07,Females,Murrumbidgee,62.1
+2022-08,Females,Murrumbidgee,73.8
+2022-09,Females,Murrumbidgee,79.9
+2022-10,Females,Murrumbidgee,99.9
+2022-11,Females,Murrumbidgee,73.4
+2022-12,Females,Murrumbidgee,54.9
+2023-01,Females,Murrumbidgee,39.9
+2023-02,Females,Murrumbidgee,38.2
+2023-03,Females,Murrumbidgee,44.2
+2023-04,Females,Murrumbidgee,59.9
+2023-05,Females,Murrumbidgee,80.8
+2023-06,Females,Murrumbidgee,54.5
+2014-07,Females,Western NSW,44.4
+2014-08,Females,Western NSW,44.2
+2014-09,Females,Western NSW,51.9
+2014-10,Females,Western NSW,36.7
+2014-11,Females,Western NSW,32.9
+2014-12,Females,Western NSW,26.7
+2015-01,Females,Western NSW,20.5
+2015-02,Females,Western NSW,31.2
+2015-03,Females,Western NSW,37.1
+2015-04,Females,Western NSW,39.7
+2015-05,Females,Western NSW,47.8
+2015-06,Females,Western NSW,46.0
+2015-07,Females,Western NSW,46.9
+2015-08,Females,Western NSW,60.5
+2015-09,Females,Western NSW,55.4
+2015-10,Females,Western NSW,50.8
+2015-11,Females,Western NSW,39.2
+2015-12,Females,Western NSW,41.2
+2016-01,Females,Western NSW,30.3
+2016-02,Females,Western NSW,54.0
+2016-03,Females,Western NSW,47.4
+2016-04,Females,Western NSW,29.5
+2016-05,Females,Western NSW,50.5
+2016-06,Females,Western NSW,57.9
+2016-07,Females,Western NSW,72.4
+2016-08,Females,Western NSW,81.2
+2016-09,Females,Western NSW,68.8
+2016-10,Females,Western NSW,78.4
+2016-11,Females,Western NSW,64.6
+2016-12,Females,Western NSW,47.3
+2017-01,Females,Western NSW,32.3
+2017-02,Females,Western NSW,41.1
+2017-03,Females,Western NSW,42.3
+2017-04,Females,Western NSW,50.8
+2017-05,Females,Western NSW,79.9
+2017-06,Females,Western NSW,69.4
+2017-07,Females,Western NSW,50.3
+2017-08,Females,Western NSW,74.7
+2017-09,Females,Western NSW,73.0
+2017-10,Females,Western NSW,43.3
+2017-11,Females,Western NSW,44.7
+2017-12,Females,Western NSW,45.3
+2018-01,Females,Western NSW,27.1
+2018-02,Females,Western NSW,40.0
+2018-03,Females,Western NSW,38.1
+2018-04,Females,Western NSW,38.7
+2018-05,Females,Western NSW,50.9
+2018-06,Females,Western NSW,52.9
+2018-07,Females,Western NSW,55.3
+2018-08,Females,Western NSW,58.5
+2018-09,Females,Western NSW,46.1
+2018-10,Females,Western NSW,63.1
+2018-11,Females,Western NSW,61.4
+2018-12,Females,Western NSW,50.4
+2019-01,Females,Western NSW,28.1
+2019-02,Females,Western NSW,42.8
+2019-03,Females,Western NSW,32.7
+2019-04,Females,Western NSW,44.2
+2019-05,Females,Western NSW,66.1
+2019-06,Females,Western NSW,60.6
+2019-07,Females,Western NSW,58.3
+2019-08,Females,Western NSW,69.4
+2019-09,Females,Western NSW,57.3
+2019-10,Females,Western NSW,51.2
+2019-11,Females,Western NSW,55.1
+2019-12,Females,Western NSW,79.6
+2020-01,Females,Western NSW,43.7
+2020-02,Females,Western NSW,37.0
+2020-03,Females,Western NSW,48.7
+2020-04,Females,Western NSW,24.8
+2020-05,Females,Western NSW,24.6
+2020-06,Females,Western NSW,37.9
+2020-07,Females,Western NSW,41.0
+2020-08,Females,Western NSW,35.5
+2020-09,Females,Western NSW,30.6
+2020-10,Females,Western NSW,58.1
+2020-11,Females,Western NSW,59.0
+2020-12,Females,Western NSW,45.1
+2021-01,Females,Western NSW,29.1
+2021-02,Females,Western NSW,37.7
+2021-03,Females,Western NSW,38.9
+2021-04,Females,Western NSW,53.1
+2021-05,Females,Western NSW,81.5
+2021-06,Females,Western NSW,69.9
+2021-07,Females,Western NSW,45.6
+2021-08,Females,Western NSW,56.7
+2021-09,Females,Western NSW,29.0
+2021-10,Females,Western NSW,36.6
+2021-11,Females,Western NSW,66.7
+2021-12,Females,Western NSW,35.2
+2022-01,Females,Western NSW,32.1
+2022-02,Females,Western NSW,31.1
+2022-03,Females,Western NSW,55.4
+2022-04,Females,Western NSW,48.1
+2022-05,Females,Western NSW,83.3
+2022-06,Females,Western NSW,97.7
+2022-07,Females,Western NSW,66.2
+2022-08,Females,Western NSW,58.2
+2022-09,Females,Western NSW,56.7
+2022-10,Females,Western NSW,61.3
+2022-11,Females,Western NSW,58.0
+2022-12,Females,Western NSW,46.6
+2023-01,Females,Western NSW,32.0
+2023-02,Females,Western NSW,41.4
+2023-03,Females,Western NSW,43.3
+2023-04,Females,Western NSW,43.9
+2023-05,Females,Western NSW,57.7
+2023-06,Females,Western NSW,55.6
