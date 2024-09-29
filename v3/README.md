@@ -38,14 +38,12 @@ pip install matplotlib
 pip install numpy
 pip install seaborn
 pip install scikit-learn
-pip install ipywidgets
 pip install kneed
-pip install widgetsnbextension
 ```
 
 Alternatively, you can choose to install all dependencies at once.
 ```bash
-pip install jupyter pandas matplotlib numpy seaborn scikit-learn ipywidgets kneed widgetsnbextension
+pip install jupyter pandas matplotlib numpy seaborn scikit-learn kneed 
 ```
 
 # Directory Structure
