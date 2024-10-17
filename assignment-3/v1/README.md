@@ -19,18 +19,22 @@ assignmnet-3/
 │   │   └── monthly.csv
 │   │   
 │   ├── arima-timeseries/
+│   │   ├── main.py # Initial FastAPI work
 │   │   ├── model.py
 │   │   └── model.pkl
 │   │   
 │   ├── k-means/
+│   │   ├── main.py # Initial FastAPI work
 │   │   ├── model.py
 │   │   └── model.pkl
 │   │   
 │   ├── knn/
+│   │   ├── main.py # Initial FastAPI work
 │   │   ├── model.py
 │   │   └── model.pkl
 │   │   
 │   ├── linear-regression/
+│   │   ├── main.py # Initial FastAPI work
 │   │   ├── model.py
 │   │   └── model.pkl
 │   │   
