@@ -1,2 +1,0 @@
-Git needs something in a directory before it will accept the folder.
-Delete this file once you start working on your model.
