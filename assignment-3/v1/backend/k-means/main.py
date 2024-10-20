@@ -32,12 +32,12 @@ async def predict_pollutant_cluster(data: PollutantData):
         predicted_cluster = kmeans_model.predict(new_data)[0]
 
         # Get the statistics for the predicted cluster and label
-        label_stats = kmeans_model.get_cluster_statistics(predicted_cluster, data.label)
+        cluster_stats = kmeans_model.get_cluster_statistics(predicted_cluster, data.label)
         
         # Return the predicted cluster and label statistics
         return {
             "predicted_cluster": int(predicted_cluster),
-            "label_stats": label_stats
+            "cluster_stats": cluster_stats
         }
     
     except Exception as e:
