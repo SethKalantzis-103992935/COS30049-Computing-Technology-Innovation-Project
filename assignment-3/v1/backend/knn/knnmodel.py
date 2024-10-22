@@ -23,11 +23,15 @@ def build_knn_model(data_path, target_stat):
 
     # Define risk levels based on health stat values (you may need to adjust thresholds based on your data)
     def categorize_risk(value):
-        if value <= np.percentile(y, 33):  # Bottom 33% - Low Risk
+        if value <= np.percentile(y, 20):
             return 'Low Risk'
-        elif value <= np.percentile(y, 66):  # Middle 33% - Medium Risk
+        elif value <= np.percentile(y, 40):
+            return 'Low-Medium Risk'
+        elif value <= np.percentile(y, 60):
             return 'Medium Risk'
-        else:  # Top 33% - High Risk
+        elif value <= np.percentile(y, 80):
+            return 'Medium-High Risk'
+        else:
             return 'High Risk'
 
     # Apply risk classification
