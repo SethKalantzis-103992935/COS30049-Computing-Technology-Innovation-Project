@@ -22,7 +22,7 @@ class PollutantInput(BaseModel):
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Change to ["http://localhost:3000"] in production
+    allow_origins=["*"],  
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -70,3 +70,55 @@ def predict_risk_level(input_data: PollutantInput):
     return {
         "risk_level": risk_level
         }
+
+@app.get("/plot_data")
+def get_plot_data(health_stat: str, pollutant: str):
+    # Ensure the model for the requested health stat is built and cached
+    if health_stat not in MODEL_CACHE:
+        model, scaler, label_encoder = build_knn_model(DATA_PATH, health_stat)
+        MODEL_CACHE[health_stat] = (model, scaler, label_encoder)
+    else:
+        model, scaler, label_encoder = MODEL_CACHE[health_stat]
+
+    df = pd.read_csv(DATA_PATH)
+    x = df[health_stat].values.tolist()
+    y = df[pollutant].values.tolist()
+    
+    # Predict risk levels for all data points
+    pollutants_data = df[['CO ppm', 'NO pphm', 'NO2 pphm', 'OZONE pphm', 'PM10 µg/m³', 'SO2 pphm']].values
+    risk_levels = label_encoder.inverse_transform(
+        model.predict(
+            scaler.transform(pollutants_data)
+        )
+    ).tolist()
+    
+    # Map risk levels to numerical values
+    risk_level_mapping = {
+        "Low Risk": 0,
+        "Low-Medium Risk": 1,
+        "Medium Risk": 2,
+        "Medium-High Risk": 3,
+        "High Risk": 4
+    }
+    risk_levels_numeric = [risk_level_mapping[risk] for risk in risk_levels]
+    
+    plot_data = {
+        "data": [
+            {
+                "x": x,
+                "y": y,
+                "mode": "markers",
+                "marker": {
+                    "color": risk_levels_numeric,  # Use numerical risk levels for coloring
+                    "colorscale": "Viridis",
+                    "showscale": True
+                }
+            }
+        ],
+        "layout": {
+            "title": f"KNN Decision Boundary for {health_stat} vs {pollutant}",
+            "xaxis": {"title": health_stat},
+            "yaxis": {"title": pollutant}
+        }
+    }
+    return plot_data

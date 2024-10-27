@@ -21,7 +21,7 @@ def build_knn_model(data_path, target_stat):
     scaler = StandardScaler()
     X_scaled = scaler.fit_transform(X)
 
-    # Define risk levels based on health stat values (you may need to adjust thresholds based on your data)
+    # Define risk levels based on health stat values
     def categorize_risk(value):
         if value <= np.percentile(y, 20):
             return 'Low Risk'
