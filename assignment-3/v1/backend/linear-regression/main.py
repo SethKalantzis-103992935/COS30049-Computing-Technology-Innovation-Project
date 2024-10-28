@@ -6,6 +6,14 @@ from regressionmodel import LinearRegressionModel
 
 app = FastAPI()
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 model = LinearRegressionModel()
 
 class PollutantData(BaseModel):
@@ -25,15 +33,12 @@ def predict_health_status(data: PollutantData):
             data.pollutant_ozone, data.pollutant_pm10, data.pollutant_s02
         ]]
 
-        metrics = model.train(data.health_statistic)
-
-        prediction = model.predict(input_data)
+        prediction = model.predict(input_data, data.health_statistic)
 
         return {
             "health_status": prediction.tolist(),
-            "dependent_variable": data.health_statistic,
-            "evaluation_metrics": metrics
-            }
+            "dependent_variable": data.health_statistic
+        }
     
     except Exception as e:
         # Raise an HTTP 500 Internal Server Error if prediction fails
@@ -41,4 +46,4 @@ def predict_health_status(data: PollutantData):
     
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8000)
