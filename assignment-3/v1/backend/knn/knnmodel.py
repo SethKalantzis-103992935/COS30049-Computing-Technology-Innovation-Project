@@ -1,12 +1,12 @@
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.neighbors import KNeighborsClassifier
+from sklearn.neighbors import KNeighborsClassifier, KNeighborsRegressor
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 
 data_path = "../__data/annual.csv"
 
-# Define a function to create a KNN model
+# Define a function to create KNN models
 def build_knn_model(data_path, target_stat):
     # Load dataset
     df = pd.read_csv(data_path)
@@ -37,22 +37,27 @@ def build_knn_model(data_path, target_stat):
     # Apply risk classification
     y_risk = np.array([categorize_risk(val) for val in y])
 
-    # Encode labels (Low Risk = 0, Medium Risk = 1, High Risk = 2)
     label_encoder = LabelEncoder()
     y_encoded = label_encoder.fit_transform(y_risk)
 
     # Split the dataset into training and test sets
     X_train, X_test, y_train, y_test = train_test_split(X_scaled, y_encoded, test_size=0.2, random_state=42)
+    X_train_val, X_test_val, y_train_val, y_test_val = train_test_split(X_scaled, y, test_size=0.2, random_state=42)
 
-    # Create KNN classifier
-    knn = KNeighborsClassifier(n_neighbors=5)
-    knn.fit(X_train, y_train)
+    # Create KNN classifier for risk level
+    knn_classifier = KNeighborsClassifier(n_neighbors=5)
+    knn_classifier.fit(X_train, y_train)
 
-    # Return the trained model and scaler for future predictions
-    return knn, scaler, label_encoder
+    # Create KNN regressor for health stat value
+    knn_regressor = KNeighborsRegressor(n_neighbors=5)
+    knn_regressor.fit(X_train_val, y_train_val)
 
-# Define a function to predict risk level for new data points
-def predict_risk(model, scaler, label_encoder, pollutants):
+    # Return the trained models and scaler for future predictions
+    return knn_classifier, knn_regressor, scaler, label_encoder
+
+# Define a function to predict risk level and health stat value for new data points
+def predict_risk(model_classifier, model_regressor, scaler, label_encoder, pollutants):
     pollutants_scaled = scaler.transform([pollutants])
-    risk_encoded = model.predict(pollutants_scaled)[0]
-    return label_encoder.inverse_transform([risk_encoded])[0]
+    risk_encoded = model_classifier.predict(pollutants_scaled)[0]
+    health_stat_value = model_regressor.predict(pollutants_scaled)[0]
+    return label_encoder.inverse_transform([risk_encoded])[0], health_stat_value

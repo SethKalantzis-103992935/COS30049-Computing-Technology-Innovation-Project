@@ -15,6 +15,7 @@ const App = () => {
   });
   const [selectedHealthStat, setSelectedHealthStat] = useState(null);
   const [riskLevel, setRiskLevel] = useState('');
+  const [healthStatValue, setHealthStatValue] = useState('');
   const [plotData, setPlotData] = useState(null);
   const [selectedPollutant, setSelectedPollutant] = useState(null);
 
@@ -37,28 +38,59 @@ const App = () => {
     setSelectedPollutant(selectedOption);
   };
 
-  const handleSubmit = () => {
-    const inputData = {
-      ...pollutants,
-      health_stat: selectedHealthStat.value
-    };
+  useEffect(() => {
+    if (selectedHealthStat && Object.values(pollutants).every(value => value !== '')) {
+      const inputData = {
+        ...pollutants,
+        health_stat: selectedHealthStat.value
+      };
 
-    axios.post('http://localhost:8000/predict', inputData)
-      .then(response => setRiskLevel(response.data.risk_level))
-      .catch(error => console.error('Error predicting risk level:', error));
-  };
+      axios.post('http://localhost:8000/predict', inputData)
+        .then(response => {
+          setRiskLevel(response.data.risk_level);
+          setHealthStatValue(response.data.health_stat_value);
+        })
+        .catch(error => console.error('Error predicting risk level:', error));
+    }
+  }, [pollutants, selectedHealthStat]);
 
   const fetchPlotData = () => {
     if (selectedHealthStat && selectedPollutant) {
-      axios.get(`http://localhost:8000/plot_data?health_stat=${selectedHealthStat.value}&pollutant=${selectedPollutant.value}`)
-        .then(response => setPlotData(response.data))
+      console.log('Selected Health Stat:', selectedHealthStat.value);
+      console.log('Selected Pollutant:', selectedPollutant.value);
+      console.log('Pollutants:', pollutants);
+      console.log('Health Stat Value:', healthStatValue);
+  
+      axios.get(`http://localhost:8000/plot_data?health_stat=${selectedHealthStat.value}&pollutant=${selectedPollutant.value}&user_co=${pollutants.co_ppm}&user_no=${pollutants.no_pphm}&user_no2=${pollutants.no2_pphm}&user_ozone=${pollutants.ozone_pphm}&user_pm10=${pollutants.pm10_ug_m3}&user_so2=${pollutants.so2_pphm}&user_health_stat_value=${healthStatValue}`)
+        .then(response => {
+          const pollutantKey = selectedPollutant.value.toLowerCase().replace(' ', '_').replace('µg/m³', 'ug_m3');
+          console.log('Pollutant Key:', pollutantKey);
+  
+          const userPoint = {
+            x: [healthStatValue],
+            y: [pollutants[pollutantKey]],
+            mode: 'markers',
+            marker: {
+              color: 'red',
+              size: 10,
+              symbol: 'x'
+            },
+            name: 'Your Data Point'
+          };
+          console.log('User Point:', userPoint);
+  
+          setPlotData({
+            ...response.data,
+            data: [...response.data.data, userPoint]
+          });
+        })
         .catch(error => console.error('Error fetching plot data:', error));
     }
   };
 
   useEffect(() => {
     fetchPlotData();
-  }, [selectedHealthStat, selectedPollutant]);
+  }, [selectedHealthStat, selectedPollutant, healthStatValue]);
 
   return (
     <div>
@@ -83,15 +115,15 @@ const App = () => {
             onChange={handleHealthStatChange}
           />
         </div>
-        <button onClick={handleSubmit}>Predict Risk Level</button>
       </div>
       {riskLevel && (
         <div>
           <h2>Predicted Risk Level: {riskLevel}</h2>
+          <h2>Predicted Health Stat Value: {healthStatValue}</h2>
         </div>
       )}
       <div>
-        <h2>Decision Boundary Plot</h2>
+        <h2>KNN Scatter Plot</h2>
         <div>
           <label>Select Pollutant for Y-Axis: </label>
           <Select

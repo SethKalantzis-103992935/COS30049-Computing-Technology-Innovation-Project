@@ -43,7 +43,7 @@ def get_health_stats():
     ]
     return {"health_stats": health_stats}
 
-# Endpoint to predict risk level based on pollutants and chosen health stat
+# Endpoint to predict risk level and health stat value based on pollutants and chosen health stat
 @app.post("/predict")
 def predict_risk_level(input_data: PollutantInput):
     # Extract pollutants and health stat from input
@@ -59,26 +59,27 @@ def predict_risk_level(input_data: PollutantInput):
 
     # Build the KNN model for the requested health stat (or reuse cached model)
     if health_stat not in MODEL_CACHE:
-        model, scaler, label_encoder = build_knn_model(DATA_PATH, health_stat)
-        MODEL_CACHE[health_stat] = (model, scaler, label_encoder)
+        model_classifier, model_regressor, scaler, label_encoder = build_knn_model(DATA_PATH, health_stat)
+        MODEL_CACHE[health_stat] = (model_classifier, model_regressor, scaler, label_encoder)
     else:
-        model, scaler, label_encoder = MODEL_CACHE[health_stat]
+        model_classifier, model_regressor, scaler, label_encoder = MODEL_CACHE[health_stat]
 
-    # Predict the risk level
-    risk_level = predict_risk(model, scaler, label_encoder, pollutants)
+    # Predict the risk level and health stat value
+    risk_level, health_stat_value = predict_risk(model_classifier, model_regressor, scaler, label_encoder, pollutants)
     
     return {
-        "risk_level": risk_level
-        }
+        "risk_level": risk_level,
+        "health_stat_value": health_stat_value
+    }
 
 @app.get("/plot_data")
 def get_plot_data(health_stat: str, pollutant: str):
     # Ensure the model for the requested health stat is built and cached
     if health_stat not in MODEL_CACHE:
-        model, scaler, label_encoder = build_knn_model(DATA_PATH, health_stat)
-        MODEL_CACHE[health_stat] = (model, scaler, label_encoder)
+        model_classifier, model_regressor, scaler, label_encoder = build_knn_model(DATA_PATH, health_stat)
+        MODEL_CACHE[health_stat] = (model_classifier, model_regressor, scaler, label_encoder)
     else:
-        model, scaler, label_encoder = MODEL_CACHE[health_stat]
+        model_classifier, model_regressor, scaler, label_encoder = MODEL_CACHE[health_stat]
 
     df = pd.read_csv(DATA_PATH)
     x = df[health_stat].values.tolist()
@@ -87,7 +88,7 @@ def get_plot_data(health_stat: str, pollutant: str):
     # Predict risk levels for all data points
     pollutants_data = df[['CO ppm', 'NO pphm', 'NO2 pphm', 'OZONE pphm', 'PM10 µg/m³', 'SO2 pphm']].values
     risk_levels = label_encoder.inverse_transform(
-        model.predict(
+        model_classifier.predict(
             scaler.transform(pollutants_data)
         )
     ).tolist()
@@ -109,7 +110,7 @@ def get_plot_data(health_stat: str, pollutant: str):
                 "y": y,
                 "mode": "markers",
                 "marker": {
-                    "color": risk_levels_numeric,  # Use numerical risk levels for coloring
+                    "color": risk_levels_numeric,
                     "colorscale": "Viridis",
                     "showscale": True
                 }
