@@ -51,7 +51,7 @@ assignmnet-3/
 ```
 
 ## Backend
-In the `backend` folder, run the following.
+Navigate to to `backend` folder, and run the following commands. ### UPDATE ONCE DIRECTORY STRUCTURE IS SET ###
 
 ### Set Up and Activate Virtual Environemnt
 ```bash
@@ -66,11 +66,17 @@ source venv/bin/activate
 
 ### Install Dependencies
 ```bash
-pip install ...
+pip install fastapi uvicorn joblib pydantic pandas numpy scikit-learn
+```
+
+### Activate FastAPI
+Navigate to wherever we end up putting main.py, and run the following command.
+```bash
+uvicorn main:app --reload
 ```
 
 ## Front End
-In the `frontend` folder, run the following.
+Navigate to to `frontend` folder, and run the following commands.
 
 ### Install Dependencies
 ```bash
