@@ -81,6 +81,7 @@ class KMeansModel:
             "min": min_value
         }
 
+
 if __name__ == "__main__":
     kmeans_model = KMeansModel()
     kmeans_model.train(data)

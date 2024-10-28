@@ -2,11 +2,23 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import numpy as np
 from model import KMeansModel
+from fastapi.middleware.cors import CORSMiddleware
+import joblib
 
-# Create a FastAPI app
 app = FastAPI()
 
-# Load the KMeansModel
+origins = [
+    "http://localhost:3000"
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 kmeans_model = KMeansModel()
 
 # Define the input data model
@@ -42,6 +54,21 @@ async def predict_pollutant_cluster(data: PollutantData):
     
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+@app.on_event("startup")
+async def load_model():
+    try:
+        global kmeans_model
+        kmeans_model = KMeansModel()
+        kmeans_model.clustered_data = joblib.load('clustered_data.pkl')  # Load the clustered data if available
+    except Exception as e:
+        print(f"Error loading the model: {e}")
+
+@app.get("/kmeans")
+async def get_kmeans_data():
+    if kmeans_model.clustered_data is None:
+        raise HTTPException(status_code=404, detail="Clustered data not available")
+    return kmeans_model.clustered_data.to_dict(orient="records")
 
 if __name__ == "__main__":
     import uvicorn
