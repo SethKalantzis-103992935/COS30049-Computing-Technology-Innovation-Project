@@ -1,9 +1,9 @@
 import React from 'react';
-import { Slider, Typography } from '@mui/material';
+import { Slider, Typography, Container } from '@mui/material';
 
 const SliderComponent = ({ name, value, min, max, step, onChange, color }) => {
     return (
-        <div style={{ width: '100%' }}>
+        <Container>
             <Typography variant="body1" style={{ color: '#ffffff' }}>
                 {name}
             </Typography>
@@ -17,7 +17,7 @@ const SliderComponent = ({ name, value, min, max, step, onChange, color }) => {
                 onChange={(event, newValue) => onChange(name, newValue)}
                 sx={styles.slider(color)}
             />
-        </div>
+        </Container>
     );
 };
 

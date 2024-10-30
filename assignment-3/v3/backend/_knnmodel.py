@@ -1,10 +1,9 @@
-import numpy as np
 import pandas as pd
+import joblib
+import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier, KNeighborsRegressor
 from sklearn.preprocessing import LabelEncoder, StandardScaler
-import joblib
-import os
 
 # Load the data
 data = pd.read_csv('__data/annual.csv')
@@ -22,10 +21,14 @@ class KNNModel:
 
     # Train the model
     def train(self):
-        label_columns = ['asthma deaths', 'asthma edp', 'asthma hospitalisations', 'asthma pic', 'copd deaths', 'copd hospitalisations', 'iap deaths', 'iap hospitalisations']
-        for l in label_columns:
+
+        # Define the lables for classification and regression
+        health_columns = ['asthma deaths', 'asthma edp', 'asthma hospitalisations', 'asthma pic', 
+                         'copd deaths', 'copd hospitalisations', 'iap deaths', 
+                         'iap hospitalisations']
+        for l in health_columns:
             # Select the relevant columns for classification and regression
-            features = data[['CO ppm', 'NO pphm', 'NO2 pphm', 'OZONE pphm', 'PM10 µg/m³', 'SO2 pphm']]
+            pollutants = data[['CO ppm', 'NO pphm', 'NO2 pphm', 'OZONE pphm', 'PM10 µg/m³', 'SO2 pphm']]
             label = data[l]
 
             # Assess the label
@@ -42,14 +45,14 @@ class KNNModel:
                     return 'High Risk'
                 
             # Scale the data
-            features_scaled = self.scaler.fit_transform(features)
+            pollutants_scaled = self.scaler.fit_transform(pollutants)
             
             # Encode the target variable
             risk = np.array([categorize_risk(val) for val in label])
             label_encoded = self.label_encoder.fit_transform(risk)
 
             # Split the data into training and testing sets
-            X_train, X_test, y_train, y_test = train_test_split(features_scaled, label_encoded, test_size=0.2, random_state=42)
+            X_train, X_test, y_train, y_test = train_test_split(pollutants_scaled, label_encoded, test_size=0.2, random_state=42)
 
             # Train the classifier
             self.classifier.fit(X_train, y_train)

@@ -1,10 +1,9 @@
-# Import Libraries
-import pandas as pd  # For data manipulation and analysis
-from sklearn.linear_model import LinearRegression  # For linear regression models
-from sklearn.model_selection import train_test_split  # For splitting data into training and testing sets
-from sklearn.preprocessing import StandardScaler  # For feature scaling
-import joblib  # For saving and loading models
-import os  # For interacting with the operating system
+import pandas as pd
+import joblib
+import os
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
 
 # Load the data
 data = pd.read_csv('__data/annual.csv')

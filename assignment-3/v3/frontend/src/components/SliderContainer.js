@@ -24,10 +24,18 @@ const SliderContainer = ({ sliders, onSliderChange, color }) => {
 const styles = {
     container: {
         display: 'flex',
-        flexDirection: 'row',
+        flexDirection: {
+            xs: 'column',
+            sm: 'column',
+            md: 'row'
+        },
         alignItems: 'center',
         justifyContent: 'space-between',
-        gap: '2rem',
+        gap: {
+            xs: '0',
+            sm: '0',
+            md: '2rem'
+        },
         width: '100%',
     },
 };

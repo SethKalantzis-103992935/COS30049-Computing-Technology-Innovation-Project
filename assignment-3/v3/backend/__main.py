@@ -33,67 +33,9 @@ class PollutantData(BaseModel):
     SO2_pphm: float
     label: str
 
-
-
-# Get the health status prediction using the regression model based on provided pollutant data
-@app.post("/regression-model")
-def predict_health_status(data: PollutantData):
-    try:
-        # Get the new values to predict
-        new_data = np.array([[data.CO_ppm, data.NO_pphm, data.NO2_pphm, data.OZONE_pphm, 
-                              data.PM10_ug_m3, data.SO2_pphm]])
-
-        prediction = regression_model.predict(new_data, data.label)
-
-        return {
-            "health_status": prediction.tolist(),
-            "dependent_variable": data.label
-        }
-    
-    except FileNotFoundError as e:
-        # Raise an HTTP 404 Not Found error if model or scaler file is not found
-        raise HTTPException(status_code=404, detail=str(e))
-    except Exception as e:
-        # Raise an HTTP 500 Internal Server Error if prediction fails
-        raise HTTPException(status_code=500, detail=str(e))
-    
-
-
-# Get the cluster and label statistics based on the provided pollutant data
-@app.post("/cluster-model")
-async def predict_pollutant_cluster(data: PollutantData):
-    try:
-
-        # Get the new values to predict
-        new_data = np.array([[data.CO_ppm, data.NO_pphm, data.NO2_pphm, data.OZONE_pphm, 
-                              data.PM10_ug_m3, data.SO2_pphm]])
-
-        # Predict the cluster
-        predicted_cluster = kmeans_model.predict(new_data)[0]
-
-        # Get the statistics for the predicted cluster and label
-        cluster_stats = kmeans_model.get_cluster_statistics(predicted_cluster, data.label)
-        
-        # Return the predicted cluster and label statistics
-        return {
-            "predicted_cluster": int(predicted_cluster),
-            "cluster_stats": cluster_stats
-        }
-    except ValueError as e:
-        # Raise an HTTP 400 Bad Request error if the model has not been trained
-        raise HTTPException(status_code=400, detail=str(e))
-    except Exception as e:
-        # Raise an HTTP 500 Internal Server Error if prediction fails
-        raise HTTPException(status_code=500, detail=str(e))
-    
-
-
-# Get the risk level and health status value based on the provided pollutant data
 @app.post("/knn-model")
 async def predict_knn_risk(data: PollutantData):
     try:
-        
-        # Get the new values to predict
         new_data = np.array([[data.CO_ppm, data.NO_pphm, data.NO2_pphm, data.OZONE_pphm, 
                               data.PM10_ug_m3, data.SO2_pphm]])
         
@@ -107,16 +49,51 @@ async def predict_knn_risk(data: PollutantData):
         raise HTTPException(status_code=404, detail=str(e))
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-    
 
-# Get the point data for the K-Means model
-@app.get("/cluster-model")
-async def get_kmeans_data():
-    if kmeans_model.clustered_data is None:
-        raise HTTPException(status_code=404, detail="Clustered data not available")
-    return kmeans_model.clustered_data.to_dict(orient="records")
 
+@app.get("/knn-model")
+def get_plot_data(health_stat: str, pollutant: str, user_co: float, user_no: float, user_no2: float, user_ozone: float, user_pm10: float, user_so2: float, user_health_stat_value: float):
+    df = pd.read_csv(DATA_PATH)
+    x = df[health_stat].values.tolist()
+    y = df[pollutant].values.tolist()
+
+    pollutants_data = df[['CO ppm', 'NO pphm', 'NO2 pphm', 'OZONE pphm', 'PM10 µg/m³', 'SO2 pphm']].values
+    risk_levels = label_encoder.inverse_transform(
+        model_classifier.predict(
+            scaler.transform(pollutants_data)
+        )
+    ).tolist()
     
+    risk_level_mapping = {
+        "Low Risk": 0,
+        "Low-Medium Risk": 1,
+        "Medium Risk": 2,
+        "Medium-High Risk": 3,
+        "High Risk": 4
+    }
+    risk_levels_numeric = [risk_level_mapping[risk] for risk in risk_levels]
+
+    plot_data = {
+        "data": [
+            {
+                "x": x,
+                "y": y,
+                "mode": "markers",
+                "marker": {
+                    "color": risk_levels_numeric,
+                    "colorscale": "Viridis",
+                    "showscale": True
+                }
+            }
+        ],
+        "layout": {
+            "title": f"KNN Decision Boundary for {health_stat} vs {pollutant}",
+            "xaxis": {"title": health_stat},
+            "yaxis": {"title": pollutant}
+        }
+    }
+    return plot_data
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)

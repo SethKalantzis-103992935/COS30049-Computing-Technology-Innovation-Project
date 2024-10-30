@@ -2,7 +2,6 @@ import pandas as pd
 import joblib
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
-import os
 
 # Load the data
 data = pd.read_csv('__data/annual.csv')

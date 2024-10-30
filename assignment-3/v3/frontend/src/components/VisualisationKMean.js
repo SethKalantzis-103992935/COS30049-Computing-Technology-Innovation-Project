@@ -4,7 +4,6 @@ import { Box, Typography } from '@mui/material';
 
 const VisualisationKMean = ({ clusterStats, predictionValues, clusterData }) => {
     const [predictedPoint, setPredictedPoint] = useState(null);
-    const [predictedCluster, setPredictedCluster] = useState(null);
     const clusterColors = ['red', 'green', 'blue', 'purple', 'orange', 'yellow'];
     const clusterScatterData = {};
     const meshData = {};
@@ -17,45 +16,78 @@ const VisualisationKMean = ({ clusterStats, predictionValues, clusterData }) => 
                     y: predictionValues['NO pphm'],
                     z: predictionValues['PM10 µg/m³'],
                 };
-
                 setPredictedPoint(newPredictedPoint);
             }
         };
-
         fetchPredictedCluster();
     }, [predictionValues]);
+
+    // Organize cluster data points by cluster, assign colors, and build scatter and mesh data
+    clusterData.forEach(point => {
+        const cluster = point.cluster;
+        const color = clusterColors[cluster % clusterColors.length];
+
+        if (!clusterScatterData[cluster]) {
+            clusterScatterData[cluster] = {
+                x: [],
+                y: [],
+                z: [],
+                mode: 'markers',
+                marker: {
+                    size: 5,
+                    color: color,
+                },
+                type: 'scatter3d',
+                name: `Cluster ${cluster}`,
+            };
+        }
+        clusterScatterData[cluster].x.push(point['CO ppm']);
+        clusterScatterData[cluster].y.push(point['NO pphm']);
+        clusterScatterData[cluster].z.push(point['PM10 µg/m³']);
+
+        if (!meshData[cluster]) {
+            meshData[cluster] = {
+                x: [],
+                y: [],
+                z: [],
+                color: color,
+            };
+        }
+        meshData[cluster].x.push(point['CO ppm']);
+        meshData[cluster].y.push(point['NO pphm']);
+        meshData[cluster].z.push(point['PM10 µg/m³']);
+    });
+
+    const meshDataList = Object.keys(meshData).map(cluster => ({
+        x: meshData[cluster].x,
+        y: meshData[cluster].y,
+        z: meshData[cluster].z,
+        alphahull: 0,
+        opacity: 0.15,
+        color: meshData[cluster].color,
+        type: 'mesh3d',
+        showlegend: false,
+    }));
 
     return (
         <Box>
             <Plot
                 data={[
-                    // Existing cluster data
-                    clusterData && {
-                        x: clusterData.map(point => point['CO ppm']),
-                        y: clusterData.map(point => point['NO pphm']),
-                        z: clusterData.map(point => point['PM10 µg/m³']),
-                        mode: 'markers',
-                        type: 'scatter3d',
-                        marker: {
-                            size: 5,
-                            color: 'blue',
-                        },
-                        name: 'Cluster Points',
-                    },
-                    // Predicted point
-                    predictedPoint ? {
+                    ...Object.values(clusterScatterData),
+                    ...meshDataList,
+                    predictedPoint && {
                         x: [predictedPoint.x],
                         y: [predictedPoint.y],
                         z: [predictedPoint.z],
                         mode: 'markers',
                         marker: {
                             size: 10,
-                            color: 'red',
+                            color: 'black',
                             symbol: 'cross',
                         },
                         type: 'scatter3d',
                         name: 'Predicted Point',
-                    } : null,
+                    },
                 ].filter(Boolean)}
                 layout={{
                     title: 'K-Means Clusters For Air Quality Data',

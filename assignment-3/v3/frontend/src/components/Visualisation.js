@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Container } from '@mui/material';
 import axios from 'axios';
 import SliderContainer from './SliderContainer';
 import DropDownContainer from './DropDownContainer';
@@ -8,18 +9,19 @@ import VisualisationKMean from './VisualisationKMean';
 
 const Visualisation = () => {
 
-    const pollutants = [ 'CO ppm', 'NO pphm', 'NO2 pphm', 'OZONE pphm', 'PM10 µg/m³', 'SO2 pphm' ];
-    const healthStats = [
-        'asthma deaths', 'asthma edp', 'asthma hospitalisations', 'asthma pic', 'copd deaths', 
-        'copd hospitalisations', 'iap deaths', 'iap hospitalisations'
-    ];
+    // Pollutants and health stats
+    const pollutants = ['CO ppm', 'NO pphm', 'NO2 pphm', 'OZONE pphm', 'PM10 µg/m³', 'SO2 pphm'];
+    const healthStats = ['asthma deaths', 'asthma edp', 'asthma hospitalisations', 'asthma pic',
+        'copd deaths', 'copd hospitalisations', 'iap deaths', 'iap hospitalisations'];
 
+    // API endpoints
     const linearEndPoint = 'http://127.0.0.1:8000/regression-model';
     const kMeanEndPoint = 'http://127.0.0.1:8000/cluster-model';
     const knnEndPoint = 'http://127.0.0.1:8000/knn-model';
 
-    const [clusterData, setClusterData] = useState(null);
 
+    // Fetch data for KMean model
+    const [clusterData, setClusterData] = useState(null);
     const fetchInitialData = async () => {
         try {
             const response = await axios.get(kMeanEndPoint);
@@ -118,7 +120,7 @@ const Visualisation = () => {
     }));
 
     return (
-        <div style={{ width: '100%' }}>
+        <Container>
             <DropDownContainer
                 models={['linear', 'kmeans', 'knn']}
                 selectedModel={selectedModel}
@@ -131,16 +133,16 @@ const Visualisation = () => {
                 onPollutantChange={handlePollutantChange}
             />
 
-            {/* <pre>{JSON.stringify(fetchedData, null, 2)}</pre>
-            <pre>{JSON.stringify(predictionValues, null, 2)}</pre>
-            <pre>{JSON.stringify(clusterData, null, 2)}</pre> */}
+            {/* <pre>{JSON.stringify(fetchedData, null, 2)}</pre> */}
+            {/* <pre>{JSON.stringify(predictionValues, null, 2)}</pre> */}
+            {/* <pre>{JSON.stringify(clusterData, null, 2)}</pre> */}
 
             {/* {selectedModel === 'linear' && (
                 <VisualisationLinearRegression 
                     selectedHealthStat={selectedHealthStat} 
                     fetchedData={fetchedData} 
                 />
-            )} */}
+            )}
             {selectedModel === 'kmeans' && (
                 <VisualisationKMean 
                     clusterStats={fetchedData}
@@ -151,18 +153,17 @@ const Visualisation = () => {
             {selectedModel === 'knn' && (
                 <VisualisationKNN 
                     selectedHealthStat={selectedHealthStat} 
+                    predictionValues={predictionValues}
                     selectedPollutant={selectedPollutant} 
                 />
-            )}
+            )} */}
 
             <SliderContainer
                 sliders={visibleSliders}
                 onSliderChange={handleSliderChange}
                 color='text.primary'
             />
-
-
-        </div>
+        </Container>
     );
 };
 

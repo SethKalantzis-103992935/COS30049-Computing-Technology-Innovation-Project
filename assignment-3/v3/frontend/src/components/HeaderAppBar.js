@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Button, IconButton } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
 
-const HeaderAppBar = ({ toggleDrawer }) => {
+const HeaderAppBar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
@@ -25,14 +24,6 @@ const HeaderAppBar = ({ toggleDrawer }) => {
             sx={styles.appBar(isScrolled)}
         >
             <Toolbar component="nav">
-                <IconButton
-                    edge="start"
-                    color="inherit"
-                    aria-label="menu"
-                    onClick={toggleDrawer(true)}
-                >
-                    <MenuIcon />
-                </IconButton>
                 <Typography
                     variant="h6"
                     component={Link}
@@ -74,11 +65,12 @@ const styles = {
         fontSize: '2rem',
         textDecoration: 'none',
         transition: 'all 0.5s',
-        color: isScrolled ? 'inherit' : 'white',
+        color: 'text.onLight',
     }),
     link: (isScrolled) => ({
         fontSize: '1rem',
-        color: isScrolled ? 'inherit' : 'white',
+        color: 'text.onLight'
+
     }),
 };
 
