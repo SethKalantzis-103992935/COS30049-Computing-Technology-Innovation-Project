@@ -18,8 +18,8 @@ class KMeansModel:
     # Train the model
     def train(self, data):
 
-        # Select the relevant columns for clustering
-        pollutants = data[['CO ppm', 'NO pphm', 'NO2 pphm', 'OZONE pphm', 'PM10 µg/m³', 'SO2 pphm']]
+        # Select the relevant columns for clustering (PCA reduced)
+        pollutants = data[['CO ppm', 'NO pphm', 'PM10 µg/m³']]
         
         # Scale the data
         pollutants_scaled = self.scaler.fit_transform(pollutants)
@@ -80,7 +80,6 @@ class KMeansModel:
             "max": max_value,
             "min": min_value
         }
-
 
 if __name__ == "__main__":
     kmeans_model = KMeansModel()

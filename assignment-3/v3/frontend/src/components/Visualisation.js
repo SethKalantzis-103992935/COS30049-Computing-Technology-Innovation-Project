@@ -9,48 +9,19 @@ import VisualisationKMean from './VisualisationKMean';
 
 const Visualisation = () => {
 
-    // Pollutants and health stats
-    const pollutants = ['CO ppm', 'NO pphm', 'NO2 pphm', 'OZONE pphm', 'PM10 µg/m³', 'SO2 pphm'];
-    const healthStats = ['asthma deaths', 'asthma edp', 'asthma hospitalisations', 'asthma pic',
-        'copd deaths', 'copd hospitalisations', 'iap deaths', 'iap hospitalisations'];
-
-    // API endpoints
+    // API Endpoints
     const linearEndPoint = 'http://127.0.0.1:8000/regression-model';
     const kMeanEndPoint = 'http://127.0.0.1:8000/cluster-model';
     const knnEndPoint = 'http://127.0.0.1:8000/knn-model';
 
+    // Pollutants
+    const pollutants = ['CO ppm', 'NO pphm', 'NO2 pphm', 'OZONE pphm', 'PM10 µg/m³', 'SO2 pphm'];
 
-    // Fetch data for KMean model
-    const [clusterData, setClusterData] = useState(null);
-    const fetchInitialData = async () => {
-        try {
-            const response = await axios.get(kMeanEndPoint);
-            setClusterData(response.data);
-        } catch (error) {
-            console.error(error);
-        }
-    };
+    // Health Stats
+    const healthStats = ['asthma deaths', 'asthma edp', 'asthma hospitalisations', 'asthma pic',
+        'copd deaths', 'copd hospitalisations', 'iap deaths', 'iap hospitalisations'];
 
-    useEffect(() => {
-        fetchInitialData();
-    }, []);
-
-
-
-    const [path, setPath] = useState(linearEndPoint);
-    const [fetchedData, setFetchedData] = useState([]);
-    const [selectedModel, setSelectedModel] = useState('linear');
-    const [selectedHealthStat, setSelectedHealthStat] = useState(healthStats[0]);
-    const [selectedPollutant, setSelectedPollutant] = useState(pollutants[0]);
-    const [predictionValues, setPredictionValues] = useState({
-        "CO ppm": 0.17,
-        "NO pphm": 1.75,
-        "NO2 pphm": 1,
-        "OZONE pphm": 1.75,
-        "PM10 µg/m³": 22.5,
-        "SO2 pphm": 0.10,
-    });
-
+    // Slider Configurations
     const sliderConfig = [
         { name: "CO ppm", min: 0, max: 0.35, step: 0.01 },
         { name: "NO pphm", min: 0, max: 3.50, step: 0.01 },
@@ -60,32 +31,56 @@ const Visualisation = () => {
         { name: "SO2 pphm", min: 0, max: 0.20, step: 0.01 },
     ];
 
-    const formatDataForAPI = () => ({
-        CO_ppm: predictionValues["CO ppm"],
-        NO_pphm: predictionValues["NO pphm"],
-        NO2_pphm: predictionValues["NO2 pphm"],
-        OZONE_pphm: predictionValues["OZONE pphm"],
-        PM10_ug_m3: predictionValues["PM10 µg/m³"],
-        SO2_pphm: predictionValues["SO2 pphm"],
-        label: selectedHealthStat
-    });
 
-    const fetchData = async () => {
+
+    // States
+    const [selectedHealthStat, setSelectedHealthStat] = useState(healthStats[0]);
+    const [selectedPollutant, setSelectedPollutant] = useState(pollutants[0]);
+    const [selectedModel, setSelectedModel] = useState('linear');
+    const [path, setPath] = useState(linearEndPoint);
+    const [clusterData, setClusterData] = useState(null);
+    const [knnData, setKnnData] = useState(null);
+    const [predictionValues, setPredictionValues] = useState({
+        "CO ppm": 0.17,
+        "NO pphm": 1.75,
+        "NO2 pphm": 1,
+        "OZONE pphm": 1.75,
+        "PM10 µg/m³": 22.5,
+        "SO2 pphm": 0.10,
+    });
+    const [predictionResults, setPredictionResults] = useState([]);
+
+
+
+    // Fetch initial data to be used in visualisation for KMeans and KNN models
+    const fetchInitialData = async () => {
         try {
-            const response = await axios.post(path, formatDataForAPI());
-            setFetchedData(response.data);
+            const response = await axios.get(kMeanEndPoint);
+            setClusterData(response.data);
         } catch (error) {
             console.error(error);
         }
     };
 
-    const handleSliderChange = (name, value) => {
-        setPredictionValues((prevValues) => ({
-            ...prevValues,
-            [name]: value
-        }));
+    // Call fetchInitialData on component mount
+    useEffect(() => {
+        fetchInitialData();
+    }, []);
+    
+
+
+
+    // Set new selected health stat when dropdown changes
+    const handleHealthStatChange = (event) => {
+        setSelectedHealthStat(event.target.value);
     };
 
+    // Set new selected pollutant when dropdown changes
+    const handlePollutantChange = (event) => {
+        setSelectedPollutant(event.target.value);
+    };
+
+    // Set new selected model when dropdown changes
     const handleModelChange = (event) => {
         const model = event.target.value;
         setSelectedModel(model);
@@ -97,18 +92,50 @@ const Visualisation = () => {
         }
     };
 
-    const handleHealthStatChange = (event) => {
-        setSelectedHealthStat(event.target.value);
+    // Update prediction values when sliders change
+    const handleSliderChange = (name, value) => {
+        setPredictionValues((prevValues) => ({
+            ...prevValues,
+            [name]: value
+        }));
     };
 
-    const handlePollutantChange = (event) => {
-        setSelectedPollutant(event.target.value);
+
+
+
+
+    // Format data for a POST request. All models expect the same data format for prediction
+    const formatDataForPostRequest = () => ({
+        CO_ppm: predictionValues["CO ppm"],
+        NO_pphm: predictionValues["NO pphm"],
+        NO2_pphm: predictionValues["NO2 pphm"],
+        OZONE_pphm: predictionValues["OZONE pphm"],
+        PM10_ug_m3: predictionValues["PM10 µg/m³"],
+        SO2_pphm: predictionValues["SO2 pphm"],
+        label: selectedHealthStat
+    });
+
+    // Fetch prediction results from API for selected model
+    const fetchData = async () => {
+        try {
+            const response = await axios.post(path, formatDataForPostRequest());
+            setPredictionResults(response.data);
+        } catch (error) {
+            setPredictionResults(error);
+        }
     };
 
+    // Call fetchData when any of the following change
     useEffect(() => {
         fetchData();
     }, [path, predictionValues, selectedModel, selectedHealthStat, selectedPollutant]);
 
+
+
+
+
+
+    // Filter sliders based on selected model. Only show sliders that are relevant to the selected model
     const visibleSliders = sliderConfig.filter((slider) => {
         if (selectedModel === 'linear') return true;
         if (selectedModel === 'kmeans') return ["CO ppm", "NO pphm", "PM10 µg/m³"].includes(slider.name);
@@ -118,6 +145,11 @@ const Visualisation = () => {
         ...slider,
         value: predictionValues[slider.name]
     }));
+
+
+
+
+
 
     return (
         <Container>
@@ -133,24 +165,27 @@ const Visualisation = () => {
                 onPollutantChange={handlePollutantChange}
             />
 
-            {/* <pre>{JSON.stringify(fetchedData, null, 2)}</pre> */}
             {/* <pre>{JSON.stringify(predictionValues, null, 2)}</pre> */}
+            {/* <pre>{JSON.stringify(predictionResults, null, 2)}</pre> */}
             {/* <pre>{JSON.stringify(clusterData, null, 2)}</pre> */}
+            {/* <pre>{JSON.stringify(knnData, null, 2)}</pre> */}
 
             {/* {selectedModel === 'linear' && (
                 <VisualisationLinearRegression 
                     selectedHealthStat={selectedHealthStat} 
-                    fetchedData={fetchedData} 
+                    predictionResults={predictionResults} 
+                    predictionValues={predictionValues}
+
                 />
-            )}
+            )} */}
             {selectedModel === 'kmeans' && (
                 <VisualisationKMean 
-                    clusterStats={fetchedData}
+                    predictionResults={predictionResults}
                     predictionValues={predictionValues}
                     clusterData={clusterData} 
                 />
             )}
-            {selectedModel === 'knn' && (
+            {/* {selectedModel === 'knn' && (
                 <VisualisationKNN 
                     selectedHealthStat={selectedHealthStat} 
                     predictionValues={predictionValues}

@@ -2,16 +2,16 @@ import React from 'react';
 import Plot from 'react-plotly.js';
 import { Container, Typography, Box } from '@mui/material';
 
-const VisualisationLinearRegression = ({ recordedData, predictionValues }) => {
+const VisualisationLinearRegression = ({ selectedHealthStat, predictionResults, predictionValues }) => {
     return (
         <Container>
             <Typography variant="h5" gutterBottom>
                 Health Prediction Results
             </Typography>
-            {recordedData && recordedData.health_status.length > 0 ? (
+            {predictionResults && predictionResults.health_status.length > 0 ? (
                 <Box mt={4}>
                     <Typography variant="h6">
-                        Predicted {recordedData.dependent_variable}: {recordedData.health_status[0]}
+                        Predicted {predictionResults.dependent_variable}: {predictionResults.health_status[0]}
                     </Typography>
                     <Plot
                         data={[

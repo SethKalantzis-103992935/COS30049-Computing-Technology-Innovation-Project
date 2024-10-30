@@ -18,8 +18,8 @@ class KMeansModel:
     # Train the model
     def train(self, data):
 
-        # Select the relevant columns for clustering
-        pollutants = data[['CO ppm', 'NO pphm', 'NO2 pphm', 'OZONE pphm', 'PM10 µg/m³', 'SO2 pphm']]
+        # Select the relevant columns for clustering (PCA reduced)
+        pollutants = data[['CO ppm', 'NO pphm', 'PM10 µg/m³']]
         
         # Scale the data
         pollutants_scaled = self.scaler.fit_transform(pollutants)
@@ -61,6 +61,10 @@ class KMeansModel:
         # Check if the clustered data is available
         if self.clustered_data is None:
             raise ValueError("No clustered data available. Please train the model first.")
+        
+        # Check if the label is valid
+        if label not in self.clustered_data.columns:
+            raise ValueError(f"Invalid label: {label}")
 
         # Get the data for the specified cluster
         cluster_data = self.clustered_data[self.clustered_data['cluster'] == cluster]

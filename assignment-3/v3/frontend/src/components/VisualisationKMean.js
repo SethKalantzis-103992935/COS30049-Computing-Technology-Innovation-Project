@@ -2,24 +2,21 @@ import React, { useEffect, useState } from 'react';
 import Plot from 'react-plotly.js';
 import { Box, Typography } from '@mui/material';
 
-const VisualisationKMean = ({ clusterStats, predictionValues, clusterData }) => {
+const VisualisationKMean = ({ predictionResults, predictionValues, clusterData }) => {
     const [predictedPoint, setPredictedPoint] = useState(null);
     const clusterColors = ['red', 'green', 'blue', 'purple', 'orange', 'yellow'];
     const clusterScatterData = {};
     const meshData = {};
 
     useEffect(() => {
-        const fetchPredictedCluster = async () => {
-            if (predictionValues) {
-                const newPredictedPoint = {
-                    x: predictionValues['CO ppm'],
-                    y: predictionValues['NO pphm'],
-                    z: predictionValues['PM10 µg/m³'],
-                };
-                setPredictedPoint(newPredictedPoint);
-            }
-        };
-        fetchPredictedCluster();
+        // Set predictedPoint directly from predictionValues
+        if (predictionValues) {
+            setPredictedPoint({
+                x: predictionValues['CO ppm'],
+                y: predictionValues['NO pphm'],
+                z: predictionValues['PM10 µg/m³'],
+            });
+        }
     }, [predictionValues]);
 
     // Organize cluster data points by cluster, assign colors, and build scatter and mesh data
@@ -34,7 +31,7 @@ const VisualisationKMean = ({ clusterStats, predictionValues, clusterData }) => 
                 z: [],
                 mode: 'markers',
                 marker: {
-                    size: 5,
+                    size: 4,
                     color: color,
                 },
                 type: 'scatter3d',
@@ -109,15 +106,17 @@ const VisualisationKMean = ({ clusterStats, predictionValues, clusterData }) => 
                 style={{ width: '100%', height: '100%' }}
             />
 
-            {clusterStats && (
+            {predictionResults && predictionResults.cluster_stats ? (
                 <Box>
-                    <Typography>Predicted Cluster: {clusterStats.predicted_cluster}</Typography>
-                    <Typography>Mean: {clusterStats.cluster_stats.mean}</Typography>
-                    <Typography>Median: {clusterStats.cluster_stats.median}</Typography>
-                    <Typography>Standard Deviation: {clusterStats.cluster_stats.std_dev}</Typography>
-                    <Typography>Min: {clusterStats.cluster_stats.min}</Typography>
-                    <Typography>Max: {clusterStats.cluster_stats.max}</Typography>
+                    <Typography>Predicted Cluster: {predictionResults.predicted_cluster}</Typography>
+                    <Typography>Mean: {predictionResults.cluster_stats.mean}</Typography>
+                    <Typography>Median: {predictionResults.cluster_stats.median}</Typography>
+                    <Typography>Standard Deviation: {predictionResults.cluster_stats.std_dev}</Typography>
+                    <Typography>Min: {predictionResults.cluster_stats.min}</Typography>
+                    <Typography>Max: {predictionResults.cluster_stats.max}</Typography>
                 </Box>
+            ) : (
+                <Typography>No prediction results available.</Typography>
             )}
         </Box>
     );
