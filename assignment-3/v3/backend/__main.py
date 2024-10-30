@@ -45,6 +45,10 @@ async def load_model():
     except Exception as e:
         print(f"Error loading the model: {e}")
 
+
+
+
+
 # Get predictions from the K-Means model
 @app.post("/cluster-model")
 async def predict_pollutant_cluster(data: PollutantData):
@@ -72,12 +76,20 @@ async def predict_pollutant_cluster(data: PollutantData):
         # Raise an HTTP 500 Internal Server Error if prediction fails
         raise HTTPException(status_code=500, detail=str(e))
     
+
+    
 # Get the clustered data from the K-Means model
 @app.get("/cluster-model")
 async def get_kmeans_data():
     if kmeans_model.clustered_data is None:
         raise HTTPException(status_code=404, detail="Clustered data not available")
     return kmeans_model.clustered_data.to_dict(orient="records")
+
+
+
+
+
+
 
 
 # Get predictions from the regression model

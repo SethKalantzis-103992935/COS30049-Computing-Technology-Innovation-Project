@@ -7,7 +7,7 @@ const theme = createTheme({
         divider: '#6f6f6f',
         background: {
             default: '#333238',
-            paper: '#333238',
+            paper: '#4b4a50', // Lighter shade
             footer: '#324458',
             header: '#71b5bc'
         },
@@ -20,7 +20,8 @@ const theme = createTheme({
             linearRegression: '#e3de8a',
             knn: '#e7ab43',
             kMean: '#dd94b8'
-        }
+        },
+        graph: '#44434a',
     }
 });
 

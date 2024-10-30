@@ -31,8 +31,10 @@ const styles = {
     card: {
         maxWidth: 250,
         boxShadow: 'none',
+        backgroundColor: 'transparent',
         '&:hover': {
             boxShadow: 'none',
+            backgroundColor: 'transparent'
         }
     },
     title: (titleColor) => ({

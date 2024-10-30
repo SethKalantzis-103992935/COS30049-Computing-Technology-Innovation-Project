@@ -4,7 +4,7 @@ import { Box, Typography } from '@mui/material';
 
 const VisualisationKMean = ({ predictionResults, predictionValues, clusterData }) => {
     const [predictedPoint, setPredictedPoint] = useState(null);
-    const clusterColors = ['red', 'green', 'blue', 'purple', 'orange', 'yellow'];
+    const clusterColors = ['#ea698b', '#6a994e', '#457b9d', '#6f2dbd', '#ee9b00', '#c1121f'];
     const clusterScatterData = {};
     const meshData = {};
 
@@ -67,7 +67,7 @@ const VisualisationKMean = ({ predictionResults, predictionValues, clusterData }
     }));
 
     return (
-        <Box>
+        <Box sx={styles.box}>
             <Plot
                 data={[
                     ...Object.values(clusterScatterData),
@@ -86,40 +86,36 @@ const VisualisationKMean = ({ predictionResults, predictionValues, clusterData }
                         name: 'Predicted Point',
                     },
                 ].filter(Boolean)}
-                layout={{
-                    title: 'K-Means Clusters For Air Quality Data',
-                    scene: {
-                        xaxis: { title: 'CO ppm' },
-                        yaxis: { title: 'NO pphm' },
-                        zaxis: { title: 'PM10 µg/m³' },
-                    },
-                    autosize: true,
-                    paper_bgcolor: 'rgba(0,0,0,0)',
-                    plot_bgcolor: 'rgba(0,0,0,0)',
-                    font: {
-                        family: 'Arial, sans-serif',
-                        size: 12,
-                        color: '#ffffff',
-                    },
-                }}
+                layout={styles.plotLayout}
                 useResizeHandler={true}
-                style={{ width: '100%', height: '100%' }}
+                style={styles.plotStyle}
             />
-
-            {predictionResults && predictionResults.cluster_stats ? (
-                <Box>
-                    <Typography>Predicted Cluster: {predictionResults.predicted_cluster}</Typography>
-                    <Typography>Mean: {predictionResults.cluster_stats.mean}</Typography>
-                    <Typography>Median: {predictionResults.cluster_stats.median}</Typography>
-                    <Typography>Standard Deviation: {predictionResults.cluster_stats.std_dev}</Typography>
-                    <Typography>Min: {predictionResults.cluster_stats.min}</Typography>
-                    <Typography>Max: {predictionResults.cluster_stats.max}</Typography>
-                </Box>
-            ) : (
-                <Typography>No prediction results available.</Typography>
-            )}
         </Box>
     );
+};
+
+const styles = {
+    box: {
+        width: '100%',
+        height: '100%',
+        position: 'relative',
+    },
+    plotLayout: {
+        title: 'K-Means Clusters For Air Quality Data',
+        scene: {
+            xaxis: { title: 'CO ppm' },
+            yaxis: { title: 'NO pphm' },
+            zaxis: { title: 'PM10 µg/m³' },
+        },
+        autosize: true,
+        paper_bgcolor: 'rgba(0, 0, 0, 0)',
+        plot_bgcolor: 'rgba(0, 0, 0, 0)'
+    },
+    plotStyle: {
+        width: '100%',
+        height: '100%',
+        position: 'absolute',
+    },
 };
 
 export default VisualisationKMean;

@@ -3,9 +3,11 @@ import { Container } from '@mui/material';
 import axios from 'axios';
 import SliderContainer from './SliderContainer';
 import DropDownContainer from './DropDownContainer';
+import StatsBox from './StatsBox';
 import VisualisationKNN from './VisualisationKNN';
 import VisualisationLinearRegression from './VisualisationLinearRegression';
 import VisualisationKMean from './VisualisationKMean';
+import { WidthFull } from '@mui/icons-material';
 
 const Visualisation = () => {
 
@@ -38,8 +40,8 @@ const Visualisation = () => {
     const [selectedPollutant, setSelectedPollutant] = useState(pollutants[0]);
     const [selectedModel, setSelectedModel] = useState('linear');
     const [path, setPath] = useState(linearEndPoint);
-    const [clusterData, setClusterData] = useState(null);
-    const [knnData, setKnnData] = useState(null);
+    const [clusterData, setClusterData] = useState([]);
+    const [knnData, setKnnData] = useState([]);
     const [predictionValues, setPredictionValues] = useState({
         "CO ppm": 0.17,
         "NO pphm": 1.75,
@@ -66,7 +68,7 @@ const Visualisation = () => {
     useEffect(() => {
         fetchInitialData();
     }, []);
-    
+
 
 
 
@@ -165,41 +167,60 @@ const Visualisation = () => {
                 onPollutantChange={handlePollutantChange}
             />
 
-            {/* <pre>{JSON.stringify(predictionValues, null, 2)}</pre> */}
-            {/* <pre>{JSON.stringify(predictionResults, null, 2)}</pre> */}
+            {/* {<pre>{JSON.stringify(selectedHealthStat, null, 2)}</pre>} */}
+            {/* {<pre>{JSON.stringify(predictionValues, null, 2)}</pre>} */}
+            {/* {<pre>{JSON.stringify(predictionResults, null, 2)}</pre>} */}
             {/* <pre>{JSON.stringify(clusterData, null, 2)}</pre> */}
             {/* <pre>{JSON.stringify(knnData, null, 2)}</pre> */}
 
-            {/* {selectedModel === 'linear' && (
-                <VisualisationLinearRegression 
-                    selectedHealthStat={selectedHealthStat} 
-                    predictionResults={predictionResults} 
-                    predictionValues={predictionValues}
+            <Container style={styles.graphContainer} >
 
-                />
-            )} */}
-            {selectedModel === 'kmeans' && (
-                <VisualisationKMean 
-                    predictionResults={predictionResults}
-                    predictionValues={predictionValues}
-                    clusterData={clusterData} 
-                />
-            )}
-            {/* {selectedModel === 'knn' && (
-                <VisualisationKNN 
-                    selectedHealthStat={selectedHealthStat} 
-                    predictionValues={predictionValues}
-                    selectedPollutant={selectedPollutant} 
-                />
-            )} */}
+                {selectedModel === 'linear' && (
+                    <VisualisationLinearRegression
+                        selectedHealthStat={selectedHealthStat}
+                        predictionResults={predictionResults}
+                        predictionValues={predictionValues}
+
+                    />
+                )}
+                {selectedModel === 'kmeans' && (
+                    <VisualisationKMean
+                        predictionResults={predictionResults}
+                        predictionValues={predictionValues}
+                        clusterData={clusterData}
+                    />
+                )}
+                {/* {selectedModel === 'knn' && (
+                    <VisualisationKNN 
+                        selectedHealthStat={selectedHealthStat} 
+                        predictionValues={predictionValues}
+                        selectedPollutant={selectedPollutant} 
+                    />
+                )} */}
+            </Container>
 
             <SliderContainer
                 sliders={visibleSliders}
                 onSliderChange={handleSliderChange}
-                color='text.primary'
+                color='primary'
             />
+
+            <StatsBox predictionResults={predictionResults} />
+
+
         </Container>
     );
+};
+
+const styles = {
+    graphContainer: {
+        width: '100%',
+        height: '50vh',
+        backgroundColor: '#f5f5f5',
+        borderRadius: '8px',
+        marginTop: '20px',
+        marginBottom: '20px',
+    },
 };
 
 export default Visualisation;

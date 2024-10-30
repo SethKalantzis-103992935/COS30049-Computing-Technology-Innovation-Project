@@ -4,51 +4,67 @@ import { Container, Typography, Box } from '@mui/material';
 
 const VisualisationLinearRegression = ({ selectedHealthStat, predictionResults, predictionValues }) => {
     return (
-        <Container>
-            <Typography variant="h5" gutterBottom>
-                Health Prediction Results
-            </Typography>
-            {predictionResults && predictionResults.health_status.length > 0 ? (
-                <Box mt={4}>
-                    <Typography variant="h6">
-                        Predicted {predictionResults.dependent_variable}: {predictionResults.health_status[0]}
-                    </Typography>
-                    <Plot
-                        data={[
-                            {
-                                type: 'scatterpolar',
-                                r: [
-                                    parseFloat(predictionValues["CO ppm"]),
-                                    parseFloat(predictionValues["NO pphm"]),
-                                    parseFloat(predictionValues["NO2 pphm"]),
-                                    parseFloat(predictionValues["OZONE pphm"]),
-                                    parseFloat(predictionValues["PM10 µg/m³"]),
-                                    parseFloat(predictionValues["SO2 pphm"])
-                                ],
-                                theta: ['CO', 'NO', 'NO2', 'Ozone', 'PM10', 'SO2'],
-                                fill: 'toself',
-                                name: 'Pollutants',
+        <Box sx={styles.box}>
+            {predictionResults && predictionResults.health_status && predictionResults.health_status.length > 0 ? (
+                <Plot
+                    data={[
+                        {
+                            type: 'scatterpolar',
+                            r: [
+                                parseFloat(predictionValues["CO ppm"]),
+                                parseFloat(predictionValues["NO pphm"]),
+                                parseFloat(predictionValues["NO2 pphm"]),
+                                parseFloat(predictionValues["OZONE pphm"]),
+                                parseFloat(predictionValues["PM10 µg/m³"]),
+                                parseFloat(predictionValues["SO2 pphm"])
+                            ],
+                            theta: ['CO', 'NO', 'NO2', 'Ozone', 'PM10', 'SO2'],
+                            fill: 'toself',
+                            name: 'Pollutants',
+                            marker: {
+                                color: '#71b5bc'
                             }
-                        ]}
-                        layout={{
-                            title: 'Pollutant Levels and Health Status Radar Chart',
-                            polar: {
-                                radialaxis: {
-                                    visible: true,
-                                    range: [0, 35] // Adjust the range as needed
-                                }
-                            },
-                            showlegend: true
-                        }}
-                    />
-                </Box>
+                        }
+                    ]}
+                    layout={styles.plotLayout}
+                    useResizeHandler={true}
+                    style={styles.plot}
+                />
             ) : (
                 <Typography variant="body1">
                     No prediction data available. Please make sure to input the values correctly.
                 </Typography>
             )}
-        </Container>
+        </Box>
     );
+};
+
+const styles = {
+    box: {
+        width: '100%',
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    plot: {
+        width: '100%',
+        height: '100%',
+    },
+    plotLayout: {
+        title: 'Pollutant Levels and Health Status Radar Chart',
+        polar: {
+            radialaxis: {
+                visible: true,
+                range: [0, 35]
+            }
+        },
+        showlegend: true,
+        autosize: true,
+        paper_bgcolor: 'rgba(0, 0, 0, 0)',
+        plot_bgcolor: 'rgba(0, 0, 0, 0)'
+    }
 };
 
 export default VisualisationLinearRegression;
