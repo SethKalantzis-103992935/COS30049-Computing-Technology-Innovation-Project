@@ -83,7 +83,7 @@ function App() {
         });
         
         const result = await response.json();
-        return result.predictedCluster; // Ensure this matches your response structure
+        return result.predictedCluster;
       };
       
 

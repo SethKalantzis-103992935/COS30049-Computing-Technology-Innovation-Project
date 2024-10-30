@@ -1,36 +1,32 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import { Container } from '@mui/material';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { Box } from '@mui/material';
+import Header from './components/Header';
+import Home from './components/Home';
+import About from './components/About';
+import Footer from './components/Footer';
 
 function App() {
-
-    const [darkMode, setDarkMode] = useState(false);
-    const [drawerOpen, setDrawerOpen] = useState(false);
-
-    const handleDarkModeToggle = () => {
-        setDarkMode(!darkMode);
-    }
-
-    const toggleDrawer = (open) => (event) => {
-        setDrawerOpen(open);
-    }
-
     return (
-        <Container
-            component='main'
-            sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-                minHeight: '100vh',
-                /* backgroundColor: 'theme.palette.background.default' */
-                backgroundColor: 'red' // TESTING ONLY
-            }}
-        >
-
-        </Container>
+        <Box component='body' sx={styles.body}>
+            <Header />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+            </Routes>
+            <Footer />
+        </Box>
     );
 }
+
+const styles = {
+    body: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'flex-start',
+        minHeight: '100vh',
+    }
+};
 
 export default App;
