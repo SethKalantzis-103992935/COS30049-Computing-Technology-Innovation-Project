@@ -1,15 +1,27 @@
 import React from 'react'
-import { Box, Typography } from '@mui/material'
+import { Box, Typography, useTheme, useMediaQuery } from '@mui/material'
 
 const Hero = ({ imgSrc, titleText, subtitleText, position }) => {
+    const theme = useTheme();
+    const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+
+    const getImgSrc = (src) => {
+        if (isSmallScreen) {
+            const parts = src.split('.');
+            const extension = parts.pop();
+            return `${parts.join('.')}-mobile.${extension}`;
+        }
+        return src;
+    };
+
     return (
         <Box sx={styles.heroContainer}>
-            <Box component='section' sx={styles.hero(imgSrc)}>
-                <Box sx={styles.textContainer(position)}>
-                    <Typography variant='h1' component='h1' sx={styles.title}>
+            <Box component='section' sx={styles.hero(getImgSrc(imgSrc))}>
+                <Box sx={styles.textContainer(position, isSmallScreen)}>
+                    <Typography variant='h1' component='h1' sx={styles.title(isSmallScreen)}>
                         {titleText}
                     </Typography>
-                    <Typography variant='h2' component='h2' sx={styles.subtitle}>
+                    <Typography variant='h2' component='h2' sx={styles.subtitle(isSmallScreen)}>
                         {subtitleText}
                     </Typography>
                 </Box>
@@ -44,27 +56,34 @@ const styles = {
         textAlign: 'center',
         padding: '0 20px'
     }),
-    textContainer: (position) => {
+    textContainer: (position, isSmallScreen) => {
         let top, left, textAlign, width;
-        switch (position) {
-            case 1:
-                top = '16%';
-                left = '5%';
-                textAlign = 'left';
-                width = '40%';
-                break;
-            case 2:
-                top = '60%';
-                left = '50%';
-                textAlign = 'right';
-                width = '40%';
-                break;
-            default:
-                top = '30%';
-                left = '20%';
-                textAlign = 'center';
-                width = '60%';
-                break;
+        if (isSmallScreen) {
+            top = '20%';
+            left = '10%';
+            width = '80%';
+            textAlign = 'center';
+        } else {
+            switch (position) {
+                case 1:
+                    top = '16%';
+                    left = '5%';
+                    textAlign = 'left';
+                    width = '40%';
+                    break;
+                case 2:
+                    top = '60%';
+                    left = '50%';
+                    textAlign = 'right';
+                    width = '40%';
+                    break;
+                default:
+                    top = '30%';
+                    left = '20%';
+                    textAlign = 'center';
+                    width = '60%';
+                    break;
+            }
         }
         return {
             position: 'absolute',
@@ -76,15 +95,15 @@ const styles = {
             color: 'text.secondary'
         };
     },
-    title: {
+    title: (isSmallScreen) => ({
         marginBottom: '20px',
         fontWeight: 'bold',
-        fontSize: '5rem'
-    },
-    subtitle: {
+        fontSize: isSmallScreen ? '3rem' : '5rem'
+    }),
+    subtitle: (isSmallScreen) => ({
         fontWeight: '300',
-        fontSize: '2rem'
-    }
+        fontSize: isSmallScreen ? '1.5rem' : '2rem'
+    })
 };
 
 export default Hero

@@ -138,17 +138,27 @@ async def predict_knn_risk(data: PollutantData):
         raise HTTPException(status_code=404, detail=str(e))
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+    
 
 
+DATA_PATH = "__data/annual.csv"
+MODEL_CACHE = {}
 
-
-
+# Get the scatter plot data for the KNN model
 @app.get("/knn-model")
-def get_plot_data(health_stat: str, pollutant: str, user_co: float, user_no: float, user_no2: float, user_ozone: float, user_pm10: float, user_so2: float, user_health_stat_value: float):
+def get_plot_data(health_stat: str, pollutant: str):
+    # Ensure the model for the requested health stat is built and cached
+    if health_stat not in MODEL_CACHE:
+        model_classifier, model_regressor, scaler, label_encoder = knn_model.build_knn_model(DATA_PATH, health_stat)
+        MODEL_CACHE[health_stat] = (model_classifier, model_regressor, scaler, label_encoder)
+    else:
+        model_classifier, model_regressor, scaler, label_encoder = MODEL_CACHE[health_stat]
+
     df = pd.read_csv(DATA_PATH)
     x = df[health_stat].values.tolist()
     y = df[pollutant].values.tolist()
-
+    
+    # Predict risk levels for all data points
     pollutants_data = df[['CO ppm', 'NO pphm', 'NO2 pphm', 'OZONE pphm', 'PM10 µg/m³', 'SO2 pphm']].values
     risk_levels = label_encoder.inverse_transform(
         model_classifier.predict(
@@ -156,6 +166,7 @@ def get_plot_data(health_stat: str, pollutant: str, user_co: float, user_no: flo
         )
     ).tolist()
     
+    # Map risk levels to numerical values
     risk_level_mapping = {
         "Low Risk": 0,
         "Low-Medium Risk": 1,
@@ -164,7 +175,7 @@ def get_plot_data(health_stat: str, pollutant: str, user_co: float, user_no: flo
         "High Risk": 4
     }
     risk_levels_numeric = [risk_level_mapping[risk] for risk in risk_levels]
-
+    
     plot_data = {
         "data": [
             {
@@ -185,6 +196,7 @@ def get_plot_data(health_stat: str, pollutant: str, user_co: float, user_no: flo
         }
     }
     return plot_data
+
 
 
 

@@ -31,11 +31,6 @@ const styles = {
         },
         alignItems: 'center',
         justifyContent: 'space-between',
-        gap: {
-            xs: '0',
-            sm: '0',
-            md: '2rem'
-        },
         width: '100%',
     },
 };

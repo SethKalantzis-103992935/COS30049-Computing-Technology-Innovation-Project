@@ -25,11 +25,11 @@ const Visualisation = () => {
 
     // Slider Configurations
     const sliderConfig = [
-        { name: "CO ppm", min: 0, max: 0.35, step: 0.01 },
-        { name: "NO pphm", min: 0, max: 3.50, step: 0.01 },
+        { name: "CO ppm", min: 0, max: 0.32, step: 0.01 },
+        { name: "NO pphm", min: 0.06, max: 3.07, step: 0.01 },
         { name: "NO2 pphm", min: 0, max: 2, step: 0.01 },
         { name: "OZONE pphm", min: 1, max: 2.50, step: 0.01 },
-        { name: "PM10 µg/m³", min: 10, max: 35, step: 0.1 },
+        { name: "PM10 µg/m³", min: 12, max: 30.7, step: 0.1 },
         { name: "SO2 pphm", min: 0, max: 0.20, step: 0.01 },
     ];
 
@@ -166,12 +166,13 @@ const Visualisation = () => {
                 selectedPollutant={selectedPollutant}
                 onPollutantChange={handlePollutantChange}
             />
+                        
 
             {/* {<pre>{JSON.stringify(selectedHealthStat, null, 2)}</pre>} */}
             {/* {<pre>{JSON.stringify(predictionValues, null, 2)}</pre>} */}
-            {/* {<pre>{JSON.stringify(predictionResults, null, 2)}</pre>} */}
-            {/* <pre>{JSON.stringify(clusterData, null, 2)}</pre> */}
-            {/* <pre>{JSON.stringify(knnData, null, 2)}</pre> */}
+            {<pre>{JSON.stringify(predictionResults, null, 2)}</pre>}
+            {/* {<pre>{JSON.stringify(clusterData, null, 2)}</pre>} */}
+            {/* {<pre>{JSON.stringify(knnData, null, 2)}</pre>} */}
 
             <Container style={styles.graphContainer} >
 
@@ -198,15 +199,19 @@ const Visualisation = () => {
                     />
                 )} */}
             </Container>
-
             <SliderContainer
                 sliders={visibleSliders}
                 onSliderChange={handleSliderChange}
                 color='primary'
             />
 
-            <StatsBox predictionResults={predictionResults} />
-
+            <StatsBox 
+                predictionValues={predictionValues} 
+                predictionResults={predictionResults} 
+                selectedHealthStat={selectedHealthStat} 
+                selectedPollutant={selectedPollutant} 
+                selectedModel={selectedModel}
+            />
 
         </Container>
     );
@@ -215,11 +220,12 @@ const Visualisation = () => {
 const styles = {
     graphContainer: {
         width: '100%',
-        height: '50vh',
+        minHeight: '50vh',
+        height: '600px',
         backgroundColor: '#f5f5f5',
         borderRadius: '8px',
         marginTop: '20px',
-        marginBottom: '20px',
+        marginBottom: '40px',
     },
 };
 

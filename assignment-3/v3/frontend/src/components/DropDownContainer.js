@@ -1,6 +1,7 @@
 import React from 'react';
-import { Box } from '@mui/material';
+import { Box, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
 import DropDownComponent from './DropDownComponent';
+import DropDownHeading from './DropDownHeading';
 
 const DropDownContainer = ({
     models = [],
@@ -13,32 +14,57 @@ const DropDownContainer = ({
     selectedPollutant,
     onPollutantChange,
 }) => {
+    // Display names for health statistics
+    const displayNames = {
+        "asthma deaths": "Asthma Deaths",
+        "asthma edp": "Asthma Emergency Department Presentations",
+        "asthma hospitalisations": "Asthma Hospitalisations",
+        "asthma pic": "Asthma Prevalence in Children",
+        "copd deaths": "Chronic Obstructive Pulmonary Disease Deaths",
+        "copd hospitalisations": "Chronic Obstructive Pulmonary Disease Hospitalisations",
+        "iap deaths": "Influenza and Pneumonia Deaths",
+        "iap hospitalisations": "Influenza and Pneumonia Hospitalisations",
+    };
+
+    // Format health stats with display names
+    const formattedHealthStats = healthStats.map(stat => ({
+        value: stat,
+        label: displayNames[stat] || stat,
+    }));
+
     return (
-        <Box display="flex" flexDirection="row" gap={2}>
-            <DropDownComponent
-                label="Select Model"
+        <Box display="flex" flexDirection="column" gap={2}>
+            <DropDownHeading
                 value={selectedModel}
                 onChange={onModelChange}
                 options={models}
+                sx={styles.heading}
             />
-
-            <DropDownComponent
-                label="Select Health Statistic"
-                value={selectedHealthStat}
-                onChange={onHealthStatChange}
-                options={healthStats}
-            />
-
-            {selectedModel === 'knn' && (
+            <Box display="flex" flexDirection="row" gap={2}>
                 <DropDownComponent
-                    label="Select Pollutant"
-                    value={selectedPollutant}
-                    onChange={onPollutantChange}
-                    options={pollutants}
+                    label="Health Statistic"
+                    value={selectedHealthStat}
+                    onChange={onHealthStatChange}
+                    options={formattedHealthStats}
                 />
-            )}
+                {selectedModel === 'knn' && (
+                    <DropDownComponent
+                        label="Pollutant"
+                        value={selectedPollutant}
+                        onChange={onPollutantChange}
+                        options={pollutants.map((pollutant) => ({ value: pollutant, label: pollutant }))}
+                    />
+                )}
+            </Box>
         </Box>
     );
+};
+
+const styles = {
+    heading: {
+        fontSize: 20,
+        fontWeight: 'bold',
+    },
 };
 
 export default DropDownContainer;
