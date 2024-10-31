@@ -134,12 +134,12 @@ async def predict_knn_risk(data: PollutantData):
 
         health_stat, pollution_score = knn_model.predict(new_data, data.label)
         
-        health_stat = health_stat.tolist()
-        pollution_score = pollution_score.tolist()
+        health_stat = health_stat.flatten().tolist()
+        pollution_score = pollution_score.flatten().tolist()
 
         return {
-            "health stat": health_stat,
-            "pollution score": pollution_score
+            "health_status": health_stat,
+            "dependent_variable": pollution_score
         }
     except FileNotFoundError as e: 
         print("shit")

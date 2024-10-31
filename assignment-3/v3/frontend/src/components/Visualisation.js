@@ -181,9 +181,10 @@ const Visualisation = () => {
 
             {/* {<pre>{JSON.stringify(selectedHealthStat, null, 2)}</pre>} */}
             {/* {<pre>{JSON.stringify(predictionValues, null, 2)}</pre>} */}
-            {/* {<pre>{JSON.stringify(predictionResults, null, 2)}</pre>} */}
+            {<pre>{JSON.stringify(predictionResults, null, 2)}</pre>}
             {/* {<pre>{JSON.stringify(clusterData, null, 2)}</pre>} */}
             {/* {<pre>{JSON.stringify(knnData, null, 2)}</pre>} */}
+            
 
             <Container style={styles.graphContainer} >
 
@@ -202,12 +203,17 @@ const Visualisation = () => {
                         clusterData={clusterData}
                     />
                 )}
-                {/* {selectedModel === 'knn' && (
+                {selectedModel === 'knn' && (
                     <VisualisationKNN 
-                        ...
+                        selectedHealthStat={selectedHealthStat} 
+                        knnData={knnData}
+                        predictionResults={predictionResults}
                     />
-                )} */}
+                )}
             </Container>
+
+            
+
             <SliderContainer
                 sliders={visibleSliders}
                 onSliderChange={handleSliderChange}

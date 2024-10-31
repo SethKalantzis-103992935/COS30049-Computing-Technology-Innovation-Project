@@ -3,7 +3,7 @@ import { FormControl, Select, MenuItem } from '@mui/material';
 
 const DropDownHeading = ({ label, value, onChange, options }) => {
     const displayNames = {
-        knn: 'KNN Clustering',
+        knn: 'KNN Classification',
         linear: 'Linear Regression',
         kmeans: 'K-Means Clustering',
     };
