@@ -3,6 +3,29 @@ import Plot from 'react-plotly.js';
 import { Container, Typography, Box } from '@mui/material';
 
 const VisualisationLinearRegression = ({ selectedHealthStat, predictionResults, predictionValues }) => {
+
+    // Define the maximum expected values for each pollutant
+    const maxValues = {
+        "CO ppm": 0.32,
+        "NO pphm": 3.07,
+        "NO2 pphm": 2,
+        "OZONE pphm": 2.5,
+        "PM10 µg/m³": 30.7,
+        "SO2 pphm": 0.2
+    };
+
+    // Normalize each pollutant value to a 0-1 range based on maxValues
+    const normalizedValues = predictionValues
+        ? [
+            predictionValues["CO ppm"] / maxValues["CO ppm"],
+            predictionValues["NO pphm"] / maxValues["NO pphm"],
+            predictionValues["NO2 pphm"] / maxValues["NO2 pphm"],
+            predictionValues["OZONE pphm"] / maxValues["OZONE pphm"],
+            predictionValues["PM10 µg/m³"] / maxValues["PM10 µg/m³"],
+            predictionValues["SO2 pphm"] / maxValues["SO2 pphm"]
+          ]
+        : [];
+
     return (
         <Box sx={styles.box}>
             {predictionResults && predictionResults.health_status && predictionResults.health_status.length > 0 ? (
@@ -10,14 +33,7 @@ const VisualisationLinearRegression = ({ selectedHealthStat, predictionResults, 
                     data={[
                         {
                             type: 'scatterpolar',
-                            r: [
-                                parseFloat(predictionValues["CO ppm"]),
-                                parseFloat(predictionValues["NO pphm"]),
-                                parseFloat(predictionValues["NO2 pphm"]),
-                                parseFloat(predictionValues["OZONE pphm"]),
-                                parseFloat(predictionValues["PM10 µg/m³"]),
-                                parseFloat(predictionValues["SO2 pphm"])
-                            ],
+                            r: normalizedValues,
                             theta: ['CO', 'NO', 'NO2', 'Ozone', 'PM10', 'SO2'],
                             fill: 'toself',
                             name: 'Pollutants',
@@ -57,10 +73,10 @@ const styles = {
         polar: {
             radialaxis: {
                 visible: true,
-                range: [0, 35]
+                range: [0, 1]
             }
         },
-        showlegend: true,
+        showlegend: false,
         autosize: true,
         paper_bgcolor: 'rgba(0, 0, 0, 0)',
         plot_bgcolor: 'rgba(0, 0, 0, 0)'

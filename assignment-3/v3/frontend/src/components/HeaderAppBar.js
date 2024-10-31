@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { AppBar, Toolbar, Typography, Button, IconButton } from '@mui/material';
+import { Link, useLocation } from 'react-router-dom';
+import { AppBar, Toolbar, Button, Box } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import MenuIcon from '@mui/icons-material/Menu';
+import HomeIcon from '@mui/icons-material/Home';
+import InfoIcon from '@mui/icons-material/Info';
 
 const HeaderAppBar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -22,82 +24,85 @@ const HeaderAppBar = () => {
     }, []);
 
     return (
-        <AppBar
-            component="header"
-            position="fixed"
-            disableGutters
-            sx={styles.appBar(isScrolled)}
-        >
+        <AppBar component="header" position="fixed" disableGutters sx={styles.appBar(isScrolled)}>
             <Toolbar component="nav" sx={styles.toolbar(isMobile)}>
-                <Typography
-                    variant="h6"
-                    component={Link}
-                    to="/"
-                    sx={styles.title(isScrolled, isMobile)}
-                >
-                    Breathe Easy
-                </Typography>
-                {isMobile ? (
-                    <IconButton
-                        edge="end"
+                <Box display="flex" alignItems="center" sx={styles.logoContainer(isMobile)}>
+                    <img
+                        src="/img/breathe-easy-logo-name.png"
+                        alt="Logo"
+                        style={styles.logoImage}
+                    />
+                </Box>
+                <Box display="flex" justifyContent="flex-end" sx={styles.buttonContainer}>
+                    <Button
                         color="inherit"
-                        aria-label="menu"
-                        sx={styles.menuButton}
+                        component={Link}
+                        to="/"
+                        sx={styles.link(isScrolled, location.pathname === '/')}
                     >
-                        <MenuIcon />
-                    </IconButton>
-                ) : (
-                    <>
-                        <Button
-                            color="inherit"
-                            component={Link}
-                            to="/"
-                            sx={styles.link(isScrolled)}
-                        >
-                            Home
-                        </Button>
-                        <Button
-                            color="inherit"
-                            component={Link}
-                            to="/about"
-                            sx={styles.link(isScrolled)}
-                        >
-                            About
-                        </Button>
-                    </>
-                )}
+                        <HomeIcon sx={{ mr: isMobile ? 0.25 : 0.5 }} />
+                        {isMobile ? null : 'Home'}
+                    </Button>
+                    <Button
+                        color="inherit"
+                        component={Link}
+                        to="/about"
+                        sx={styles.link(isScrolled, location.pathname === '/about')}
+                    >
+                        <InfoIcon sx={{ mr: isMobile ? 0.25 : 0.5 }} />
+                        {isMobile ? null : 'About'}
+                    </Button>
+                </Box>
             </Toolbar>
         </AppBar>
     );
 };
 
+// Move styles to the bottom
 const styles = {
     appBar: (isScrolled) => ({
-        backgroundColor: isScrolled ? 'background.header' : 'transparent',
-        transition: 'all 0.5s',
-        boxShadow: isScrolled ? '0px 4px 6px rgba(0, 0, 0, 0.3)' : 'none',
-        '&:hover': {
-            backgroundColor: 'background.header',
-        }
+        display: 'flex',
+        justifyContent: 'flex-start',
+        background: 'linear-gradient(90deg, rgba(0, 191, 255, 1), rgba(30, 130, 200, 1))',
+        transition: 'background 0.5s ease, box-shadow 0.5s ease',
+        boxShadow: isScrolled ? '0px 4px 15px rgba(0, 0, 0, 0.5)' : '0px 4px 10px rgba(0, 0, 0, 0.2)',
+        height: '64px'
     }),
     toolbar: (isMobile) => ({
         display: 'flex',
-        justifyContent: isMobile ? 'space-between' : 'flex-start',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        padding: isMobile ? '0 8px' : '0 16px',
+        height: '100%',
+        width: '100%',
     }),
-    title: (isScrolled, isMobile) => ({
-        flexGrow: 1,
-        fontSize: isMobile ? '1.5rem' : '2rem',
-        textDecoration: 'none',
-        transition: 'all 0.5s',
-        color: 'text.onLight',
+    logoContainer: (isMobile) => ({
+        flexGrow: isMobile ? 1 : 0,
+        display: 'flex',
+        justifyContent: isMobile ? 'center' : 'flex-start',
+        alignItems: 'center',
+        height: '60%',
     }),
-    link: (isScrolled) => ({
-        fontSize: '1rem',
-        color: 'text.onLight'
-    }),
-    menuButton: {
-        marginRight: 2,
+    logoImage: {
+        maxHeight: '100%',
+        maxWidth: '100%',
+        objectFit: 'contain',
     },
+    buttonContainer: {
+        display: 'flex',
+        justifyContent: 'flex-end',
+        flexGrow: 1,
+    },
+    link: (isScrolled, isActive) => ({
+        fontSize: '1rem',
+        color: isActive ? 'secondary.main' : 'text.onLight',
+        display: 'flex',
+        alignItems: 'center',
+        transition: 'color 0.3s',
+        '&:hover': {
+            color: 'secondary.main',
+        },
+    }),
 };
 
 export default HeaderAppBar;

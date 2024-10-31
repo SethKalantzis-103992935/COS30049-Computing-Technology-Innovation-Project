@@ -69,13 +69,13 @@ const styles = {
                     top = '16%';
                     left = '5%';
                     textAlign = 'left';
-                    width = '40%';
+                    width = '50%';
                     break;
                 case 2:
                     top = '60%';
                     left = '50%';
                     textAlign = 'right';
-                    width = '40%';
+                    width = '50%';
                     break;
                 default:
                     top = '30%';
@@ -98,7 +98,7 @@ const styles = {
     title: (isSmallScreen) => ({
         marginBottom: '20px',
         fontWeight: 'bold',
-        fontSize: isSmallScreen ? '3rem' : '5rem'
+        fontSize: isSmallScreen ? '3rem' : '4rem'
     }),
     subtitle: (isSmallScreen) => ({
         fontWeight: '300',

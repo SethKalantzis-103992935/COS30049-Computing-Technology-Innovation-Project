@@ -9,7 +9,7 @@ const Home = () => {
         <Container component="main" sx={styles.main}>
             <Hero
                 imgSrc="/img/hero-index.png"
-                titleText='Breathe Easy'
+                titleText='Get Some Fresh Air!'
                 subtitleText="We've done the research so you don't have to. Breathe easy knowing 
                               how the air you breathe really affects the respiratory health of you 
                               and your community."

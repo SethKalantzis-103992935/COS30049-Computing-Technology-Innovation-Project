@@ -47,14 +47,6 @@ const DropDownContainer = ({
                     onChange={onHealthStatChange}
                     options={formattedHealthStats}
                 />
-                {selectedModel === 'knn' && (
-                    <DropDownComponent
-                        label="Pollutant"
-                        value={selectedPollutant}
-                        onChange={onPollutantChange}
-                        options={pollutants.map((pollutant) => ({ value: pollutant, label: pollutant }))}
-                    />
-                )}
             </Box>
         </Box>
     );

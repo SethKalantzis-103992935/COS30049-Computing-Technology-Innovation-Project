@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Plot from 'react-plotly.js';
-import { Box, Typography } from '@mui/material';
+import { Box, useMediaQuery, useTheme } from '@mui/material';
 
 const VisualisationKMean = ({ predictionResults, predictionValues, clusterData }) => {
     const [predictedPoint, setPredictedPoint] = useState(null);
@@ -8,8 +8,10 @@ const VisualisationKMean = ({ predictionResults, predictionValues, clusterData }
     const clusterScatterData = {};
     const meshData = {};
 
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+
     useEffect(() => {
-        // Set predictedPoint directly from predictionValues
         if (predictionValues) {
             setPredictedPoint({
                 x: predictionValues['CO ppm'],
@@ -19,7 +21,6 @@ const VisualisationKMean = ({ predictionResults, predictionValues, clusterData }
         }
     }, [predictionValues]);
 
-    // Organize cluster data points by cluster, assign colors, and build scatter and mesh data
     clusterData.forEach(point => {
         const cluster = point.cluster;
         const color = clusterColors[cluster % clusterColors.length];
@@ -66,27 +67,46 @@ const VisualisationKMean = ({ predictionResults, predictionValues, clusterData }
         showlegend: false,
     }));
 
+    const plotData = [
+        ...Object.values(clusterScatterData),
+        ...meshDataList,
+        predictedPoint && {
+            x: [predictedPoint.x],
+            y: [predictedPoint.y],
+            z: [predictedPoint.z],
+            mode: 'markers',
+            marker: {
+                color: 'red',
+                size: 4,
+                symbol: 'x',
+            },
+            type: 'scatter3d',
+            name: 'Predicted Point',
+        },
+    ].filter(Boolean);
+
     return (
         <Box sx={styles.box}>
             <Plot
-                data={[
-                    ...Object.values(clusterScatterData),
-                    ...meshDataList,
-                    predictedPoint && {
-                        x: [predictedPoint.x],
-                        y: [predictedPoint.y],
-                        z: [predictedPoint.z],
-                        mode: 'markers',
-                        marker: {
-                            size: 10,
-                            color: 'black',
-                            symbol: 'cross',
-                        },
-                        type: 'scatter3d',
-                        name: 'Predicted Point',
+                data={plotData}
+                layout={{
+                    ...styles.plotLayout,
+                    title: {
+                        text: isMobile 
+                            ? 'K-Means Clusters<br>For Air Quality Data'
+                            : 'K-Means Clusters For Air Quality Data',
+                        font: { size: 24 },
+                        x: 0.5,
+                        xanchor: 'center',
                     },
-                ].filter(Boolean)}
-                layout={styles.plotLayout}
+                    scene: {
+                        ...styles.plotLayout.scene,
+                        camera: {
+                            eye: { x: isMobile ? 2.8 : 1.5, y: 2.8, z: 2.8 },
+                        },
+                    },
+                    showlegend: !isMobile,
+                }}
                 useResizeHandler={true}
                 style={styles.plotStyle}
             />
@@ -101,15 +121,20 @@ const styles = {
         position: 'relative',
     },
     plotLayout: {
-        title: 'K-Means Clusters For Air Quality Data',
         scene: {
-            xaxis: { title: 'CO ppm' },
-            yaxis: { title: 'NO pphm' },
-            zaxis: { title: 'PM10 µg/m³' },
+            xaxis: { title: 'CO ppm', autorange: true },
+            yaxis: { title: 'NO pphm', autorange: true },
+            zaxis: { title: 'PM10 µg/m³', autorange: true },
         },
         autosize: true,
         paper_bgcolor: 'rgba(0, 0, 0, 0)',
-        plot_bgcolor: 'rgba(0, 0, 0, 0)'
+        plot_bgcolor: 'rgba(0, 0, 0, 0)',
+        margin: {
+            l: 10,
+            r: 10,
+            b: 10,
+            t: 80, // Extra space at the top to accommodate title
+        },
     },
     plotStyle: {
         width: '100%',

@@ -55,7 +55,7 @@ const Visualisation = () => {
 
 
     // Fetch initial data to be used in visualisation for KMeans and KNN models
-    const fetchInitialData = async () => {
+    const fetchInitialClusterData = async () => {
         try {
             const response = await axios.get(kMeanEndPoint);
             setClusterData(response.data);
@@ -64,9 +64,20 @@ const Visualisation = () => {
         }
     };
 
+    // Fetch initial data to be used in visualisation for KMeans and KNN models
+    const fetchInitialKnnData = async () => {
+        try {
+            const response = await axios.get(knnEndPoint);
+            setKnnData(response.data);
+        } catch (error) {
+            console.error(error);
+        }
+    };
+
     // Call fetchInitialData on component mount
     useEffect(() => {
-        fetchInitialData();
+        fetchInitialClusterData();
+        fetchInitialKnnData();
     }, []);
 
 
@@ -140,8 +151,8 @@ const Visualisation = () => {
     // Filter sliders based on selected model. Only show sliders that are relevant to the selected model
     const visibleSliders = sliderConfig.filter((slider) => {
         if (selectedModel === 'linear') return true;
+        if (selectedModel === 'knn') return true;
         if (selectedModel === 'kmeans') return ["CO ppm", "NO pphm", "PM10 µg/m³"].includes(slider.name);
-        if (selectedModel === 'knn') return slider.name === selectedPollutant;
         return false;
     }).map(slider => ({
         ...slider,
@@ -170,7 +181,7 @@ const Visualisation = () => {
 
             {/* {<pre>{JSON.stringify(selectedHealthStat, null, 2)}</pre>} */}
             {/* {<pre>{JSON.stringify(predictionValues, null, 2)}</pre>} */}
-            {<pre>{JSON.stringify(predictionResults, null, 2)}</pre>}
+            {/* {<pre>{JSON.stringify(predictionResults, null, 2)}</pre>} */}
             {/* {<pre>{JSON.stringify(clusterData, null, 2)}</pre>} */}
             {/* {<pre>{JSON.stringify(knnData, null, 2)}</pre>} */}
 
@@ -193,9 +204,7 @@ const Visualisation = () => {
                 )}
                 {/* {selectedModel === 'knn' && (
                     <VisualisationKNN 
-                        selectedHealthStat={selectedHealthStat} 
-                        predictionValues={predictionValues}
-                        selectedPollutant={selectedPollutant} 
+                        ...
                     />
                 )} */}
             </Container>

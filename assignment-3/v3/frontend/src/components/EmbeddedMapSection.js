@@ -1,7 +1,7 @@
 import React from 'react';
-import { Container, Typography, List, ListItem, Box } from '@mui/material';
+import { Container, Typography, Box } from '@mui/material';
 
-const EmbeddedMapSection = ({ title, text, ListItems = [], iframeSrc }) => {
+const EmbeddedMapSection = ({ title, text, iframeSrc }) => {
     return (
         <Container component="section" sx={styles.section}>
             <Typography variant="h2" sx={styles.title}>
@@ -12,15 +12,6 @@ const EmbeddedMapSection = ({ title, text, ListItems = [], iframeSrc }) => {
                     {paragraph}
                 </Typography>
             ))}
-            {ListItems.length > 0 && (
-                <List>
-                    {ListItems.map((item, index) => (
-                        <ListItem key={index} sx={styles.listItem}>
-                            {item}
-                        </ListItem>
-                    ))}
-                </List>
-            )}
             <Box
                 component="iframe"
                 src={iframeSrc}
@@ -49,10 +40,7 @@ const styles = {
         marginTop: 4,
         borderRadius: 2,
         border: '1px solid divider.main',
-    },
-    listItem: {
-        padding: 1
-    },
+    }
 };
 
 export default EmbeddedMapSection;
