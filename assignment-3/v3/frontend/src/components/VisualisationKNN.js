@@ -34,13 +34,21 @@ const VisualisationKNN = ({ selectedHealthStat, knnData, predictionResults }) =>
 
         // Add predicted results to the plot
         if (predictionResults && predictionResults.health_status && predictionResults.dependent_variable) {
-            const predictedHealthStat = predictionResults.health_status[0]; // Accessing the first (and only) number
-            const predictedPollutionScore = predictionResults.dependent_variable[0]; // Accessing the first (and only) number
+            const predictedHealthStat = predictionResults.health_status[0];
+            const predictedPollutionScore = predictionResults.dependent_variable[0];
 
             console.log("Predicted Health Stat:", predictedHealthStat);
             console.log("Predicted Pollution Score:", predictedPollutionScore);
 
             // Add a trace for the predicted results
+            const getColorForPrediction = (score) => {
+                if (score <= 0.2) return 'green';
+                if (score <= 0.4) return 'blue';
+                if (score <= 0.6) return 'orange';
+                if (score <= 0.8) return 'red';
+                return 'darkred';
+            };
+
             const predictedTrace = {
                 x: [predictedHealthStat],
                 y: [predictedPollutionScore],
@@ -48,9 +56,9 @@ const VisualisationKNN = ({ selectedHealthStat, knnData, predictionResults }) =>
                 type: 'scatter',
                 name: 'Predicted Result',
                 marker: {
-                    color: 'red',
+                    color: getColorForPrediction(predictedPollutionScore),
                     size: 12,
-                    symbol: 'cross'
+                    symbol: 'x'
                 }
             };
 
