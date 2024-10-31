@@ -4,6 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import numpy as np
 import logging
 import joblib
+import pandas as pd
 
 from _regressionmodel import LinearRegressionModel
 from _clustermodel import KMeansModel
@@ -42,6 +43,7 @@ class PollutantData(BaseModel):
 async def load_model():
     try:
         kmeans_model.clustered_data = joblib.load('km_data.pkl')
+        knn_model.scatterplot_data = joblib.load('knn_data.pkl')
     except Exception as e:
         print(f"Error loading the model: {e}")
 
@@ -96,9 +98,9 @@ async def get_kmeans_data():
 @app.post("/regression-model")
 def predict_health_status(data: PollutantData):
     try:
-        # Get the new values to predict
-        new_data = np.array([[data.CO_ppm, data.NO_pphm, data.NO2_pphm, data.OZONE_pphm, 
-                              data.PM10_ug_m3, data.SO2_pphm]])
+        new_data = pd.DataFrame([[data.CO_ppm, data.NO_pphm, data.NO2_pphm, data.OZONE_pphm, 
+                          data.PM10_ug_m3, data.SO2_pphm]], 
+                        columns=['CO ppm', 'NO pphm', 'NO2 pphm', 'OZONE pphm', 'PM10 µg/m³', 'SO2 pphm'])
 
         prediction = regression_model.predict(new_data, data.label)
 
@@ -121,81 +123,38 @@ def predict_health_status(data: PollutantData):
 
 
 
+
 # Get predictions from the KNN model
 @app.post("/knn-model")
 async def predict_knn_risk(data: PollutantData):
     try:
-        new_data = np.array([[data.CO_ppm, data.NO_pphm, data.NO2_pphm, data.OZONE_pphm, 
-                              data.PM10_ug_m3, data.SO2_pphm]])
+        new_data = pd.DataFrame([[data.CO_ppm, data.NO_pphm, data.NO2_pphm, data.OZONE_pphm, 
+                          data.PM10_ug_m3, data.SO2_pphm]], 
+                        columns=['CO ppm', 'NO pphm', 'NO2 pphm', 'OZONE pphm', 'PM10 µg/m³', 'SO2 pphm'])
+
+        health_stat, pollution_score = knn_model.predict(new_data, data.label)
         
-        risk_level, health_stat_value = knn_model.predict(new_data, data.label)
-        
+        health_stat = health_stat.tolist()
+        pollution_score = pollution_score.tolist()
+
         return {
-            "risk_level": risk_level,
-            "health_stat_value": health_stat_value
+            "health stat": health_stat,
+            "pollution score": pollution_score
         }
-    except FileNotFoundError as e:
+    except FileNotFoundError as e: 
+        print("shit")
         raise HTTPException(status_code=404, detail=str(e))
     except Exception as e:
+        print("balls")
         raise HTTPException(status_code=500, detail=str(e))
     
 
-
-DATA_PATH = "__data/annual.csv"
-MODEL_CACHE = {}
-
-# Get the scatter plot data for the KNN model
+# Get the scatterplot data from the KNN model
 @app.get("/knn-model")
-def get_plot_data(health_stat: str, pollutant: str):
-    # Ensure the model for the requested health stat is built and cached
-    if health_stat not in MODEL_CACHE:
-        model_classifier, model_regressor, scaler, label_encoder = knn_model.build_knn_model(DATA_PATH, health_stat)
-        MODEL_CACHE[health_stat] = (model_classifier, model_regressor, scaler, label_encoder)
-    else:
-        model_classifier, model_regressor, scaler, label_encoder = MODEL_CACHE[health_stat]
-
-    df = pd.read_csv(DATA_PATH)
-    x = df[health_stat].values.tolist()
-    y = df[pollutant].values.tolist()
-    
-    # Predict risk levels for all data points
-    pollutants_data = df[['CO ppm', 'NO pphm', 'NO2 pphm', 'OZONE pphm', 'PM10 µg/m³', 'SO2 pphm']].values
-    risk_levels = label_encoder.inverse_transform(
-        model_classifier.predict(
-            scaler.transform(pollutants_data)
-        )
-    ).tolist()
-    
-    # Map risk levels to numerical values
-    risk_level_mapping = {
-        "Low Risk": 0,
-        "Low-Medium Risk": 1,
-        "Medium Risk": 2,
-        "Medium-High Risk": 3,
-        "High Risk": 4
-    }
-    risk_levels_numeric = [risk_level_mapping[risk] for risk in risk_levels]
-    
-    plot_data = {
-        "data": [
-            {
-                "x": x,
-                "y": y,
-                "mode": "markers",
-                "marker": {
-                    "color": risk_levels_numeric,
-                    "colorscale": "Viridis",
-                    "showscale": True
-                }
-            }
-        ],
-        "layout": {
-            "title": f"KNN Decision Boundary for {health_stat} vs {pollutant}",
-            "xaxis": {"title": health_stat},
-            "yaxis": {"title": pollutant}
-        }
-    }
-    return plot_data
+async def get_plot_data():
+    if knn_model.scatterplot_data is None:
+        raise HTTPException(status_code=404, detail="KNN data not available")
+    return knn_model.scatterplot_data.to_dict(orient="records")
 
 
 

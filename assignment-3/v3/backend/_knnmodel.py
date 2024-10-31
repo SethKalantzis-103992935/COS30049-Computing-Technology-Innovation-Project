@@ -1,9 +1,9 @@
 import pandas as pd
 import joblib
 import numpy as np
-from sklearn.model_selection import train_test_split
-from sklearn.neighbors import KNeighborsClassifier, KNeighborsRegressor
-from sklearn.preprocessing import LabelEncoder, StandardScaler
+import os
+
+from sklearn.preprocessing import MinMaxScaler
 
 # Load the data
 data = pd.read_csv('__data/annual.csv')
@@ -12,73 +12,64 @@ data = pd.read_csv('__data/annual.csv')
 class KNNModel:
 
     # Initialize the model, scaler and label_encoder attributes
-    def __init__(self, n_neighbors=5):
-        self.n_neighbors = n_neighbors
-        self.classifier = KNeighborsClassifier(n_neighbors=self.n_neighbors)
-        self.regressor = KNeighborsRegressor(n_neighbors=self.n_neighbors)
-        self.scaler = StandardScaler()
-        self.label_encoder = LabelEncoder()
+    def __init__(self):
+        self.scaler = MinMaxScaler()
+        self.score_scaler = MinMaxScaler()
+        self.scatterplot_data = None
 
     # Train the model
-    def train(self):
+    def train(self, data):
 
-        # Define the lables for classification and regression
-        health_columns = ['asthma deaths', 'asthma edp', 'asthma hospitalisations', 'asthma pic', 
-                         'copd deaths', 'copd hospitalisations', 'iap deaths', 
-                         'iap hospitalisations']
-        for l in health_columns:
-            # Select the relevant columns for classification and regression
-            pollutants = data[['CO ppm', 'NO pphm', 'NO2 pphm', 'OZONE pphm', 'PM10 µg/m³', 'SO2 pphm']]
-            label = data[l]
+        # Define the labels and features
+        pollutants = data[['CO ppm', 'NO pphm', 'NO2 pphm', 'OZONE pphm', 'PM10 µg/m³', 'SO2 pphm']]        
 
-            # Assess the label
-            def categorize_risk(value):
-                if value <= np.percentile(label, 20):
-                    return 'Low Risk'
-                elif value <= np.percentile(label, 40):
-                    return 'Low-Medium Risk'
-                elif value <= np.percentile(label, 60):
-                    return 'Medium Risk'
-                elif value <= np.percentile(label, 80):
-                    return 'Medium-High Risk'
-                else:
-                    return 'High Risk'
-                
-            # Scale the data
-            pollutants_scaled = self.scaler.fit_transform(pollutants)
+        # Scale the pollutants from 0 to 1
+        pollutants_scaled = self.scaler.fit_transform(pollutants)
+
+        # Sum the pollutants to get a pollution score, scale again, add to the data
+        data['pollution_score'] = self.score_scaler.fit_transform(pollutants_scaled.sum(axis=1).reshape(-1, 1))
+
+        # Define the risk levels
+        bins = [-0.1, 0.2, 0.4, 0.6, 0.8, 1.0]
+        risk_levels = ['Low Risk', 'Low-Medium', 'Medium Risk', 'Medium High', 'High Risk']
             
-            # Encode the target variable
-            risk = np.array([categorize_risk(val) for val in label])
-            label_encoded = self.label_encoder.fit_transform(risk)
+        # Add the risk level to the data
+        data['risk_level'] = pd.cut(data['pollution_score'], bins=bins, labels=risk_levels)
 
-            # Split the data into training and testing sets
-            X_train, X_test, y_train, y_test = train_test_split(pollutants_scaled, label_encoded, test_size=0.2, random_state=42)
+        # Store the scatterplot data
+        self.scatterplot_data = data
 
-            # Train the classifier
-            self.classifier.fit(X_train, y_train)
-
-            # Save the classifier and label encoder
-            joblib.dump(self.classifier, f'knn_classifier_{l.replace(' ', '_')}.pkl')
-            joblib.dump(self.label_encoder, f'knn_encoder_{l.replace(' ', '_')}.pkl')
+        # Save the scalers
+        joblib.dump(self.scaler, 'knn_scaler.pkl')
+        joblib.dump(self.score_scaler, 'knn_score_scaler.pkl')
+        joblib.dump(self.scatterplot_data, 'knn_data.pkl')
 
     # Predict the risk level for new data
     def predict(self, new_data, label):
-        # Load models and scaler
-        classifier = joblib.load(f'knn_classifier_{label.replace(" ", "_")}.pkl')
-        label_encoder = joblib.load(f'knn_encoder_{label.replace(" ", "_")}.pkl')
-        model = joblib.load(f'lr_model_{label.replace(" ", "_")}.pkl')
-        scaler = joblib.load(f'lr_scaler_{label.replace(" ", "_")}.pkl')
+        # Load model and scaler
+        model_filename = f'lr_model_{label.replace(" ", "_")}.pkl'
+        scaler_filename = 'knn_scaler.pkl'
+        scaler_score_filename = 'knn_score_scaler.pkl'
 
-        # Scale the input pollutants
+        # Check for file existence
+        if not os.path.exists(model_filename) or not os.path.exists(scaler_filename) or not os.path.exists(scaler_score_filename):
+            raise FileNotFoundError(f"Model or scaler file for label '{label}' not found.")
+        
+        model = joblib.load(model_filename)
+        scaler = joblib.load(scaler_filename)
+        scaler_score = joblib.load(scaler_score_filename)
+
+        # Scale the new data
         new_data_scaled = scaler.transform(new_data)
 
-        # Predict risk level and health stat
-        risk_encoded = classifier.predict(new_data_scaled)[0]
-        health_stat_value = model.predict(new_data_scaled)[0]
-        risk_level = label_encoder.inverse_transform([risk_encoded])[0]
+        # Sum the pollutants to get a pollution score, scale again
+        new_data_summed = scaler_score.transform(new_data_scaled.sum(axis=1).reshape(-1, 1))
 
-        return risk_level, health_stat_value
-    
+        # Predict the target
+        predicted_target = model.predict(new_data_scaled)
+
+        return predicted_target, new_data_summed
+
 if __name__ == "__main__":
     knn_model = KNNModel()
-    knn_model.train()
+    knn_model.train(data)
