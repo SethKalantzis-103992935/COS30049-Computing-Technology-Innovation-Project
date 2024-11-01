@@ -1,25 +1,47 @@
 import React, { useEffect, useState } from 'react';
 import Plot from 'react-plotly.js';
-import { Box, useMediaQuery, useTheme } from '@mui/material';
+import { Box, useMediaQuery } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 
 const VisualisationKMean = ({ predictionResults, predictionValues, clusterData }) => {
+    const theme = useTheme();
     const [predictedPoint, setPredictedPoint] = useState(null);
-    const clusterColors = ['#ea698b', '#6a994e', '#457b9d', '#6f2dbd', '#ee9b00', '#c1121f'];
+    const [camera, setCamera] = useState({
+        eye: { x: 1.8, y: 1.8, z: 1 },
+        up: { x: 0, y: 0, z: 1 },
+        center: { x: 0, y: 0, z: -0.2 }
+    });
+    
+    const clusterColors = [
+        theme.palette.graph.pinkPoint,
+        theme.palette.graph.orangePoint,
+        theme.palette.graph.bluePoint,
+        theme.palette.graph.purplePoint,
+        theme.palette.graph.redPoint,
+        theme.palette.graph.greenPoint
+    ];
     const clusterScatterData = {};
     const meshData = {};
-
-    const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
     useEffect(() => {
         if (predictionValues) {
-            setPredictedPoint({
+            const newPredictedPoint = {
                 x: predictionValues['CO ppm'],
                 y: predictionValues['NO pphm'],
                 z: predictionValues['PM10 µg/m³'],
-            });
+            };
+            setPredictedPoint(newPredictedPoint);
         }
     }, [predictionValues]);
+
+    const getPredictedPointColor = () => {
+        if (predictionResults && predictionResults.predicted_cluster !== undefined) {
+            const clusterIndex = predictionResults.predicted_cluster;
+            return clusterColors[clusterIndex % clusterColors.length];
+        }
+        return theme.palette.graph.blackDefault;
+    };
 
     clusterData.forEach(point => {
         const cluster = point.cluster;
@@ -32,7 +54,7 @@ const VisualisationKMean = ({ predictionResults, predictionValues, clusterData }
                 z: [],
                 mode: 'markers',
                 marker: {
-                    size: 4,
+                    size: 3,
                     color: color,
                 },
                 type: 'scatter3d',
@@ -68,7 +90,31 @@ const VisualisationKMean = ({ predictionResults, predictionValues, clusterData }
     }));
 
     const plotData = [
-        ...Object.values(clusterScatterData),
+        // Data traces for the clusters
+        ...Object.values(clusterScatterData).map(trace => ({
+            ...trace,
+            marker: {
+                ...trace.marker,
+                size: 3, // Keep the original size for the plot markers
+            },
+            showlegend: false, // Show the trace in the legend
+        })),
+        // Create a separate dummy trace for the legend markers
+        ...Object.values(clusterScatterData).map(trace => ({
+            x: [null], // Dummy data point
+            y: [null],
+            z: [null],
+            mode: 'markers',
+            marker: {
+                size: 8, // Larger size for the legend markers
+                color: trace.marker.color, // Use the same color as the cluster
+            },
+            type: 'scatter3d',
+            name: trace.name, // Keep the name for the legend
+            showlegend: true, // Show this trace in the legend
+            hoverinfo: 'none', // Disable hover information
+            legendgroup: trace.name, // Group the legend items
+        })),
         ...meshDataList,
         predictedPoint && {
             x: [predictedPoint.x],
@@ -76,14 +122,19 @@ const VisualisationKMean = ({ predictionResults, predictionValues, clusterData }
             z: [predictedPoint.z],
             mode: 'markers',
             marker: {
-                color: 'red',
-                size: 4,
+                color: getPredictedPointColor(),
+                line: { color: 'black', width: 2 },
+                size: 3, // Keep the original size for the predicted point marker
                 symbol: 'x',
             },
             type: 'scatter3d',
             name: 'Predicted Point',
+            showlegend: false, // Hide the predicted point from the legend
         },
     ].filter(Boolean);
+    
+    
+    
 
     return (
         <Box sx={styles.box}>
@@ -101,11 +152,21 @@ const VisualisationKMean = ({ predictionResults, predictionValues, clusterData }
                     },
                     scene: {
                         ...styles.plotLayout.scene,
-                        camera: {
-                            eye: { x: isMobile ? 2.8 : 1.5, y: 2.8, z: 2.8 },
-                        },
+                        camera: camera,
+                    },
+                    legend: {
+                        orientation: 'h',
+                        y: 0,
+                        x: 0.5,
+                        xanchor: 'center',
+                        font: { size: 16 },
                     },
                     showlegend: !isMobile,
+                }}
+                onRelayout={(event) => {
+                    if (event['scene.camera']) {
+                        setCamera(event['scene.camera']);
+                    }
                 }}
                 useResizeHandler={true}
                 style={styles.plotStyle}
@@ -133,7 +194,7 @@ const styles = {
             l: 10,
             r: 10,
             b: 10,
-            t: 80, // Extra space at the top to accommodate title
+            t: 80,
         },
     },
     plotStyle: {

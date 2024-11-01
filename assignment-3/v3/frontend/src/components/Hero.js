@@ -1,5 +1,5 @@
-import React from 'react'
-import { Box, Typography, useTheme, useMediaQuery } from '@mui/material'
+import React from 'react';
+import { Box, Typography, useTheme, useMediaQuery } from '@mui/material';
 
 const Hero = ({ imgSrc, titleText, subtitleText, position }) => {
     const theme = useTheme();
@@ -15,8 +15,8 @@ const Hero = ({ imgSrc, titleText, subtitleText, position }) => {
     };
 
     return (
-        <Box sx={styles.heroContainer}>
-            <Box component='section' sx={styles.hero(getImgSrc(imgSrc))}>
+        <Box sx={styles.heroContainer(isSmallScreen)}>
+            <Box component='section' sx={styles.hero(getImgSrc(imgSrc), isSmallScreen)}>
                 <Box sx={styles.textContainer(position, isSmallScreen)}>
                     <Typography variant='h1' component='h1' sx={styles.title(isSmallScreen)}>
                         {titleText}
@@ -27,26 +27,26 @@ const Hero = ({ imgSrc, titleText, subtitleText, position }) => {
                 </Box>
             </Box>
         </Box>
-    )
+    );
 }
 
 const styles = {
-    heroContainer: {
+    heroContainer: (isSmallScreen) => ({
         width: '100%',
-        height: '100vh',
+        height: isSmallScreen ? '100vh' : '75vh', // Adjust height based on screen size
         overflow: 'hidden'
-    },
-    hero: (imgSrc) => ({
+    }),
+    hero: (imgSrc, isSmallScreen) => ({
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'left',
         justifyContent: 'center',
-        height: '100vh',
+        height: isSmallScreen ? '100vh' : '75vh', // Adjust height here too
         width: '100%',
-        color: 'primary.contrastText',
+        color: 'primary.secondary',
         backgroundImage: `url(${imgSrc})`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: 'bottom',
         backgroundRepeat: 'no-repeat',
         position: 'absolute',
         top: 0,
@@ -72,13 +72,13 @@ const styles = {
                     width = '50%';
                     break;
                 case 2:
-                    top = '60%';
+                    top = '40%';
                     left = '50%';
                     textAlign = 'right';
                     width = '50%';
                     break;
                 default:
-                    top = '30%';
+                    top = '35%';
                     left = '20%';
                     textAlign = 'center';
                     width = '60%';
@@ -91,8 +91,8 @@ const styles = {
             top: top,
             left: left,
             width: width,
-            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
-            color: 'text.secondary'
+            textShadow: '2px 2px 4px rgba(0, 0, 0, 1)',
+            color: 'text.primary'
         };
     },
     title: (isSmallScreen) => ({
@@ -106,4 +106,4 @@ const styles = {
     })
 };
 
-export default Hero
+export default Hero;

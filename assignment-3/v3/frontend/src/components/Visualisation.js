@@ -7,52 +7,20 @@ import StatsBox from './StatsBox';
 import VisualisationKNN from './VisualisationKNN';
 import VisualisationLinearRegression from './VisualisationLinearRegression';
 import VisualisationKMean from './VisualisationKMean';
-import { WidthFull } from '@mui/icons-material';
+import { pollutants, healthStats } from '../constants/DataNames';
+import { linearEndPoint, kMeanEndPoint, knnEndPoint } from '../constants/Endpoints';
+import { sliderConfig, sliderMidPoints } from '../constants/SliderConfig';
+import { mlModels } from '../constants/MLModels';
 
-const Visualisation = () => {
+const Visualisation = ({ selectedModel, setSelectedModel }) => {
 
-    // API Endpoints
-    const linearEndPoint = 'http://127.0.0.1:8000/regression-model';
-    const kMeanEndPoint = 'http://127.0.0.1:8000/cluster-model';
-    const knnEndPoint = 'http://127.0.0.1:8000/knn-model';
-
-    // Pollutants
-    const pollutants = ['CO ppm', 'NO pphm', 'NO2 pphm', 'OZONE pphm', 'PM10 µg/m³', 'SO2 pphm'];
-
-    // Health Stats
-    const healthStats = ['asthma deaths', 'asthma edp', 'asthma hospitalisations', 'asthma pic',
-        'copd deaths', 'copd hospitalisations', 'iap deaths', 'iap hospitalisations'];
-
-    // Slider Configurations
-    const sliderConfig = [
-        { name: "CO ppm", min: 0, max: 0.32, step: 0.01 },
-        { name: "NO pphm", min: 0.06, max: 3.07, step: 0.01 },
-        { name: "NO2 pphm", min: 0, max: 2, step: 0.01 },
-        { name: "OZONE pphm", min: 1, max: 2.50, step: 0.01 },
-        { name: "PM10 µg/m³", min: 12, max: 30.7, step: 0.1 },
-        { name: "SO2 pphm", min: 0, max: 0.20, step: 0.01 },
-    ];
-
-
-
-    // States
     const [selectedHealthStat, setSelectedHealthStat] = useState(healthStats[0]);
     const [selectedPollutant, setSelectedPollutant] = useState(pollutants[0]);
-    const [selectedModel, setSelectedModel] = useState('linear');
     const [path, setPath] = useState(linearEndPoint);
     const [clusterData, setClusterData] = useState([]);
     const [knnData, setKnnData] = useState([]);
-    const [predictionValues, setPredictionValues] = useState({
-        "CO ppm": 0.17,
-        "NO pphm": 1.75,
-        "NO2 pphm": 1,
-        "OZONE pphm": 1.75,
-        "PM10 µg/m³": 22.5,
-        "SO2 pphm": 0.10,
-    });
+    const [predictionValues, setPredictionValues] = useState({ ...sliderMidPoints });
     const [predictionResults, setPredictionResults] = useState([]);
-
-
 
     // Fetch initial data to be used in visualisation for KMeans and KNN models
     const fetchInitialClusterData = async () => {
@@ -98,9 +66,9 @@ const Visualisation = () => {
         const model = event.target.value;
         setSelectedModel(model);
         switch (model) {
-            case 'linear': setPath(linearEndPoint); break;
-            case 'kmeans': setPath(kMeanEndPoint); break;
-            case 'knn': setPath(knnEndPoint); break;
+            case mlModels.linear: setPath(linearEndPoint); break;
+            case mlModels.kmeans: setPath(kMeanEndPoint); break;
+            case mlModels.knn: setPath(knnEndPoint); break;
             default: setPath(linearEndPoint); break;
         }
     };
@@ -150,9 +118,9 @@ const Visualisation = () => {
 
     // Filter sliders based on selected model. Only show sliders that are relevant to the selected model
     const visibleSliders = sliderConfig.filter((slider) => {
-        if (selectedModel === 'linear') return true;
-        if (selectedModel === 'knn') return true;
-        if (selectedModel === 'kmeans') return ["CO ppm", "NO pphm", "PM10 µg/m³"].includes(slider.name);
+        if (selectedModel === mlModels.linear) return true;
+        if (selectedModel === mlModels.knn) return true;
+        if (selectedModel === mlModels.kmeans) return ["CO ppm", "NO pphm", "PM10 µg/m³"].includes(slider.name);
         return false;
     }).map(slider => ({
         ...slider,
@@ -165,70 +133,69 @@ const Visualisation = () => {
 
 
     return (
-        <Container>
-            <DropDownContainer
-                models={['linear', 'kmeans', 'knn']}
-                selectedModel={selectedModel}
-                onModelChange={handleModelChange}
-                healthStats={healthStats}
-                selectedHealthStat={selectedHealthStat}
-                onHealthStatChange={handleHealthStatChange}
-                pollutants={pollutants}
-                selectedPollutant={selectedPollutant}
-                onPollutantChange={handlePollutantChange}
-            />
-                        
+        <div id='visualisation'>
+            <Container>
+                <DropDownContainer
+                    models={[mlModels.linear, mlModels.kmeans, mlModels.knn]}
+                    selectedModel={selectedModel}
+                    onModelChange={handleModelChange}
+                    healthStats={healthStats}
+                    selectedHealthStat={selectedHealthStat}
+                    onHealthStatChange={handleHealthStatChange}
+                    pollutants={pollutants}
+                    selectedPollutant={selectedPollutant}
+                    onPollutantChange={handlePollutantChange}
+                />
 
-            {/* {<pre>{JSON.stringify(selectedHealthStat, null, 2)}</pre>} */}
-            {/* {<pre>{JSON.stringify(predictionValues, null, 2)}</pre>} */}
-            {<pre>{JSON.stringify(predictionResults, null, 2)}</pre>}
-            {/* {<pre>{JSON.stringify(clusterData, null, 2)}</pre>} */}
-            {/* {<pre>{JSON.stringify(knnData, null, 2)}</pre>} */}
-            
 
-            <Container style={styles.graphContainer} >
+                {/* {<pre>{JSON.stringify(selectedHealthStat, null, 2)}</pre>} */}
+                {/* {<pre>{JSON.stringify(predictionValues, null, 2)}</pre>} */}
+                {/* {<pre>{JSON.stringify(predictionResults, null, 2)}</pre>} */}
+                {/* {<pre>{JSON.stringify(clusterData, null, 2)}</pre>} */}
+                {/* {<pre>{JSON.stringify(knnData, null, 2)}</pre>} */}
 
-                {selectedModel === 'linear' && (
-                    <VisualisationLinearRegression
-                        selectedHealthStat={selectedHealthStat}
-                        predictionResults={predictionResults}
-                        predictionValues={predictionValues}
 
-                    />
-                )}
-                {selectedModel === 'kmeans' && (
-                    <VisualisationKMean
-                        predictionResults={predictionResults}
-                        predictionValues={predictionValues}
-                        clusterData={clusterData}
-                    />
-                )}
-                {selectedModel === 'knn' && (
-                    <VisualisationKNN 
-                        selectedHealthStat={selectedHealthStat} 
-                        knnData={knnData}
-                        predictionResults={predictionResults}
-                    />
-                )}
+                <Container style={styles.graphContainer} >
+
+                    {selectedModel === mlModels.linear && (
+                        <VisualisationLinearRegression
+                            predictionValues={predictionValues}
+                        />
+                    )}
+                    {selectedModel === mlModels.kmeans && (
+                        <VisualisationKMean
+                            predictionResults={predictionResults}
+                            predictionValues={predictionValues}
+                            clusterData={clusterData}
+                        />
+                    )}
+                    {selectedModel === mlModels.knn && (
+                        <VisualisationKNN
+                            selectedHealthStat={selectedHealthStat}
+                            knnData={knnData}
+                            predictionResults={predictionResults}
+                        />
+                    )}
+                </Container>
+
+
+
+                <SliderContainer
+                    sliders={visibleSliders}
+                    onSliderChange={handleSliderChange}
+                    color='primary'
+                />
+
+                <StatsBox
+                    predictionValues={predictionValues}
+                    predictionResults={predictionResults}
+                    selectedHealthStat={selectedHealthStat}
+                    selectedPollutant={selectedPollutant}
+                    selectedModel={selectedModel}
+                />
+
             </Container>
-
-            
-
-            <SliderContainer
-                sliders={visibleSliders}
-                onSliderChange={handleSliderChange}
-                color='primary'
-            />
-
-            <StatsBox 
-                predictionValues={predictionValues} 
-                predictionResults={predictionResults} 
-                selectedHealthStat={selectedHealthStat} 
-                selectedPollutant={selectedPollutant} 
-                selectedModel={selectedModel}
-            />
-
-        </Container>
+        </div>
     );
 };
 

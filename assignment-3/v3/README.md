@@ -42,7 +42,7 @@ Navigate to to `backend` folder, and run the following commands. ### UPDATE ONCE
 python -m venv venv
 
 # Windows
-venv\Scripts\activate.bat
+venv\scripts\activate.bat
 
 #Linux/ Mac
 source venv/bin/activate
@@ -64,7 +64,7 @@ Navigate to to `frontend` folder, and run the following commands.
 
 ### Install Dependencies
 ```bash
-npm install react-router-dom mui @mui/material @emotion/react @emotion/styled @mui/icons-material
+npm install react-router-dom react-router-hash-link mui @mui/material @emotion/react @emotion/styled @mui/icons-material
 ```
 
 ### Activate React

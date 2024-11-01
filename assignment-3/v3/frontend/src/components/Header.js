@@ -2,20 +2,18 @@ import React, { useState } from 'react'
 import { Box } from '@mui/material'
 import HeaderAppBar from './HeaderAppBar';
 
-const Header = () => {
+const Header = ({ selectedModel, setSelectedModel }) => {
 
-    const [drawerOpen, setDrawerOpen] = useState(false);
-
-    const toggleDrawer = (open) => (event) => {
-        if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-            return;
-        }
-        setDrawerOpen(open);
-    };
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
         <Box sx={{ width: '100vw' }} >
-            <HeaderAppBar toggleDrawer={toggleDrawer} />
+            <HeaderAppBar 
+                selectedModel={selectedModel}
+                setSelectedModel={setSelectedModel}
+                isMenuOpen={isMenuOpen}
+                setIsMenuOpen={setIsMenuOpen}
+            />
         </Box>
     )
 }

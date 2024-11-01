@@ -6,9 +6,6 @@ const ProfileCardRow = () => {
     return (
 
         <Box sx={styles.container}>
-            <Typography variant='h2' align='center' sx={styles.title}>
-                Meet the Team
-            </Typography>
             <Grid2 container spacing={8} sx={styles.cards}>
                 <Grid2 item>
                     <ModelCard
