@@ -46,7 +46,8 @@ const ProfileCardRow = () => {
                 {/* Henry Richardson Profile Card */}
                 <Grid2 item>
                     <ModelCard
-                        imgSrc='\img\henry-profile.png'
+                        imgSrc='\img\henry-profile.jpg'
+                        altImgSrc='\img\henry-profile-alt.jpg'
                         title='Henry Richardson'
                         text='Lead Backend Developer'
                         titleColor='text.primary'
