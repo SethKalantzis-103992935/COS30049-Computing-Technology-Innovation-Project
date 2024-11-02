@@ -1,33 +1,30 @@
+/**
+ * StatsBox.js
+ * 
+ * Author: Matthew Cross (Anti-Pesto Party)
+ * Created: October 29, 2024.
+ * Last Modified: November 2, 2024.
+ * 
+ * Purpose:
+ * This component displays prediction results for various machine learning models in text form, 
+ * providing health statistics based on the selected model and input data. It formats the output to 
+ * present a clear summary of predictions and risk levels.
+ * 
+ * Usage:
+ * This component receives prediction results, selected health statistics, and the selected model as 
+ * props.
+ */
+
 import React from 'react';
 import { Container, Typography, useTheme } from '@mui/material';
 import { displayNames } from '../constants/DisplayNames';
 
-const StatsBox = ({
-    predictionValues,
-    predictionResults,
-    selectedHealthStat,
-    selectedPollutant,
-    selectedModel
-}) => {
+// StatsBox component
+const StatsBox = ({ predictionResults, selectedHealthStat, selectedModel }) => {
+    
     const theme = useTheme();
 
-    const riskLevels = [
-        { level: 'Low', range: [0, 0.2], color: theme.palette.graph.greenPoint },
-        { level: 'Low-Medium', range: [0.2, 0.4], color: theme.palette.graph.bluePoint },
-        { level: 'Medium', range: [0.4, 0.6], color: theme.palette.graph.yellowPoint },
-        { level: 'Medium-High', range: [0.6, 0.8], color: theme.palette.graph.orangePoint },
-        { level: 'High', range: [0.8, 1], color: theme.palette.graph.redPoint }
-    ];
-
-    const getRiskLevel = (score) => {
-        for (const { level, range } of riskLevels) {
-            if (score >= range[0] && score < range[1]) {
-                return level;
-            }
-        }
-        return 'Unknown'; // Fallback if score doesn't match any range
-    };
-
+    // Format prediction results for Linear Regression model.
     const formatLinearRegression = () => {
         const healthStatus = predictionResults.health_status
             ? Number(predictionResults.health_status).toFixed(2)
@@ -41,13 +38,14 @@ const StatsBox = ({
         };
     }
 
+    // Format prediction results for K-Means Clustering model.
     const formatKMeans = () => {
         const clusterStats = predictionResults.cluster_stats || {};
         const mean = clusterStats.mean !== undefined ? Number(clusterStats.mean).toFixed(2) : 'N/A';
         const std = clusterStats.std_dev !== undefined ? Number(clusterStats.std_dev).toFixed(2) : 'N/A';
         const min = clusterStats.min !== undefined ? Number(clusterStats.min).toFixed(2) : 'N/A';
         const max = clusterStats.max !== undefined ? Number(clusterStats.max).toFixed(2) : 'N/A';
-    
+
         return {
             'Head': `Predicted ${displayNames[selectedHealthStat]} per 100,000 people: ${mean}`,
             'SubHead': [
@@ -60,16 +58,10 @@ const StatsBox = ({
         };
     }
     
+    // Format prediction results for KNN Classification model.
     const formatKNN = () => {
-        const healthStatus = predictionResults.health_status 
-            ? Number(predictionResults.health_status[0]).toFixed(2) 
-            : 'N/A';
-        const dependentVariable = predictionResults.dependent_variable 
-            ? Number(predictionResults.dependent_variable[0]).toFixed(2) 
-            : 'N/A';
-
-        // Calculate risk level based on health status (pollution score)
-        const pollutionScore = parseFloat(healthStatus); // Assuming healthStatus reflects the pollution score
+        const healthStatus = Number(predictionResults.health_status).toFixed(2);
+        const pollutionScore = predictionResults.pollution_score;
         const riskLevel = getRiskLevel(pollutionScore);
 
         return {
@@ -83,6 +75,26 @@ const StatsBox = ({
         };
     }
 
+    // Define risk levels with their corresponding ranges and colors for the KNN model.
+    const riskLevels = [
+        { level: 'Low', range: [0, 0.2], color: theme.palette.graph.greenPoint },
+        { level: 'Low-Medium', range: [0.2, 0.4], color: theme.palette.graph.bluePoint },
+        { level: 'Medium', range: [0.4, 0.6], color: theme.palette.graph.yellowPoint },
+        { level: 'Medium-High', range: [0.6, 0.8], color: theme.palette.graph.orangePoint },
+        { level: 'High', range: [0.8, 1], color: theme.palette.graph.redPoint }
+    ];
+
+    // Function to determine the risk level based on the pollution score from the KNN model.
+    const getRiskLevel = (score) => {
+        for (const { level, range } of riskLevels) {
+            if (score >= range[0] && score < range[1]) {
+                return level;
+            }
+        }
+        return 'Unknown';
+    };
+
+    // Format statistics based on the selected model.
     const formatStats = () => {
         switch (selectedModel) {
             case 'linear':
@@ -121,6 +133,7 @@ const StatsBox = ({
     );
 }
 
+// Styles for the StatsBox component
 const styles = {
     container: {
         backgroundColor: '#44434a',

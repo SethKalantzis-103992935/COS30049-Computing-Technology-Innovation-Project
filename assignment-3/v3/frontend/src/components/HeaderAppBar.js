@@ -1,41 +1,41 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+/**
+ * HeaderAppBar.js
+ * 
+ * Author: Matthew Cross (Anti-Pesto Party)
+ * Created: October 20, 2024.
+ * Last Modified: November 2, 2024.
+ * 
+ * Purpose:
+ * This component represents the application’s top navigation bar, including the logo and a menu 
+ * button. It manages the logo's hover state and provides a way to toggle the visibility of the 
+ * navigation menu.
+ * 
+ * Usage:
+ * This component is imported and used within the Header component to provide navigation 
+ * functionality.
+ */
+
+import React from 'react';
 import { HashLink } from 'react-router-hash-link';
-import { AppBar, Toolbar, Button, Box, Collapse } from '@mui/material';
+import { AppBar, Toolbar, Button, Box } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import HomeIcon from '@mui/icons-material/Home';
-import InfoIcon from '@mui/icons-material/Info';
 import MenuIcon from '@mui/icons-material/Menu';
-import { mlModels } from '../constants/MLModels';
 
-const HeaderAppBar = ({ selectedModel, setSelectedModel, isMenuOpen, setIsMenuOpen }) => {
+// HeaderAppBar component
+const HeaderAppBar = ({ setIsMenuOpen }) => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-    const location = useLocation();
-    const dropdownRef = useRef(null);
-    const [logoSrc, setLogoSrc] = useState('/img/breathe-easy-logo-name.png');
+    const [logoSrc, setLogoSrc] = React.useState('/img/breathe-easy-logo-name.png');
 
-    // Close dropdown when clicking outside
-    useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-                setIsMenuOpen(false);
-            }
-        };
-
-        if (isMenuOpen) {
-            document.addEventListener('mousedown', handleClickOutside);
-        } else {
-            document.removeEventListener('mousedown', handleClickOutside);
-        }
-
-        return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
-        };
-    }, [isMenuOpen, setIsMenuOpen]);
-
-    const isAboutPage = location.pathname === '/about';
+    /**
+     * Handles the menu button click event.
+     * This function prevents event propagation and toggles the menu visibility.
+     */
+    const handleMenuClick = (event) => {
+        event.stopPropagation(); 
+        setIsMenuOpen(prev => !prev);
+    };
 
     return (
         <AppBar component="header" position="fixed" disableGutters sx={styles.appBar}>
@@ -44,8 +44,8 @@ const HeaderAppBar = ({ selectedModel, setSelectedModel, isMenuOpen, setIsMenuOp
                     display="flex"
                     alignItems="center"
                     sx={styles.logoContainer(isMobile)}
-                    component={Link}
-                    to="/"
+                    component={HashLink}
+                    to="/#home"
                     onMouseEnter={() => setLogoSrc('/img/breathe-easy-logo-name-hover.png')}
                     onMouseLeave={() => setLogoSrc('/img/breathe-easy-logo-name.png')}
                 >
@@ -58,46 +58,18 @@ const HeaderAppBar = ({ selectedModel, setSelectedModel, isMenuOpen, setIsMenuOp
                 <Box display="flex" justifyContent="flex-end" sx={styles.buttonContainer}>
                     <Button
                         color="inherit"
-                        onClick={() => setIsMenuOpen(!isMenuOpen)}
+                        onClick={handleMenuClick}
                         sx={{ ...styles.link(false), flex: 1, justifyContent: 'center' }}
                     >
                         <MenuIcon sx={{ mr: isMobile ? 0.25 : 0.5 }} />
                     </Button>
-                    <Collapse in={isMenuOpen} timeout="auto" unmountOnExit sx={styles.dropdownMenu(theme)} ref={dropdownRef}>
-                        {Object.keys(mlModels).map((key) => (
-                            <Button
-                                key={key}
-                                color="inherit"
-                                smooth
-                                onClick={() => setSelectedModel(mlModels[key])}
-                                sx={{
-                                    ...styles.link(isAboutPage ? false : selectedModel === mlModels[key]),
-                                    flex: 1,
-                                    justifyContent: 'center'
-                                }}
-                                component={HashLink}
-                                to="/#visualisation"
-                            >
-                                {mlModels[key]}
-                            </Button>
-                        ))}
-                        <Button
-                            color="inherit"
-                            component={Link}
-                            to="/about"
-                            smooth
-                            sx={{ ...styles.link(isAboutPage), flex: 1, justifyContent: 'center' }}
-                        >
-                            About
-                        </Button>
-                    </Collapse>
                 </Box>
             </Toolbar>
         </AppBar>
     );
 };
 
-// Styles
+// Styles for the HeaderAppBar component
 const styles = {
     appBar: {
         display: 'flex',
@@ -116,19 +88,20 @@ const styles = {
     logoContainer: (isMobile) => ({
         flexGrow: isMobile ? 1 : 0,
         display: 'flex',
-        justifyContent: isMobile ? 'center' : 'flex-start',
+        justifyContent: 'flex-start',
         alignItems: 'center',
         height: '60%',
+        marginLeft: '16px',
     }),
     logoImage: {
-        maxHeight: '100%',
+        maxHeight: '85%',
         maxWidth: '100%',
         objectFit: 'contain',
     },
     buttonContainer: {
         display: 'flex',
         justifyContent: 'flex-end',
-        position: 'relative', // Needed for dropdown positioning
+        position: 'relative',
     },
     link: (isActive) => ({
         fontSize: '1rem',
@@ -139,20 +112,6 @@ const styles = {
         '&:hover': {
             color: 'secondary.main',
         },
-    }),
-    dropdownMenu: (theme) => ({
-        position: 'absolute',
-        top: '64px',
-        right: 0,
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-around',
-        width: '100%',
-        minWidth: '150px', // Set a minimum width for the dropdown
-        background: theme.palette.background.paper,
-        boxShadow: theme.shadows[5],
-        zIndex: 1,
-        padding: theme.spacing(1), // Adds padding around the dropdown content
     }),
 };
 

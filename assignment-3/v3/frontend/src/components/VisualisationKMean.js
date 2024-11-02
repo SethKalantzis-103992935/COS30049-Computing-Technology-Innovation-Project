@@ -1,17 +1,47 @@
+/**
+ * VisualisationKMean.js
+ * 
+ * Author: Matthew Cross (Anti-Pesto Party)
+ * Created: October 12, 2024
+ * Last Modified: November 02, 2024
+ * 
+ * Purpose:
+ * This component visualizes K-Means clustering results for air quality data in a 3D scatter plot. 
+ * It displays clusters of data points based on pollutant levels and highlights the predicted 
+ * point based on user input values, allowing for an interactive examination of the clustering. 
+ * Points are colored based on their respective clusters, and a mesh is used to visualize the 
+ * boundaries of each cluster.
+ * 
+ * Usage: 
+ * This component is used to display the results of K-Means clustering on air quality data,
+ * enabling users to visualize how different pollutants interact and their respective clusters.
+ */
+
 import React, { useEffect, useState } from 'react';
 import Plot from 'react-plotly.js';
 import { Box, useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
+// VisualisationKMean Component
 const VisualisationKMean = ({ predictionResults, predictionValues, clusterData }) => {
+
     const theme = useTheme();
     const [predictedPoint, setPredictedPoint] = useState(null);
+    const clusterScatterData = {};
+    const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+
+    /**
+    * Define the initial camera position for the 3D scatter plot.
+    */
     const [camera, setCamera] = useState({
-        eye: { x: 1.8, y: 1.8, z: 1 },
+        eye: isMobile ? { x: 2.5, y: 2.5, z: 1.5 } : { x: 1.5, y: 1.5, z: 1 },
         up: { x: 0, y: 0, z: 1 },
         center: { x: 0, y: 0, z: -0.2 }
     });
-    
+
+    /**
+    * Define the colors for each cluster in the 3D scatter plot.
+    */
     const clusterColors = [
         theme.palette.graph.pinkPoint,
         theme.palette.graph.orangePoint,
@@ -20,21 +50,12 @@ const VisualisationKMean = ({ predictionResults, predictionValues, clusterData }
         theme.palette.graph.redPoint,
         theme.palette.graph.greenPoint
     ];
-    const clusterScatterData = {};
-    const meshData = {};
-    const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
-    useEffect(() => {
-        if (predictionValues) {
-            const newPredictedPoint = {
-                x: predictionValues['CO ppm'],
-                y: predictionValues['NO pphm'],
-                z: predictionValues['PM10 µg/m³'],
-            };
-            setPredictedPoint(newPredictedPoint);
-        }
-    }, [predictionValues]);
-
+    /**
+    * Determines the color of the predicted point based on the cluster it belongs to.
+    * If the cluster index is valid, it returns the corresponding cluster color - otherwise it 
+    * defaults to black.
+    */
     const getPredictedPointColor = () => {
         if (predictionResults && predictionResults.predicted_cluster !== undefined) {
             const clusterIndex = predictionResults.predicted_cluster;
@@ -43,10 +64,15 @@ const VisualisationKMean = ({ predictionResults, predictionValues, clusterData }
         return theme.palette.graph.blackDefault;
     };
 
+    /** 
+    * Iterate through the cluster data to populate the scatter data for visualization. 
+    * Each data point is assigned to a cluster and colored accordingly. 
+    */
     clusterData.forEach(point => {
         const cluster = point.cluster;
         const color = clusterColors[cluster % clusterColors.length];
 
+        // Initialize scatter data for each cluster
         if (!clusterScatterData[cluster]) {
             clusterScatterData[cluster] = {
                 x: [],
@@ -61,61 +87,49 @@ const VisualisationKMean = ({ predictionResults, predictionValues, clusterData }
                 name: `Cluster ${cluster}`,
             };
         }
+
+        // Populate scatter data with pollutant values
         clusterScatterData[cluster].x.push(point['CO ppm']);
         clusterScatterData[cluster].y.push(point['NO pphm']);
         clusterScatterData[cluster].z.push(point['PM10 µg/m³']);
-
-        if (!meshData[cluster]) {
-            meshData[cluster] = {
-                x: [],
-                y: [],
-                z: [],
-                color: color,
-            };
-        }
-        meshData[cluster].x.push(point['CO ppm']);
-        meshData[cluster].y.push(point['NO pphm']);
-        meshData[cluster].z.push(point['PM10 µg/m³']);
     });
 
-    const meshDataList = Object.keys(meshData).map(cluster => ({
-        x: meshData[cluster].x,
-        y: meshData[cluster].y,
-        z: meshData[cluster].z,
-        alphahull: 0,
-        opacity: 0.15,
-        color: meshData[cluster].color,
-        type: 'mesh3d',
-        showlegend: false,
-    }));
-
+    /**
+    * Combine scatter data to create the final plot data for visualization. 
+    * This includes the cluster scatter data, the cluster mesh data, and the predicted point.
+    * The predicted point is highlighted with an 'x' symbol and colored based on its cluster.
+    * 
+    * The plot also includes dummy legend entries for each cluster to display the cluster colors.
+    * Plotly does not support a legend with different marker sizes on the legend vs the plot itself,
+    * so this is a workaround to display the cluster colors in the legend at the desired size.
+    */
     const plotData = [
-        // Data traces for the clusters
+        // Scatter data for each cluster
         ...Object.values(clusterScatterData).map(trace => ({
             ...trace,
             marker: {
                 ...trace.marker,
-                size: 3, // Keep the original size for the plot markers
+                size: isMobile
+                    ? 3
+                    : 4,
             },
-            showlegend: false, // Show the trace in the legend
+            showlegend: false,
+            hoverinfo: 'none',
         })),
-        // Create a separate dummy trace for the legend markers
-        ...Object.values(clusterScatterData).map(trace => ({
-            x: [null], // Dummy data point
-            y: [null],
-            z: [null],
-            mode: 'markers',
-            marker: {
-                size: 8, // Larger size for the legend markers
-                color: trace.marker.color, // Use the same color as the cluster
-            },
-            type: 'scatter3d',
-            name: trace.name, // Keep the name for the legend
-            showlegend: true, // Show this trace in the legend
-            hoverinfo: 'none', // Disable hover information
-            legendgroup: trace.name, // Group the legend items
+
+        // Mesh data for cluster boundaries
+        ...Object.keys(clusterScatterData).map(cluster => ({
+            x: clusterScatterData[cluster].x,
+            y: clusterScatterData[cluster].y,
+            z: clusterScatterData[cluster].z,
+            alphahull: 0,
+            opacity: 0.15,
+            color: clusterColors[cluster % clusterColors.length],
+            type: 'mesh3d',
+            showlegend: false,
         })),
-        ...meshDataList,
+
+        // Predicted point data
         predictedPoint && {
             x: [predictedPoint.x],
             y: [predictedPoint.y],
@@ -124,18 +138,55 @@ const VisualisationKMean = ({ predictionResults, predictionValues, clusterData }
             marker: {
                 color: getPredictedPointColor(),
                 line: { color: 'black', width: 2 },
-                size: 3, // Keep the original size for the predicted point marker
+                size: 8,
                 symbol: 'x',
             },
             type: 'scatter3d',
             name: 'Predicted Point',
-            showlegend: false, // Hide the predicted point from the legend
+            showlegend: false,
+            hoverinfo: 'text',
+            text: [
+                `Cluster: ${predictionResults.predicted_cluster}<br>` +
+                `CO ppm: ${predictedPoint.x.toFixed(3)}<br>` +
+                `NO pphm: ${predictedPoint.y.toFixed(3)}<br>` +
+                `PM10 µg/m³: ${predictedPoint.z.toFixed(3)}`
+            ]
         },
-    ].filter(Boolean);
-    
-    
-    
 
+        // Dummy Legend Entries for Cluster Colors
+        ...Array.from({ length: 6 }, (_, i) => ({
+            x: [null], // No actual data points to plot
+            y: [null],
+            z: [null],
+            mode: 'markers',
+            marker: {
+                size: 10,
+                color: clusterColors[i % clusterColors.length],
+            },
+            type: 'scatter3d',
+            name: `Cluster ${i}`,
+            showlegend: true,
+            hoverinfo: 'none',
+        })),
+    ].filter(Boolean);
+
+    /**
+    * Effect hook to update the predicted point when new prediction values are received.
+    */
+    useEffect(() => {
+        if (predictionValues) {
+            const newPredictedPoint = {
+                x: predictionValues['CO ppm'],
+                y: predictionValues['NO pphm'],
+                z: predictionValues['PM10 µg/m³'],
+            };
+            setPredictedPoint(newPredictedPoint);
+        }
+    }, [predictionValues]);
+
+    /**
+    * Return the 3D scatter plot with the cluster data and predicted point.
+    */
     return (
         <Box sx={styles.box}>
             <Plot
@@ -143,7 +194,7 @@ const VisualisationKMean = ({ predictionResults, predictionValues, clusterData }
                 layout={{
                     ...styles.plotLayout,
                     title: {
-                        text: isMobile 
+                        text: isMobile
                             ? 'K-Means Clusters<br>For Air Quality Data'
                             : 'K-Means Clusters For Air Quality Data',
                         font: { size: 24 },
@@ -175,6 +226,7 @@ const VisualisationKMean = ({ predictionResults, predictionValues, clusterData }
     );
 };
 
+// Styles for the component layout and plot.
 const styles = {
     box: {
         width: '100%',

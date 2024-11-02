@@ -1,6 +1,24 @@
-import React from 'react'
-import { Container, Typography, Divider, Box } from '@mui/material'
+/**
+ * Footer.js
+ * 
+ * Author: Matthew Cross (Anti-Pesto Party)
+ * Created: October 24, 2024.
+ * Last Modified: November 02, 2024.
+ * 
+ * Purpose:
+ * This component renders the footer of the application, including a divider with logos for 
+ * React and FastAPI and a copyright notice. It provides a simple and  visually appealing bottom 
+ * section for the app.
+ * 
+ * Usage:
+ * Import this component and include it at the bottom of the App component to ensure it appears on 
+ * every page. It should only be used once per application.
+ */
 
+import React from 'react';
+import { Container, Typography, Divider, Box } from '@mui/material';
+
+// Footer component
 const Footer = () => {
     return (
         <Container component="footer" sx={styles.footer}>
@@ -17,6 +35,7 @@ const Footer = () => {
     )
 }
 
+// Styles for the footer component
 const styles = {
     footer: {
         width: '100%',
@@ -51,4 +70,4 @@ const styles = {
     }
 }
 
-export default Footer
+export default Footer;

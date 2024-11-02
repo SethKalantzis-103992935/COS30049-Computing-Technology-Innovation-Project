@@ -1,8 +1,25 @@
-import React from 'react';
-import { Box, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
-import DropDownComponent from './DropDownComponent';
-import DropDownHeading from './DropDownHeading';
+/**
+ * DropDownContainer.js
+ * 
+ * Author: Matthew Cross (Anti-Pesto Party)
+ * Created: October 20, 2024.
+ * Last Modified: November 02, 2024.
+ * 
+ * Purpose:
+ * This component serves as a container for multiple dropdowns. It is configured to accept props for
+ * machine learning models and health statistics. The component renders two dropdowns side by side 
+ * on larger screens and stacked on top of each other on smaller screens.
+ * 
+ * Usage:
+ * Import this component and provide it with the necessary props for models, health statistics, 
+ * and selected values to create a functional dropdown interface within your application.
+ */
 
+import React from 'react';
+import { Box } from '@mui/material';
+import DropDownComponent from './DropDownComponent';
+
+// Container for dropdown components
 const DropDownContainer = ({
     models = [],
     selectedModel,
@@ -10,52 +27,35 @@ const DropDownContainer = ({
     healthStats = [],
     selectedHealthStat,
     onHealthStatChange,
-    pollutants = [],
-    selectedPollutant,
-    onPollutantChange,
 }) => {
-    // Display names for health statistics
-    const displayNames = {
-        "asthma deaths": "Asthma Deaths",
-        "asthma edp": "Asthma Emergency Department Presentations",
-        "asthma hospitalisations": "Asthma Hospitalisations",
-        "asthma pic": "Asthma Prevalence in Children",
-        "copd deaths": "Chronic Obstructive Pulmonary Disease Deaths",
-        "copd hospitalisations": "Chronic Obstructive Pulmonary Disease Hospitalisations",
-        "iap deaths": "Influenza and Pneumonia Deaths",
-        "iap hospitalisations": "Influenza and Pneumonia Hospitalisations",
-    };
-
-    // Format health stats with display names
-    const formattedHealthStats = healthStats.map(stat => ({
-        value: stat,
-        label: displayNames[stat] || stat,
-    }));
-
     return (
-        <Box display="flex" flexDirection="column" gap={2}>
-            <DropDownHeading
+        <Box sx={styles.box}>
+            <DropDownComponent
+                label="Model"
                 value={selectedModel}
                 onChange={onModelChange}
                 options={models}
-                sx={styles.heading}
             />
-            <Box display="flex" flexDirection="row" gap={2}>
-                <DropDownComponent
-                    label="Health Statistic"
-                    value={selectedHealthStat}
-                    onChange={onHealthStatChange}
-                    options={formattedHealthStats}
-                />
-            </Box>
+            <DropDownComponent
+                label="Health Statistic"
+                value={selectedHealthStat}
+                onChange={onHealthStatChange}
+                options={healthStats}
+            />
         </Box>
     );
 };
 
+// Styles for dropdown container
 const styles = {
-    heading: {
-        fontSize: 20,
-        fontWeight: 'bold',
+    box: {
+        display: 'flex',
+        flexDirection: {
+            xs: 'column',
+            sm: 'column',
+            md: 'row',
+        },
+        gap: 2
     },
 };
 

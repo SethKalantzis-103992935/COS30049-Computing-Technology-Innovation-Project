@@ -1,38 +1,55 @@
+/**
+ * VisualisationLinearRegression.js
+ * 
+ * Author: Henry Richardson, Matthew Cross (Anti-Pesto Party)
+ * Created: October 16, 2024
+ * Last Modified: November 02, 2024
+ * 
+ * Purpose:
+ * This component visualizes pollutant levels and their health impacts using a radar chart. It takes 
+ * prediction values as props, normalizes them against defined slider limits, and displays them in a 
+ * radar plot to provide a visual representation of air quality.
+ * 
+ * Usage: 
+ * This component is used to display the levels of various pollutants in a radar chart format,
+ * providing an intuitive visual representation of how pollutant levels compare to health impact.
+ */
+
 import React from 'react';
 import Plot from 'react-plotly.js';
-import { Typography, Box } from '@mui/material';
+import { Typography, Box, useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+import { sliderConfig } from '../constants/SliderConfig';
 
+// VisualisationLinearRegression Component
 const VisualisationLinearRegression = ({ predictionValues }) => {
-
     const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
-    // Define the maximum expected values for each pollutant
-    const maxValues = {
-        "CO ppm": 0.32,
-        "NO pphm": 3.07,
-        "NO2 pphm": 2,
-        "OZONE pphm": 2.5,
-        "PM10 µg/m³": 30.7,
-        "SO2 pphm": 0.2
-    };
-
-    // Normalize each pollutant value to a 0-1 range based on maxValues
+    /**
+     * Normalize the prediction values against the slider limits to ensure the radar chart is
+     * consistent and visually appealing. All individual pollutant values are divided by their
+     * respective maximum slider values to ensure they are within the range [0, 1].
+     * 
+     * The first and last values are repeated to close the shape of the radar chart.
+     */
     const normalizedValues = predictionValues
         ? [
-            predictionValues["CO ppm"] / maxValues["CO ppm"],
-            predictionValues["NO pphm"] / maxValues["NO pphm"],
-            predictionValues["NO2 pphm"] / maxValues["NO2 pphm"],
-            predictionValues["OZONE pphm"] / maxValues["OZONE pphm"],
-            predictionValues["PM10 µg/m³"] / maxValues["PM10 µg/m³"],
-            predictionValues["SO2 pphm"] / maxValues["SO2 pphm"],
-            predictionValues["CO ppm"] / maxValues["CO ppm"], // Repeated to close the shape
+            predictionValues["CO ppm"] / sliderConfig.find(s => s.name === "CO ppm").max,
+            predictionValues["NO pphm"] / sliderConfig.find(s => s.name === "NO pphm").max,
+            predictionValues["NO2 pphm"] / sliderConfig.find(s => s.name === "NO2 pphm").max,
+            predictionValues["OZONE pphm"] / sliderConfig.find(s => s.name === "OZONE pphm").max,
+            predictionValues["PM10 µg/m³"] / sliderConfig.find(s => s.name === "PM10 µg/m³").max,
+            predictionValues["SO2 pphm"] / sliderConfig.find(s => s.name === "SO2 pphm").max,
+            predictionValues["CO ppm"] / sliderConfig.find(s => s.name === "CO ppm").max,
         ]
         : [];
 
-    // Check if there are enough values to form the plot
+    /** 
+    * If there are less than 7 normalized values, display a message indicating that no prediction
+    * data is available. This can occur if the user has not input the values correctly.
+    */
     if (normalizedValues.length < 7) {
-        // If not enough data, do not render the plot
         return (
             <Box sx={styles.box}>
                 <Typography variant="body1">
@@ -42,6 +59,9 @@ const VisualisationLinearRegression = ({ predictionValues }) => {
         );
     }
 
+    /**
+    * Return the radar chart with the normalized values displayed as a filled polygon.
+    */
     return (
         <Box sx={styles.box}>
             <Plot
@@ -55,7 +75,24 @@ const VisualisationLinearRegression = ({ predictionValues }) => {
                         color: theme.palette.graph.bluePoint
                     }
                 }]}
-                layout={styles.plotLayout}
+                layout={{
+                    title: {
+                        text: isMobile 
+                            ? 'Pollutant Levels<br>Radar Chart'
+                            : 'Pollutant Levels Radar Chart',
+                        font: { size: 24 },
+                    },
+                    polar: {
+                        radialaxis: {
+                            visible: true,
+                            range: [0, 1]
+                        }
+                    },
+                    showlegend: false,
+                    autosize: true,
+                    paper_bgcolor: 'rgba(0, 0, 0, 0)',
+                    plot_bgcolor: 'rgba(0, 0, 0, 0)',
+                }}
                 useResizeHandler={true}
                 style={styles.plot}
             />
@@ -63,6 +100,7 @@ const VisualisationLinearRegression = ({ predictionValues }) => {
     );
 };
 
+// Styles for the component layout and plot.
 const styles = {
     box: {
         width: '100%',
@@ -76,19 +114,6 @@ const styles = {
         width: '100%',
         height: '100%',
     },
-    plotLayout: {
-        title: 'Pollutant Levels and Health Status Radar Chart',
-        polar: {
-            radialaxis: {
-                visible: true,
-                range: [0, 1]
-            }
-        },
-        showlegend: false,
-        autosize: true,
-        paper_bgcolor: 'rgba(0, 0, 0, 0)',
-        plot_bgcolor: 'rgba(0, 0, 0, 0)'
-    }
 };
 
 export default VisualisationLinearRegression;

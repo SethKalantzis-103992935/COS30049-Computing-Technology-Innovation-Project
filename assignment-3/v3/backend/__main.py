@@ -139,7 +139,7 @@ async def predict_knn_risk(data: PollutantData):
 
         return {
             "health_status": health_stat,
-            "dependent_variable": pollution_score
+            "pollution_score": pollution_score
         }
     except FileNotFoundError as e: 
         print("shit")

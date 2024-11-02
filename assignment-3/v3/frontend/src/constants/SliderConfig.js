@@ -1,3 +1,20 @@
+/**
+ * SliderConfig.js
+ * 
+ * Author: Matthew Cross (Anti-Pesto Party)
+ * Created: October 20, 2024.
+ * Last Modified: October 24, 2024.
+ * 
+ * Purpose:
+ * This file exports configuration settings for sliders used in the application to adjust 
+ * pollutant levels. Each slider configuration specifies the name, minimum, maximum, and 
+ * step values for user input.
+ * 
+ * Usage:
+ * To use these configurations, import them as follows:
+ * import { sliderConfig, sliderMidPoints } from '../constants/SliderConfig';
+ */
+
 // Slider Configurations
 export const sliderConfig = [
     { name: "CO ppm", min: 0, max: 0.32, step: 0.01 },
@@ -8,11 +25,12 @@ export const sliderConfig = [
     { name: "SO2 pphm", min: 0, max: 0.20, step: 0.01 },
 ];
 
+// Midpoint values for sliders
 export const sliderMidPoints = {
-    "CO ppm": 0.17,
-    "NO pphm": 1.75,
+    "CO ppm": 0.16,
+    "NO pphm": 1.56,
     "NO2 pphm": 1,
     "OZONE pphm": 1.75,
-    "PM10 µg/m³": 22.5,
+    "PM10 µg/m³": 27.3,
     "SO2 pphm": 0.10
 };
