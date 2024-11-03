@@ -25,6 +25,7 @@ class LinearRegressionModel:
         # Scale pollutant data
         features_scaled = self.scaler.fit_transform(features)
 
+        # Run a for loop to train the model for each label
         for l in label_columns:
             # Select the relevant columns for regression
             label = data[l]
@@ -35,13 +36,14 @@ class LinearRegressionModel:
             # Fit the model
             self.model.fit(X_train, y_train)
 
-            # Save the model and scaler with the label name in the filename
+            # Save the model to a .pkl file
             joblib.dump(self.model, f'lr_model_{l.replace(" ", "_")}.pkl')
+        # Save the scaler to a .pkl file
         joblib.dump(self.scaler, f'lr_scaler.pkl')
 
     # Predict the target for new data
     def predict(self, new_data, label):
-        # Load the model and scaler
+        # Fetch the file paths for the model and scaler
         model_filename = f'lr_model_{label.replace(" ", "_")}.pkl'
         scaler_filename = f'lr_scaler.pkl'
 
@@ -49,6 +51,7 @@ class LinearRegressionModel:
         if not os.path.exists(model_filename) or not os.path.exists(scaler_filename):
             raise FileNotFoundError(f"Model or scaler file for label '{label}' not found.")
 
+        # Load the model and scaler
         model = joblib.load(model_filename)
         scaler = joblib.load(scaler_filename)
 
@@ -61,6 +64,7 @@ class LinearRegressionModel:
         # Return the predicted target
         return predicted_target
 
+# Run main to train the model and generate pkl files
 if __name__ == "__main__":
     linear_regression_model = LinearRegressionModel()
     evaluation_metrics = linear_regression_model.train()

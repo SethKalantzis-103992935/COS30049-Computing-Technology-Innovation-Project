@@ -11,7 +11,7 @@ data = pd.read_csv('__data/annual.csv')
 # Define the KNNModel class
 class KNNModel:
 
-    # Initialize the model, scaler and label_encoder attributes
+    # Initialize the model, scaler and scatterplot_data attributes
     def __init__(self):
         self.scaler = MinMaxScaler()
         self.score_scaler = MinMaxScaler()
@@ -20,7 +20,7 @@ class KNNModel:
     # Train the model
     def train(self, data):
 
-        # Define the labels and features
+        # Define the features
         pollutants = data[['CO ppm', 'NO pphm', 'NO2 pphm', 'OZONE pphm', 'PM10 µg/m³', 'SO2 pphm']]        
 
         # Scale the pollutants from 0 to 1
@@ -39,14 +39,14 @@ class KNNModel:
         # Store the scatterplot data
         self.scatterplot_data = data
 
-        # Save the scalers
+        # Save the scalers and scatterplot data to .pkl files
         joblib.dump(self.scaler, 'knn_scaler.pkl')
         joblib.dump(self.score_scaler, 'knn_score_scaler.pkl')
         joblib.dump(self.scatterplot_data, 'knn_data.pkl')
 
     # Predict the risk level for new data
     def predict(self, new_data, label):
-        # Load model and scaler
+        # Fetch file paths for scalers and regression model
         model_filename = f'lr_model_{label.replace(" ", "_")}.pkl'
         scaler_filename = 'knn_scaler.pkl'
         scaler_score_filename = 'knn_score_scaler.pkl'
@@ -55,6 +55,7 @@ class KNNModel:
         if not os.path.exists(model_filename) or not os.path.exists(scaler_filename) or not os.path.exists(scaler_score_filename):
             raise FileNotFoundError(f"Model or scaler file for label '{label}' not found.")
         
+        # Load the scalers and regression model into variables
         model = joblib.load(model_filename)
         scaler = joblib.load(scaler_filename)
         scaler_score = joblib.load(scaler_score_filename)
@@ -68,8 +69,10 @@ class KNNModel:
         # Predict the target
         predicted_target = model.predict(new_data_scaled)
 
+        # Return the predicted target and the pollution score
         return predicted_target, new_data_summed
 
+# Run main to train the model and generate pkl files
 if __name__ == "__main__":
     knn_model = KNNModel()
     knn_model.train(data)

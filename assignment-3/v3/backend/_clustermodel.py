@@ -30,7 +30,7 @@ class KMeansModel:
         # Add the cluster labels to the data
         data['cluster'] = self.model.predict(pollutants_scaled)
 
-        # Save the model, scaler and clustered data
+        # Store the clustered data
         self.clustered_data = data
 
         # Save the model, scaler and clustered data to .pkl files
@@ -85,6 +85,7 @@ class KMeansModel:
             "min": min_value
         }
 
+# Run main to train the model and generate the .pkl files
 if __name__ == "__main__":
     kmeans_model = KMeansModel()
     kmeans_model.train(data)
