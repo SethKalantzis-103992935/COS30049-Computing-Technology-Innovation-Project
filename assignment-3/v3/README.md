@@ -97,7 +97,7 @@ source venv/bin/activate
 
 ### Install Dependencies
 ```bash
-pip install fastapi uvicorn joblib pydantic pandas numpy scikit-learn
+pip install fastapi uvicorn logging joblib pydantic pandas numpy scikit-learn
 ```
 
 ### Activate FastAPI
@@ -112,6 +112,10 @@ uvicorn __main:app --reload
 Navigate to to `frontend` folder, and run the following commands.
 
 ### Install Dependencies
+
+This step is not required. All dependencies have been included in the zip file provided with this assignment. If you would like 
+to reinstall them, please fun the following command. 
+
 ```bash
 npm install @emotion/react @emotion/styled @mui/icons-material @mui/material @testing-library/jest-dom @testing-library/react @testing-library/user-event axios plotly plotly.js react-select react-router react-router-dom react-router-hash-link
 ```
