@@ -11,6 +11,8 @@ Henry Richardson - 104 420 453\
 Seth Kalantzis - 103 992 935\
 Matthew Cross - 101 828 627
 
+The final version of this project is showcased in this video: https://youtu.be/yGmnuFbfSWM
+
 # Overview
 
 This project was completed as part of a student project for unit COS30049 at Swinburne University of
