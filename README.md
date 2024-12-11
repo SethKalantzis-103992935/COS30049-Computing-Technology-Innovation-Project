@@ -1,5 +1,5 @@
 
-![image](.assignment-3/v3/img/logo-anti-pesto-party.png "Anti Pesto Party")
+![image](./assignment-3/v3/img/logo-anti-pesto-party.png "Anti Pesto Party")
 
 # Full-Stack Web Development for AI Application
 
